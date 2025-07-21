@@ -13,8 +13,8 @@ export default function Home() {
           alt="Logo"
         />
         <div className="pt-5 flex flex-col gap-2 text-center justify-center">
-          <h1 className="text-8xl">2025</h1>
-          <h1 className="text-6xl">Product Catalog</h1>
+          <h1 className="text-6xl">Product</h1>
+          <h1 className="text-7xl">Catalog</h1>
         </div>
       </header>
 
