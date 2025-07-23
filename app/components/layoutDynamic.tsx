@@ -9,30 +9,24 @@ export default function CatalogLayout({
   children: React.ReactNode
 }) {
   return (
- <div className="">
-      <header className="flex justify-between p-5">
-        <h1 className="text-7xl font-semibold">{title}</h1>
-<Image
-            src="/images/logo.jpg"
-            width={200}
+ <div className="en flex flex-col min-h-screen">
+      
+        <main  className="flex-grow">{children}</main>
+<footer className="bg-gray-100 h-25 flex">
+        <div className="bg-red-600 w-[30px] h-full text-sm pl-5 pt-2 ">1</div>
+        <div className="flex w-full justify-between px-3 pt-2">
+ <h1 className=" font-bold text-lg">{title}</h1>
+         <Image
+            src="/images/tlogo.jpg"
+            width={150}
             height={150}
             alt="Logo"
             className="mb-4"
           />
-      </header>
-
-      <main className="">{children}</main>
-
-      <footer className="p-5 flex gap-[24px] flex-wrap items-center justify-center w-full bg-1 ">
-        <div className="flex flex-col items-center text-center">
-          <a className="hover:underline hover:underline-offset-4">
-            7150 Westfield Ave. Pennsauken, NJ 08110
-          </a>
-          <a className="hover:underline hover:underline-offset-4">
-            (856) 662-6666
-          </a>
         </div>
+       
       </footer>
-   </div>
+    
+    </div>
   )
 }

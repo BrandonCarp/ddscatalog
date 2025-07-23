@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
-import { Playfair_Display } from "next/font/google";
+// import { Playfair_Display } from "next/font/google";
+import { Saira } from "next/font/google";
 import "./globals.css";
+import Image from "next/image";
+import Link from "next/link";
 
-const playfair = Playfair_Display({
+const saira = Saira({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  style: ["normal", "italic"],
   subsets: ["latin"],
-  variable: "--font-playfair",
-  weight: ["400", "700"],
+  display: "swap",
+  variable: "--font-saira", // optional: for CSS variable usage
 });
 
 export const metadata: Metadata = {
@@ -19,9 +24,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`${playfair.variable} antialiased`}>
-        {children}
+    <html lang="en flex flex-col min-h-screen">
+      <body className={`${saira.variable} antialiased`}>
+        <main  className="flex-grow">{children}</main>
+
       </body>
     </html>
   );

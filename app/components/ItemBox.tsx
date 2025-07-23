@@ -1,30 +1,38 @@
 'use client';
 import Image from "next/image";
 
-type ItemBoxProps = {
-  id: string;
-  description: string;
+type DrumInfo = {
+  label: string;
+  image: string;
+  description: string[];
 };
 
-export default function ItemBox({id, description}: ItemBoxProps){
-    return (
-        <>
-        <div className="flex flex-col justify-center items-center w-[180px] h-[180px] bg-white py-3 rounded border-1">
-            <Image
-                        src="/prodImages/2_NYLON_SS_ROLLER.jpg"
-                        alt="Part"
-                        width={100}
-                        height={150}
-          
-        
-                      />
-                      {/* Description */}
-                    <div className="flex flex-col items-center justify-center text-center  border-t-1 w-full  pt-1 text-center px-1 text-sm">
-                        
-                        <h1 className="">{id}</h1>
-                        <h1>{description}</h1>
-                        </div>  
-        </div>
-        </>
-    )
+type ItemBoxProps = {
+  id: string;
+  description: DrumInfo;
+};
+
+export default function ItemBox({ id, description }: ItemBoxProps) {
+  return (
+    <div className="flex flex-col justify-center items-center  bg-white py-3 ">
+      <Image
+        src={description.image}
+        alt={description.label}
+        width={150}
+        height={100}
+        className="object-contain"
+      />
+
+      {/* Description */}
+      <div className="flex flex-col items-center justify-center text-center  pt-1 px-1 text-sm">
+        <h1 className="font-semibold">{id}</h1>
+        <h2 className="text-gray-600">{description.label}</h2>
+        <ul className="list-disc list-inside text-sm text-gray-600  whitespace-pre">
+  {description.description.map((line, i) => (
+    <li key={i}>{line}</li>
+  ))}
+</ul>
+      </div>
+    </div>
+  );
 }
