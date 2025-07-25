@@ -9,7 +9,7 @@ export default function CalBlock({day}: CalInfo){
         <>
         <div className="">
             
-            <div className="border border-gray-300 ">
+            <div className="border border-gray-300 h-25 w-25">
                 <div className="p-2">
                     {day}
                 </div>

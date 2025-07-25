@@ -9,8 +9,8 @@ const dayList = [1, 2, 3, 4, 5, 6, 7, 8, 9 ,10 ,11, 12, 13, 14, 15, 16,
 export default function CalMain(){
     return (
         <>
-        <div className="w-[80%]">
-           <ul className="grid grid-cols-4 md:grid-cols-7 gap-5 ">
+        <div className="w-[80%] ">
+           <ul className="grid  md:grid-cols-7 ">
            {dayList.map((item) => (
                     <li key={item}>
                         <CalBlock day={item} />
