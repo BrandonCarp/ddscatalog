@@ -1,6 +1,6 @@
 
 import ItemBox from "@/components/DrumBox"
-import CatalogLayout from "../../components/layoutDynamic"
+import CatalogLayout from "../../components/CatalogLayout"
 
 const torList7: { [key: string]: string } = {
   '2" ID, 207 WIRE, 22.25" LONG': "TS-2-207-22",

@@ -1,4 +1,4 @@
-import MiniCalendar from './MiniCalendar'
+// import MiniCalendar from './MiniCalendar'
 
 export default function LeftNav(){
     return (

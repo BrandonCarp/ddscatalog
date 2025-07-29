@@ -1,6 +1,6 @@
 
 import ItemBox from "@/components/DrumBox"
-import CatalogLayout from "../../components/layoutDynamic"
+import CatalogLayout from "../../components/CatalogLayout"
 
 
 const dechdwList: { [key: string]: string } = {

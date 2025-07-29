@@ -1,4 +1,4 @@
-import CatalogLayout from "@/components/layoutDynamic";
+import CatalogLayout from "@/components/CatalogLayout";
 import OperatorBox from "@/components/OperatorParts/OperatorBox";
 
 
@@ -29,7 +29,7 @@ export default function Operators(){
     return (
         <>
         <div className="">
-  <CatalogLayout title={"RESIDENTIAL\nLIFTMASTER"}>
+  <CatalogLayout title={"RESIDENTIAL\nLIFTMASTER"} color={"red"}>
 
 <div className="flex flex-col justify-center items-center mt-15"> {Object.entries(operatorList).map(([key, value]) => (
                 <OperatorBox key={key} id={key} description={value} />

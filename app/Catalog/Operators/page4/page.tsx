@@ -1,5 +1,5 @@
 import Image from "next/image";
-import CatalogLayout from "@/components/layoutDynamic";
+import CatalogLayout from "@/components/CatalogLayout";
 import OperatorBox from "@/components/OperatorParts/OperatorBox";
 
 
@@ -27,7 +27,7 @@ export default function Operators(){
         <>
         <div className="">
           
-  <CatalogLayout title={"RESIDENTIAL\nLIFTMASTER"}>
+  <CatalogLayout title={"RESIDENTIAL\nLIFTMASTER"} color={"red"}>
 <div className="relative w-full h-65 overflow-hidden">  <Image
                       src="/Operators/hero.png"
                       alt="Operator Hero"

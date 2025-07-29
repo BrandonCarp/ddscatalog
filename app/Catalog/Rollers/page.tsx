@@ -1,5 +1,5 @@
 import RollerBox from "@/components/RollerBox";
-import CatalogLayout from "../../components/layoutDynamic"
+import CatalogLayout from "../../components/CatalogLayout"
 import Image from "next/image";
 // import rollers from "/images/Rollers/rollers.png"
 
@@ -83,7 +83,7 @@ export default function Rollers(){
             priority
           />
         </div>
-<CatalogLayout title={"Rollers"}>
+<CatalogLayout title={"Rollers"} color={"sky"}>
    
    
    <div className="px-10 mt-3 text-sm"> 

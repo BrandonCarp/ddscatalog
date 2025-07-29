@@ -1,4 +1,4 @@
-import CatalogLayout from "@/components/layoutDynamic";
+import CatalogLayout from "@/components/CatalogLayout";
 import ItemBox from "@/components/DrumBox"
 
 
@@ -39,7 +39,7 @@ const vertList: { [key: string]: DrumInfo } = {
 export default function Drums() {
   return (
     <>
-      <CatalogLayout title={"Drums"}>
+      <CatalogLayout title={"Drums"} color={"yellow"}>
         <div className="px-5"> {/* Added padding here */}
           {/* Top Section — STANDARD LIFT */}
           <div className="mt-2 py-1">
