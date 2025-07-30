@@ -90,7 +90,7 @@ const allSizes = Array.from(
 export default function VinylTable() {
   return (
     <CatalogLayout title={"WEATHER\nSEAL"} color={"green"}>
-          <div className="relative w-full h-57 overflow-hidden">
+          <div className="relative w-full h-55 overflow-hidden">
             <Image
               src="/images/Vinyl/house.png"
               alt="Vinyl Hero"

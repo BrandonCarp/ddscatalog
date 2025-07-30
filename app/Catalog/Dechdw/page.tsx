@@ -27,7 +27,7 @@ export default function Dechdw(){
     return (
   <>
   <div className="flex items-center justify-center ">
-  <CatalogLayout title="Decorative Hardware">
+  <CatalogLayout title="Decorative Hardware" color={"blue"}>
   <div className="grid grid-cols-4  space-y-3 mx-10">
    {Object.entries(dechdwList).map(([key, value]) => (
     <ItemBox key={key} id={key} description={value} />
