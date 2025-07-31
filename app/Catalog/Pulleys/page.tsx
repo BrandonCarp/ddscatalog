@@ -37,7 +37,6 @@ const pulleyList: { [key: string]: PulleyInfo } = {
     description: [
       "Zinc-coated steel construction",
    
-     
     ],
   },
   "4-cast-iron": {
@@ -84,8 +83,7 @@ const forkList: { [key: string]: PulleyInfo } = {
     image: "/images/pulleys/3Fork.png",
     title: "FORKS",
     description: [
-      "3-inch fork bracket",
-      "Fits standard pulley shafts",
+     
       
     ],
   },
@@ -94,8 +92,7 @@ const forkList: { [key: string]: PulleyInfo } = {
     image: "/images/pulleys/3SafetyFork.png",
     title: "FORKS",
     description: [
-      "Safety locking mechanism included",
-      "Fits 3-inch pulleys securely",
+     "Nylon bushing for restraint cable"
     
     ],
   },
@@ -104,12 +101,56 @@ const forkList: { [key: string]: PulleyInfo } = {
     image: "/images/pulleys/4Fork.png",
     title: "FORKS",
     description: [
-      "Robust 4-inch fork bracket",
-      "Designed for heavy-duty pulley mounting",
+      
+    
    
     ],
   },
 };
+
+const collarCouplingList: { [key: string]: PulleyInfo } = {
+  '1" COLLAR': {
+    label: "3\" Fork",
+    image: "/images/pulleys/3Fork.png",
+    title: "FORKS",
+    description: [
+      "3-inch fork bracket",
+
+      
+    ],
+  },
+  '1-1/4" COLLAR': {
+    label: "3\" Safety Fork",
+    image: "/images/pulleys/3SafetyFork.png",
+    title: "FORKS",
+    description: [
+      "Safety locking mechanism included",
+   
+    
+    ],
+  },
+  '1" COUPLING': {
+    label: "3\" Fork",
+    image: "/images/pulleys/3Fork.png",
+    title: "FORKS",
+    description: [
+      "3-inch fork bracket",
+    
+      
+    ],
+  },
+  '1-1/4" COUPLING': {
+    label: "3\" Safety Fork",
+    image: "/images/pulleys/3SafetyFork.png",
+    title: "FORKS",
+    description: [
+      "Safety locking mechanism included",
+    
+    
+    ],
+  },
+};
+
 
 
 
@@ -118,39 +159,36 @@ export default function Pulleys() {
     <>
       <CatalogLayout title={"HARDWARE\n PULLEYS & FORKS"}  bgcolor={"bg-red-800"} textcolor={"text-red-800"}>
         <div className="contain flex flex-col justify-center items-center ">
-<div className=" border-b  p-3 mx-2 px-10 ">
+<div className=" border-b  pb-4  px-5 ">
         
-              <h1 className="font-bold text-[30px] text-red-800">HARDWARE</h1>
+              <h1 className="font-bold text-[28px] text-red-800">COLLAR & COUPLING</h1>
         
            
-            <div className="gap-20 mt-1 flex h-[200px]">
+            <div className="gap-20 mt-1 flex h-[210px]">
 
-              {Object.entries(forkList).map(([key, value]) => (
+              {Object.entries(collarCouplingList).map(([key, value]) => (
                 <PulleyBox key={key} id={key} description={value} />
               ))}
             </div>
           </div>
-        <div className="px-5 pb-5 flex h-[700]"> 
-        
-  
+        <div className="px-5  flex h-[700]"> 
           <div className="">
-        
               <h1 className="font-bold text-[28px] text-red-800">PULLEY</h1>
           
            
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-10 mt-1">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-1">
 
               {Object.entries(pulleyList).map(([key, value]) => (
                 <PulleyBox key={key} id={key} description={value} />
               ))}
             </div>
           </div>
-<div className="  flex flex-col    border-l  py-5 px-10  mt-2">
+<div className="  flex flex-col    border-l   px-10  mt-1">
         
               <h1 className="font-bold text-[28px] text-red-800">FORK</h1>
-          <h1 className="font-bold text-[16px]  text-gray-600">FASTERNERS SOLD SEPARETELY</h1>
+          <h1 className="font-bold text-[14px]  text-gray-600">FASTERNERS SOLD SEPARETELY</h1>
            
-            <div className="">
+            <div className="flex flex-col gap-10">
 
               {Object.entries(forkList).map(([key, value]) => (
                 <PulleyBox key={key} id={key} description={value} />

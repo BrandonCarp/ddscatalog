@@ -1,5 +1,5 @@
 
-import ItemBox from "@/components/DrumBox"
+import ItemBox from "@/components/Drums/DrumBox"
 import CatalogLayout from "../../components/CatalogLayout"
 
 const torList7: { [key: string]: string } = {

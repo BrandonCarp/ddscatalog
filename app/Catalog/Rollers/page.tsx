@@ -1,4 +1,4 @@
-import RollerBox from "@/components/RollerBox";
+import RollerBox from "@/components/Rollers/RollerBox";
 import CatalogLayout from "../../components/CatalogLayout"
 import Image from "next/image";
 // import rollers from "/images/Rollers/rollers.png"

@@ -1,5 +1,5 @@
 import CatalogLayout from "@/components/CatalogLayout";
-import ItemBox from "@/components/DrumBox"
+import ItemBox from "@/components/Drums/DrumBox"
 
 
 

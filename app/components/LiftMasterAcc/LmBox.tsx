@@ -1,31 +1,43 @@
 'use client';
 import Image from "next/image";
 
-type PulleyInfo = {
+
+type LmInfo
+ = {
   label: string;
   image: string;
-  title: string;
+  details: string;
   description: string[];
+ 
 };
 
-type PulleyBoxProps = {
+type LmBoxProps = {
   id: string;
-  description: PulleyInfo;
+  description: LmInfo
+  ;
 };
 
-export default function PulleyBox({ id, description }: PulleyBoxProps) {
+
+export default function LMBox({ id, description }: LmBoxProps) {
+
+const midpoint = Math.ceil(description.description.length / 2);
+const firstHalf = description.description.slice(0, midpoint);
+const secondHalf = description.description.slice(midpoint);
+
+
+
   return (
-    <div className="flex flex-col text-[12px]">
+ <div className="flex  p-1   text-[12px]">
       {/* Image */}
       <Image
         src={description.image}
         alt={description.label}
-        width={120}
-        height={100}
+        width={110}
+        height={120}
       />
 
       {/* Description */}
-      <div className="mt-1 ">
+      <div className="mt-1 ml-1">
         <ul className="list-disc list-inside text-gray-700 whitespace-pre-line">
           {description.description.map((line, i) => (
             <li key={i}>{line}</li>
@@ -40,3 +52,5 @@ export default function PulleyBox({ id, description }: PulleyBoxProps) {
     </div>
   );
 }
+
+
