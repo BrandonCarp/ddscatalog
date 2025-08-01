@@ -1,5 +1,6 @@
+import Image from "next/image";
 import CatalogLayout from "@/components/CatalogLayout";
-import LMBox from "@/components/LiftMasterAcc/LmBox";
+import LmAccBox from "@/components/LiftMasterAcc/LmAccBox";
 
 
 
@@ -11,103 +12,71 @@ type LmInfo = {
 
 };
 
-const ConsoleList: { [key: string]: LmInfo } = {
-  "378LM": {
-    label: "378LM",
-    image: "/images/ControlPanels/378lm.png",
-    details: "Wireless Secondary Multi-Function Control Panel",
+const AccessoryList: { [key: string]: LmInfo } = {
+  "485LM": {
+    label: "485LM",
+    image: "/images/accessories/485lm.png",
+    details: "12 V Garage Door Opener Battery Backup",
     description: [
-      "Wireless wall-mounted control",
-      "Easy programming of remote devices"
+      "Fast and easy replacement battery for integrated backup systems",
+      "Works with LiftMaster integrated battery-backup openers like 8360, 8500, 8550",
+      "Keeps opener operational during power outages" 
     ],
-
   },
-  "880LM": {
-    label: "880LM",
-    image: "/images/ControlPanels/880lm.png",
-    details: "Smart Control Panel®",
+  "828LM": {
+    label: "828LM",
+    image: "/images/accessories/828lm.png",
+    details: "myQ® Internet Gateway",
     description: [
-      "Displays time, temperature, and diagnostics",
-      "Locks out remote access for security"
+      "Adds smartphone control to myQ-enabled garage/gate openers and lights",
+      "Supports up to 16 myQ devices with real-time alerts and scheduling",
+      "Enables Amazon Key in-garage delivery where available"
     ],
-
   },
-  "882LMW": {
-    label: "882LMW",
-    image: "/images/ControlPanels/882lmw.png",
-    details: "Multi-Function Control Panel",
+  "850LM": {
+    label: "850LM",
+    image: "/images/accessories/850lm.png",
+    details: "Universal Receiver, Security+ 2.0",
     description: [
-      "Compatible with Security+ 2.0®",
-      "Light control button",
-      "Remote control programming support"
+      "Universal commercial-grade 3-channel receiver using Security+ 2.0 rolling-code tech",
+      "Supports multiple access points per receiver",
+      "Compatible with MAX remotes and 811LM/813LM remotes"
     ],
-
   },
-  "885LM": {
-    label: "885LM",
-    image: "/images/ControlPanels/885lm.png",
-    details: "Garage Door Control Button",
-    description: [
-      "Single push-button operation",
-      "Surface mount design"
-    ],
-
-  },
-  "886LM": {
-    label: "886LM",
-    image: "/images/ControlPanels/886lm.png",
-    details: "Motion Detecting Control Panel",
-    description: [
-      "Turns on garage lights automatically with motion",
-      "Compatible with Security+ 2.0® systems"
-    ],
-  
-  },
-  "889LM": {
-    label: "889LM",
-    image: "/images/ControlPanels/889lm.png",
-    details: "myQ® Control Panel",
-    description: [
-      "Enables myQ® smart technology",
-      "Upgrade for compatible garage door openers"
-    ],
-
-  }
 };
 
 const KeypadList: { [key: string]: LmInfo } = {
   "387LM": {
     label: "387LM",
-    image: "/images/Keypads/387lm.png",
-    details: "Universal Wireless Keyless Entry Keypad",
+    image: "/images/keypads/387lm.png",
+    details: "Universal Keyless Entry Keypad",
     description: [
-      "Works with most major garage opener brands from 1993 onward",
-      "Fully wireless — no wiring needed",
-      "Weather-proof slide-up cover with backlit keypad"
+      "Wireless universal keypad for garage/gate openers across many brands",
+      "Weatherproof with backlit keypad and slide-up protective cover",
+      "Battery-powered (9 V), secure keyless access via PIN code"
     ],
   },
   "877LM": {
     label: "877LM",
-    image: "/images/Keypads/877lm.png",
-    details: "Security+ 2.0™ Wireless Keyless Entry System",
+    image: "/images/keypads/877lm.png",
+    details: "Wireless Keyless Entry Keypad (Security+ 2.0)",
     description: [
-      "Works with Security+ 2.0™ openers (yellow Learn button)",
-      "Programmable 4-digit PIN for secure garage access",
-      "Supports temporary PINs for visitors or service personnel"
+      "Works with LiftMaster & Chamberlain openers featuring yellow Learn button",
+      "Wireless 9 V battery design, weatherproof, backlit keypad",
+      "Supports rolling-code Security+ 2.0, temporary PINs, one-button close"
     ],
   },
   "878MAX": {
     label: "878MAX",
-    image: "/images/Keypads/878max.png",
-    details: "Universal 878MAX Wireless Keyless Entry System",
+    image: "/images/keypads/878max.png",
+    details: "Wireless Keyless Entry System",
     description: [
-      "Compatible with all LiftMaster/Chamberlain/Craftsman openers since 1993",
-      "Backlit keypad, no wiring required",
-      "Programmable primary PIN and temporary PINs (time- or use-limited)"
+      "Compatible with all LiftMaster openers since 1993 using Security+ 2.0",
+      "Permanently holds rolling-code security, temporary guest PINs, one-button close",
+      "Weatherproof, backlit with flip-cover, simple programming"
     ],
   },
 };
-
 
 
 
@@ -120,41 +89,45 @@ export default function Operators(){
         
   <CatalogLayout title={"RESIDENTIAL\nLIFTMASTER"} bgcolor={"bg-yellow-600"} textcolor={"text-yellow-600"} >
 {/* Wall Console */}
-<div className="">
+<div className="relative w-full h-55 overflow-hidden">  <Image
+                      src="/images/accessories/gd.png"
+                      alt="Operator Hero"
+                      fill
+                      className="object-cover "
+                      priority
+                    />
+                  </div>
+<div className="mt-5 mx-2">
   
 <div className="p-4">
-                      <div>
-                            <h1 className="font-bold text-[28px] text-red-800">WALL CONSOLE</h1>
-                            <h4 className="font-semibold text-[15px] ">FOR LIFTMASTER RESIDENTIAL OPERATORS</h4>
-                    
-                      </div>
+                     <div className="leading-tight space-y-1">
+  <h1 className="font-bold text-[28px] text-red-800 mb-3">KEYPAD</h1>
+
+</div>
                           
-                          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-1">
+                          <div className="grid grid-cols-2 md:grid-cols-3 gap-5 mt-1">
               
-                            {Object.entries(ConsoleList).map(([key, value]) => (
-                              <LMBox key={key} id={key} description={value} />
+                            {Object.entries(KeypadList).map(([key, value]) => (
+                              <LmAccBox key={key} id={key} description={value} />
                             ))}
                           </div>
                         </div>
                         <div className="border-t mx-5"></div>
                         {/* Remotes */}
-              <div className="p-5  ">
+              <div className="p-4 mt-5">
                 
                       <div>
-                            <h1 className="font-bold text-[28px] text-red-800">REMOTES</h1>
+                            <h1 className="font-bold text-[28px] text-red-800 ">ACCESSORIES</h1>
                     
                       </div>
                           
-                          {/* <div className="grid grid-cols-4 md:grid-cols-2 gap-4 mt-1">
+                          <div className="grid grid-cols-4 md:grid-cols-3 mt-1">
               
-                            {Object.entries(RemList).map(([key, value]) => (
-                              <LMBox key={key} id={key} description={value} />
+                            {Object.entries(AccessoryList).map(([key, value]) => (
+                              <LmAccBox key={key} id={key} description={value} />
                             ))}
-                          </div> */}
+                          </div>
                         </div>
-
-              
-                       
                           </div>
         </CatalogLayout>
       

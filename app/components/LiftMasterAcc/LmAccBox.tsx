@@ -18,10 +18,9 @@ type LmBoxProps = {
 };
 
 
-export default function LMBox({ id, description }: LmBoxProps) {
+export default function LmAccBox({ id, description }: LmBoxProps) {
 
 const midpoint = Math.ceil(description.description.length / 2);
-
 
 
 
@@ -32,7 +31,7 @@ const midpoint = Math.ceil(description.description.length / 2);
  <Image
         src={description.image}
         alt={description.label}
-        width={105}
+        width={150}
         height={100}
       />
       </div>

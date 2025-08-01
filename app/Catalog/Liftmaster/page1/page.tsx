@@ -142,14 +142,13 @@ export default function Operators(){
         
   <CatalogLayout title={"RESIDENTIAL\nLIFTMASTER"} bgcolor={"bg-yellow-600"} textcolor={"text-yellow-600"} >
 {/* Wall Console */}
-<div className="my-5 mx-2">
+<div className=" mx-2">
   
-<div className="p-4">
-                      <div>
-                            <h1 className="font-bold text-[28px] text-red-800">WALL CONSOLE</h1>
-                            <h4 className="font-semibold text-[15px] ">FOR LIFTMASTER RESIDENTIAL OPERATORS</h4>
-                    
-                      </div>
+<div className="p-3">
+                     <div className="leading-tight space-y-1">
+  <h1 className="font-bold text-[28px] text-red-800 mb-0">WALL CONSOLE</h1>
+  <h4 className="font-semibold text-[15px] ">FOR LIFTMASTER RESIDENTIAL OPERATORS</h4>
+</div>
                           
                           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-1">
               
@@ -160,14 +159,14 @@ export default function Operators(){
                         </div>
                         <div className="border-t mx-5"></div>
                         {/* Remotes */}
-              <div className="p-5  ">
+              <div className="p-3  ">
                 
                       <div>
-                            <h1 className="font-bold text-[28px] text-red-800">REMOTES</h1>
+                            <h1 className="font-bold text-[28px] text-red-800 ">REMOTES</h1>
                     
                       </div>
                           
-                          <div className="grid grid-cols-4 md:grid-cols-2 mt-1">
+                          <div className="grid grid-cols-4 md:grid-cols-3 mt-1">
               
                             {Object.entries(RemList).map(([key, value]) => (
                               <LMBox key={key} id={key} description={value} />
