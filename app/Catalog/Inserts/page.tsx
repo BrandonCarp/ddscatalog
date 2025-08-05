@@ -1,4 +1,4 @@
-
+import Image from "next/image";
 import CatalogLayout from "../../components/CatalogLayout"
 
 
@@ -55,7 +55,8 @@ export default function InsertTable() {
         <h1 className="font-bold text-3xl text-green-800 p-4">
           CLOPAY INSERTS
         </h1>
-        <table className=" table-auto border border-gray-300 text-[11px]">
+        <div className="flex justify-center">
+ <table className=" table-auto border border-gray-300 text-[11px]">
           <thead>
             <tr className="bg-gray-100">
               <th className="px-2 py-1 text-left w-2/3">Insert Description</th>
@@ -76,6 +77,26 @@ export default function InsertTable() {
             ))}
           </tbody>
         </table>
+        {/* Image Div */}
+        <div className="">
+           <Image
+                  src={'/images/inserts/cloinserts.png'}
+                  alt={"Clopay Inserts"}
+                  width={500}
+                  height={100}
+                  className="p-5"
+                />
+          <Image
+                  src={'/images/inserts/house1.png'}
+                  alt={"Clopay Inserts"}
+                  width={500}
+                  height={100}
+                  className="p-5 mt-15"
+                />
+                
+        </div>
+        </div>
+       
       </div>
     </CatalogLayout>
   );
