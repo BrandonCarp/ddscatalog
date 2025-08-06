@@ -1,7 +1,6 @@
 'use client';
 import Image from "next/image";
 
-
 type OperatorInfo = {
   label: string;
   image: string;
@@ -17,52 +16,47 @@ type OperatorBoxProps = {
   description: OperatorInfo;
 };
 
-
 export default function OperatorBox({ id, description }: OperatorBoxProps) {
-
-const midpoint = Math.ceil(description.description.length / 2);
-const firstHalf = description.description.slice(0, midpoint);
-const secondHalf = description.description.slice(midpoint);
-
-
+  const midpoint = Math.ceil(description.description.length / 2);
+  const firstHalf = description.description.slice(0, midpoint);
+  const secondHalf = description.description.slice(midpoint);
 
   return (
-    <div className="flex  items-center justify-center text-[12px] border-t first:border-none border-gray-300 p-5 ">
-<div className="flex items-center justify-center mr-5">
-<Image
-        src={description.image}
-        alt={description.label}
-        width={220}
-        height={100}
-        
-      />
+    <div className="flex w-full max-w-[700px] min-h-[250px] border-t border-gray-300 p-5 text-[12px]">
+      <div className="flex items-start justify-center w-[220px] h-[120px] mr-6">
+        <Image
+          src={description.image}
+          alt={description.label}
+          width={220}
+          height={100}
+          style={{ objectFit: "contain" }}
+        />
+      </div>
 
-</div>
-      
-      {/* Description */}
-      <div className="">
-        <h1 className="text-red-800 font-semibold text-4xl">{id}</h1>
-        <h2 className="text-gray-800 font-semibold text-xl whitespace-pre">{description.details}</h2>
-       <div className="grid grid-cols-2   ">
-  <ul className="list-disc list-inside text-gray-700 whitespace-pre">
-    {firstHalf.map((line, i) => (
-      <li key={i} className="">{line}</li>
-    ))}
-  </ul>
-  <ul className="list-disc list-inside text-gray-700 whitespace-pre">
-    {secondHalf.map((line, i) => (
-      <li key={i + midpoint}>{line}</li>
-    ))}
-    <ul className="flex  space-x-5 list-disc list-inside text-gray-700 whitespace-pre">
-          {description.wifi ? <li>Wifi</li> : ""}
-          {description.myQ ? <li>myQ</li> : ""}
-          {description.amazonKey ? <li>Amazon Key</li> : ""}
-        </ul>
-  </ul>
-</div>
+      <div className="flex flex-col justify-between w-full">
+        <div>
+          <h1 className="text-red-800 font-semibold text-3xl">{id}</h1>
+          <h2 className="text-gray-800 font-semibold text-lg whitespace-pre">{description.details}</h2>
+        </div>
+
+        <div className="grid grid-cols-2 gap-x-4 mt-2 text-gray-700">
+          <ul className="list-disc list-inside whitespace-pre-wrap">
+            {firstHalf.map((line, i) => (
+              <li key={i}>{line}</li>
+            ))}
+          </ul>
+          <ul className="list-disc list-inside whitespace-pre-wrap">
+            {secondHalf.map((line, i) => (
+              <li key={i}>{line}</li>
+            ))}
+            <li className="list-none mt-2 space-x-4 flex text-blue-700">
+              {description.wifi && <span>WiFi</span>}
+              {description.myQ && <span>myQ</span>}
+              {description.amazonKey && <span>Amazon Key</span>}
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
 }
-
-

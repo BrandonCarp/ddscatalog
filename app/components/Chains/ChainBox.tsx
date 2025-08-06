@@ -10,31 +10,38 @@ export type PartItem = {
 
 export default function ChainBox({ part }: { part: PartItem }) {
   return (
-    <div className="flex flex-col justify-center items-center  break-inside-avoid  p-5">
-      {part.image && (
-        <div className="flex flex-col justify-center text-center items-center mb-2">
+    <div className="flex flex-col h-[300px] w-full p-3 border rounded text-xs">
+      
+      {/* Image area */}
+      <div className="h-[100px] flex items-center justify-center">
+        {part.image && (
           <Image
             src={part.image}
             alt={part.label}
-            width={185}
+            width={150}
             height={100}
-            style={{ objectFit: 'contain' }}
+            className="object-contain"
           />
-          <div className="flex  font-bold text-2xl  mt-1 text-blue-800 ">{part.label}</div>
-        </div>
-      )}
-
-      <ul className="list-disc list-inside text-gray-800 text-xs ">
-        {part.description.map((line, i) => (
-          <li key={i}>{line}</li>
-        ))}
-      </ul>
-
-      <div className=" font-semibold text-gray-700 ">
-        <span className="text-gray-500 text-xs">Part:</span>{' '}
-        <span className="text-sm">{part.code}</span>
+        )}
       </div>
-      {}
+
+      {/* Label */}
+      <div className="h-[40px] flex items-center justify-center text-center text-blue-800 font-bold text-lg">
+        {part.label}
+      </div>
+
+      {/* Description + Part code */}
+      <div className="flex flex-col justify-start overflow-hidden">
+        <ul className="list-disc list-inside text-gray-800 text-[11px] leading-tight mb-2">
+          {part.description.map((line, i) => (
+            <li key={i}>{line}</li>
+          ))}
+        </ul>
+        <div className="font-semibold text-gray-700 mt-auto">
+          <span className="text-gray-500 text-xs">Part:</span>{' '}
+          <span className="text-sm">{part.code}</span>
+        </div>
+      </div>
     </div>
   );
 }

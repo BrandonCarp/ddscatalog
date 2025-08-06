@@ -18,8 +18,31 @@ const fixtureList: { [key: string]: string } = {
   "COMMERICAL LHR BTM BB-6": "F-C-LB6",
 };
 
+const jambList: { [key: string]: string } = {
+  "#1 JAMB BRACKET": "JB-1",
+  "#2 JAMB BRACKET": "JB-2",
+  "#3 JAMB BRACKET": "JB-3",
+  "#4 JAMB BRACKET": "JB-4",
+  "#5 JAMB BRACKET": "JB-5",
+  "#6 JAMB BRACKET": "JB-6",
+  "#7 JAMB BRACKET": "JB-7",
+  "#8 JAMB BRACKET": "JB-8",
+  "#9 JAMB BRACKET": "JB-9",
+  "#10 JAMB BRACKET": "JB-10",
+  "#11 JAMB BRACKET": "JB-11",
+  "#12 JAMB BRACKET": "JB-12",
+};
 
-export default function Fixtures(){
+const ebpList: { [key: string]: string } = {
+  '3-3/8"  RES, END BEARING PLATE': "EP-R-3",
+  '3-3/8" COMM, END BEARING PLATE': "EP-C-3",
+  '4-3/8" END BEARING PLATE': "EP-CR-4",
+  '5" END BEARING PLATE': "EP-CR-5",
+  '6" END BEARING PLATE': "EP-CR-6",
+};
+
+
+export default function FixJambEndb(){
     return (
   <>
   <div className="flex items-center justify-center">

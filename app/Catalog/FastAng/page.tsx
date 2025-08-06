@@ -96,7 +96,7 @@ export default function FastAng(){
   return (
    <>
       <CatalogLayout title={`FASTENERS \n& ANGLES`} bgcolor="bg-teal-800" textcolor="text-teal-800">
-        <div className="relative w-full h-60 ">  <Image
+        <div className="relative w-full h-60">  <Image
                               src="/images/anglefastern/gdangle.png"
                               alt="Operator Hero"
                               fill
@@ -106,7 +106,7 @@ export default function FastAng(){
                           </div>
          <div className="flex items-center">
           {/* Fasterns */}
-          <div className="p-1 w-[100%]  border-r  mt-3">
+          <div className="p-1 w-[100%]  border-r  my-3">
  <h1 className="text-4xl font-bold text-teal-800 ml-5 mt-5 mb-5">FASTENERS</h1>
 
        <div className="grid grid-cols-3 gap-6 px-4">
@@ -115,23 +115,19 @@ export default function FastAng(){
   ))}
 </div>
           </div>
- 
-
         {/* Angle */}
-        <div className="flex flex-col items-center  p-1     w-[40%]">
-        <h1 className="text-4xl font-bold text-teal-800  mt-2 mb-5">ANGLE</h1>
+        
+        <div className="flex flex-col  justify-center items-center  p-3      w-[35%]">
+     
+<h1 className="text-4xl font-bold text-teal-800   ">ANGLE</h1>
 
-        <div className="flex flex-col space-y-10 ">
+        <div className="flex flex-col  mt-5">
           {angles.map((part) => (
             <FastAngBox key={part.code} part={part} />
           ))}
         </div>
         </div>
-          
-       
          </div>
-        
-      
       </CatalogLayout>
     </>
   );

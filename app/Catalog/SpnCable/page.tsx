@@ -9,9 +9,15 @@ const spList: { [key: string]: string } = {
   'U-STYLE DOOR BUMPERS, 2PCS': "USB-2",
 };
 
+const cableList: { [key: string]: string } = {
+  '1-1/4" X 1-1/4" X 8FT, GALV ANGLE': "GA-1-1/4-8",
+  '1-1/4" X 1-1/4" X 8FT, WHITE ANGLE': "WA-1-1/4-8",
+  '2" X 2" X 10FT GALV ANGLE': "GA-2-2-10",
+};
 
 
-export default function Springpusher(){
+
+export default function SpnCable(){
     return (
   <>
   <div className="flex items-center justify-center">
