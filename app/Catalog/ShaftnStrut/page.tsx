@@ -108,7 +108,7 @@ export default function ShaftnStrut() {
      
 
         {/* Shafts */}
-        <section className="flex border-r ">
+        <section className="flex  ">
           <div className="leading-tight ">
             <h1 className="text-2xl font-bold text-teal-800 ">TUBE SHAFTS</h1>
             <h3 className="font-bold text-gray-700 mb-6">GALVANIZED</h3>
@@ -128,15 +128,15 @@ export default function ShaftnStrut() {
         </section>
 
         {/* Struts */}
-        <section className="flex space-x-10 border-b pb-2">
+        <section className="flex space-x-10  pb-2">
           <div>
-            <h1 className="text-2xl font-bold text-teal-800 mb-6 pt-20">2" STRUTS</h1>
+            <h1 className="text-2xl font-bold text-teal-800 mb-6 ">2" STRUTS</h1>
             {struts2.map((part) => (
               <StrutBox key={part.code} part={part} />
             ))}
           </div>
           <div>
-            <h1 className="text-2xl font-bold text-teal-800 mb-6 pt-20">3" STRUTS</h1>
+            <h1 className="text-2xl font-bold text-teal-800 mb-6 ">3" STRUTS</h1>
             {struts3.map((part) => (
               <StrutBox key={part.code} part={part} />
             ))}
@@ -171,9 +171,3 @@ export default function ShaftnStrut() {
   );
 }
 
-
-// Fuel gauges indicate, often with fractions, just how much fuel is in a tank. For instance 1/4 indicates that a tank is 25% full, 1/2 indicates that a tank is 50% full, and 3/4 indicates that a tank is 75% full.
-
-// In a file called fuel.py, implement a program that prompts the user for a fraction, formatted as X/Y, wherein each of X and Y is a positive integer, and then outputs, as a percentage rounded to the nearest integer, how much fuel is in the tank. If, though, 1% or less remains, output E instead to indicate that the tank is essentially empty. And if 99% or more remains, output F instead to indicate that the tank is essentially full.
-
-// If, though, X or Y is not an integer, X is greater than Y, or Y is 0, instead prompt the user again. (It is not necessary for Y to be 4.) Be sure to catch any exceptions like ValueError or ZeroDivisionError.

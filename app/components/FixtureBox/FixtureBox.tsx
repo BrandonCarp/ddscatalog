@@ -1,44 +1,38 @@
 'use client';
 import Image from "next/image";
 
-export type PartItem = {
+type PartItem = {
   code: string;
   label: string;
-  feature?: string;
   image?: string;
   description: string[];
 };
 
-export default function StrutBox({ part }: { part: PartItem }) {
+export default function FixtureBox({ part }: { part: PartItem }) {
   return (
-    <div className="flex flex-col w-full  aaa items-center ">
+    <div className="flex flex-col w-full  items-center ">
       {/* Image */}
-      {part.image ? <div className="h-[100px] w-full flex justify-center items-center my-5 mb-10"> {part.image && (
+      {part.image ? <div className="h-15  w-full flex justify-center items-center my-10 "> {part.image && (
           <Image
             src={part.image}
             alt={part.label}
-            width={200}
+            width={130}
             height={80}
             className="object-contain"
           />
         )}
       </div> : ""}
-     
-
-      {/* Label */}
-      {/* <div className="mt-5 text-center font-semibold text-[16px] text-teal-800">
-        {part.label}
-      </div>
+        
 
       {/* Description */}
-      <ul className="mt-2 list-disc text-xs pl-5 w-full">
+      <ul className="list-disc  ">
         {part.description.map((line, i) => {
           const [label, code] = line.split(" - ");
           return (
             <li key={i}>
              
-              <div className="text-[13px] leading-tight">{label} </div>
-              <div className="text-gray-500 font-semibold">
+              <div className="text-[12px] leading-tight pr-5">{label} </div>
+              <div className="text-gray-500 font-semibold text-[12px] ">
                 Part: <span className="text-gray-800 text-[14px]">{code}</span>
               </div>
             </li>
@@ -48,4 +42,3 @@ export default function StrutBox({ part }: { part: PartItem }) {
     </div>
   );
 }
-
