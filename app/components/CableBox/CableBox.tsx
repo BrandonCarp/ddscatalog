@@ -25,7 +25,7 @@ export default function CableBox({ part }: { part: PartItem }) {
         
 
       {/* Description */}
-      <ul className="list-disc  ">
+      <ul className="list-disc mt-3 ">
         {part.description.map((line, i) => {
           const [label, code] = line.split(" - ");
           return (

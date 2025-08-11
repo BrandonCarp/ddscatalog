@@ -33,7 +33,7 @@ export default function Hinges(){
     return (
   <>
   <div className="flex items-center justify-center">
-  <CatalogLayout title="Hinges">
+  <CatalogLayout title="Hinges" bgcolor="bg-green-700" textcolor="text-green-700">
   <div className="grid grid-cols-4 space-y-3 space-x-3">
    {Object.entries(hingeList).map(([key, value]) => (
     <ItemBox key={key} id={key} description={value} />

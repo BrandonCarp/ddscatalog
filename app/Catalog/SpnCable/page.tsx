@@ -96,24 +96,29 @@ const CableList: PartItem[] = [
 export default function SpnCable(){
     return (
   <>
-  <div className="flex items-center justify-center">
-  <CatalogLayout title={"Spring Pushers \n& Cables"} bgcolor="bg-blue-800" textcolor="text-blue-800">
-  <div className="grid grid-cols-4 space-y-3 space-x-3">
+
+  <CatalogLayout title={"SPRING PUSHERS \n& CABLES"} bgcolor="bg-blue-800" textcolor="text-blue-800">
+    <section className="p-5">
+<h1 className="text-3xl font-bold text-blue-800 mb-2">CABLES</h1>
+  <div className="grid grid-cols-4  space-x-3">
    {Object.entries(CableList).map(([key, value]) => (
     <CableBox key={key} part={value} />
   ))}
-{Object.entries(SpList).map(([key, value]) => (
-    <CableBox key={key} part={value} />
-  ))}
-    </div>
-    {/* <div className="grid grid-cols-4 space-y-3 space-x-3">
-   {Object.entries(SpList).map(([key, value]) => (
-    <CableBox key={key} part={value} />
-  ))}
+  </div>
+    </section>
+<div className="border-t mx-10">
 
-    </div> */}
+</div>
+  <section className="p-5">
+<h1 className="text-3xl font-bold text-blue-800 mb-2">SPRING PUSHERS</h1>
+  <div className="grid grid-cols-2">
+    {Object.entries(SpList).map(([key, value]) => (
+    <CableBox key={key} part={value} />
+  ))}
+  </div>
+  </section>
     </CatalogLayout>
-    </div>
+    
     </>
     )
 }
