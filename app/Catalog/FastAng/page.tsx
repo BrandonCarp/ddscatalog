@@ -109,7 +109,7 @@ export default function FastAng(){
           <div className="p-1 w-[100%]  border-r  my-3">
  <h1 className="text-4xl font-bold text-teal-800 ml-5 mt-5 mb-5">FASTENERS</h1>
 
-       <div className="grid grid-cols-3 gap-6 px-4">
+       <div className="grid grid-cols-3 gap-10 px-4">
   {fasteners.map((part) => (
     <FastAngBox key={part.code} part={part} />
   ))}

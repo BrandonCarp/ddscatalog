@@ -31,14 +31,14 @@ export default function FastAngBox({ part }: { part: PartItem }) {
       </div>
 
       {/* Description */}
-      <ul className="h-[120px] list-disc list-outside text-xs pl-5  w-full">
+      <ul className="h-[120px] list-disc list-outside  pl-5  w-full">
         {part.description.map((line, i) => {
           const [label, code] = line.split(" - ");
           return (
             <li key={i}>
-              <div className="text-[13px] leading-tight">{label}</div>
+              <div className="text-[16px] leading-tight">{label}</div>
               <div className="text-gray-500 font-semibold">
-                Part: <span className="text-gray-800 text-[14px]">{code}</span>
+                <span className="text-[14px]">Part:</span> <span className="text-gray-800 text-[16px]">{code}</span>
               </div>
             </li>
           );

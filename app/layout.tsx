@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 // import { Playfair_Display } from "next/font/google";
-import { Saira } from "next/font/google";
+import { Archivo } from "next/font/google";
 import "./globals.css";
 import Image from "next/image";
 import Link from "next/link";
 
-const saira = Saira({
+const archivo = Archivo({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   style: ["normal", "italic"],
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-saira", // optional: for CSS variable usage
+  variable: "--font-archivo",
 });
 
 export const metadata: Metadata = {
@@ -25,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en flex flex-col min-h-screen">
-      <body className={`${saira.variable} antialiased`}>
+      <body className={`${archivo.variable} antialiased`}>
         <main  className="flex-grow">{children}</main>
 
       </body>

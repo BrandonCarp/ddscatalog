@@ -14,10 +14,10 @@ type ItemBoxProps = {
 
 export default function ItemBox({ id, description }: ItemBoxProps) {
   return (
-    <div className="flex flex-col h-[300px] w-full p-3 border rounded text-xs">
+    <div className="flex flex-col w-full p-3 border rounded text-sm"> {/* was text-xs */}
       
       {/* Image */}
-      <div className="h-[100px] flex items-center justify-center">
+      <div className="flex items-center justify-center">
         <Image
           src={description.image}
           alt={description.label}
@@ -28,18 +28,18 @@ export default function ItemBox({ id, description }: ItemBoxProps) {
       </div>
 
       {/* Label */}
-      <div className="h-[40px] flex items-center justify-center font-semibold text-gray-600 text-sm text-center">
+      <div className=" flex items-center justify-center font-semibold text-gray-600 text-lg text-center">
         {description.label}
       </div>
 
       {/* Description & Part */}
       <div className="flex flex-col justify-start overflow-hidden">
-        <ul className="list-disc list-inside text-gray-700 text-[11px] leading-tight mb-2">
+        <ul className="list-disc list-inside text-gray-700 text-base leading-snug mb-2">
           {description.description.map((line, i) => (
             <li key={i}>{line}</li>
           ))}
         </ul>
-        <h1 className="font-semibold mt-auto">
+        <h1 className="font-semibold ">
           <span className="text-gray-700 text-xs">Part</span>{' '}
           <span className="text-red-800 text-sm">{id}</span>
         </h1>
