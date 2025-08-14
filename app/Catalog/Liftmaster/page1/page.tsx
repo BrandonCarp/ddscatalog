@@ -130,21 +130,21 @@ export default function Operators(){
        
           <div className="leading-tight p-1">
             <h1 className="font-bold text-[30px] text-red-800 ">WALL CONSOLE</h1>
-            <h4 className="font-semibold text-[13px] mb-12">FOR LIFTMASTER RESIDENTIAL OPERATORS</h4>
+            <h4 className="font-semibold text-[13px] ">FOR LIFTMASTER RESIDENTIAL OPERATORS</h4>
           </div>
-          <div className="grid grid-cols-4 lg:grid-cols-4 gap-3 mt-1">
+          <div className="grid grid-cols-3 gap-3 mt-1">
             {Object.entries(ConsoleList).map(([key, value]) => (
               <LMBox key={key} id={key} description={value} />
             ))}
           </div>
-      
+            
 
-        <div className="border-t mx-5"></div>
+        <div className="border-t mx-5 mt-2"></div>
 
-        {/* Remotes */}
+        {/* Remotes */} 
         <div className="">
-          <h1 className="font-bold text-[22px] text-red-800 mb-10 p-1">REMOTES</h1>
-          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 mt-1">
+          <h1 className="font-bold text-[30px] text-red-800  p-1">REMOTES</h1>
+          <div className="grid grid-cols-3 lg:grid-cols-5 gap-3 mt-1">
             {Object.entries(RemList).map(([key, value]) => (
               <LMBox key={key} id={key} description={value} />
             ))}
