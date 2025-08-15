@@ -59,7 +59,7 @@ const forkList: { [key: string]: PulleyInfo } = {
     label: '3" Fork',
     image: "/images/pulleys/3Fork.png",
     title: "FORKS",
-    description: [],
+    description: [`Sheave Fork for 3" Extension Spring Pulley`],
   },
   "3-safety-fork": {
     label: '3" Safety Fork',
@@ -71,34 +71,7 @@ const forkList: { [key: string]: PulleyInfo } = {
     label: '4" Fork',
     image: "/images/pulleys/4Fork.png",
     title: "FORKS",
-    description: [],
-  },
-};
-
-const collarCouplingList: { [key: string]: PulleyInfo } = {
-  '1" COLLAR': {
-    label: '3" Fork',
-    image: "/images/pulleys/3Fork.png",
-    title: "FORKS",
-    description: ["3-inch fork bracket"],
-  },
-  '1-1/4" COLLAR': {
-    label: '3" Safety Fork',
-    image: "/images/pulleys/3SafetyFork.png",
-    title: "FORKS",
-    description: ["Safety locking mechanism included"],
-  },
-  '1" COUPLING': {
-    label: '3" Fork',
-    image: "/images/pulleys/3Fork.png",
-    title: "FORKS",
-    description: ["3-inch fork bracket"],
-  },
-  '1-1/4" COUPLING': {
-    label: '3" Safety Fork',
-    image: "/images/pulleys/3SafetyFork.png",
-    title: "FORKS",
-    description: ["Safety locking mechanism included"],
+    description: ['4" Fork For Pulley'],
   },
 };
 
@@ -109,47 +82,31 @@ export default function Pulleys() {
       bgcolor={"bg-red-800"}
       textcolor={"text-red-800"}
     >
-      {/* MAIN FLEX ROW: LEFT = Collar+Pulley, RIGHT = Forks */}
-      <div className="relative">
-        {/* LEFT COLUMN */}
-        <div className="flex flex-col  ">
-          {/* Collar & Couplings */}
-          <section className="w-[80%] p-5 ">
-            <h1 className="font-bold text-[28px] text-red-800 ">
-              COLLAR & COUPLING
-            </h1>
-            <div className="grid grid-cols-3 gap-4">
-              {Object.entries(collarCouplingList).map(([key, value]) => (
-                <PulleyBox key={key} id={key} description={value} />
-              ))}
-            </div>
-          </section>
-
-          {/* Pulleys */}
-          <section className="mt-10 mx-5">
-            <h1 className="font-bold text-[28px] text-red-800 ">PULLEYS</h1>
-            <div className="grid grid-cols-4 gap-4">
-              {Object.entries(pulleyList).map(([key, value]) => (
-                <PulleyBox key={key} id={key} description={value} />
-              ))}
-            </div>
-          </section>
-        </div>
-
-        {/* RIGHT COLUMN: FORKS */}
-        <aside className="flex flex-col justify-center items-center   w-[30%]   pt-5 absolute top-0 right-0 ">
+      <div className="flex flex-col items-center justify-center   ">
+        {/* Forks */}
+        <section className="p-3 ">
           <div className="">
             <h1 className="font-bold text-[28px] text-red-800">FORK</h1>
             <h2 className="font-bold text-[14px] text-gray-600">
               FASTENERS SOLD SEPARATELY
             </h2>
           </div>
-          <div className="flex flex-col gap-3 mt-2">
+          <div className="grid grid-cols-4 gap-4 mt-2">
             {Object.entries(forkList).map(([key, value]) => (
               <PulleyBox key={key} id={key} description={value} />
             ))}
           </div>
-        </aside>
+        </section>
+
+        {/* Pulleys */}
+        <section className=" mx-5">
+          <h1 className="font-bold text-[28px] text-red-800 ">PULLEYS</h1>
+          <div className="grid grid-cols-4 gap-4 mt-2">
+            {Object.entries(pulleyList).map(([key, value]) => (
+              <PulleyBox key={key} id={key} description={value} />
+            ))}
+          </div>
+        </section>
       </div>
     </CatalogLayout>
   );

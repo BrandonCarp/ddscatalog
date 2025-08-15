@@ -1,6 +1,6 @@
 import Image from "next/image";
 import StrutBox from "@/components/Strut/StrutBox";
-import CatalogLayout from "../../components/CatalogLayout"
+import CatalogLayout from "../../components/CatalogLayout";
 
 type PartItem = {
   code: string;
@@ -8,8 +8,7 @@ type PartItem = {
   feature?: string;
   image?: string;
   description: string[];
-}
-
+};
 
 const tubeShafts: PartItem[] = [
   {
@@ -51,27 +50,28 @@ const struts2: PartItem[] = [
     label: '2-1/4" STRUTS',
     image: "/images/ShaftStrut/struts.png",
     description: [
-      '2-1/4" STRUT 8\' - ST-8-2',
-      '2-1/4" STRUT 9\' - ST-9-2',
-      '2-1/4" STRUT 10\' - ST-10-2',
-      '2-1/4" STRUT 12\' - ST-12-2',
-      '2-1/4" STRUT 14\' - ST-14-2',
-      '2-1/4" STRUT 15\' - ST-15-2',
-      '2-1/4" STRUT 16\' - ST-16-2',
-      '2-1/4" STRUT 18\' - ST-18-2',
-    ],}
+      "2-1/4\" STRUT 8' - ST-8-2",
+      "2-1/4\" STRUT 9' - ST-9-2",
+      "2-1/4\" STRUT 10' - ST-10-2",
+      "2-1/4\" STRUT 12' - ST-12-2",
+      "2-1/4\" STRUT 14' - ST-14-2",
+      "2-1/4\" STRUT 15' - ST-15-2",
+      "2-1/4\" STRUT 16' - ST-16-2",
+      "2-1/4\" STRUT 18' - ST-18-2",
+    ],
+  },
 ];
 
 const struts3: PartItem[] = [
   {
     code: "ST-16-3",
     label: '3" STRUTS',
-    
+
     description: [
-      '3" STRUT 16\' - ST-16-3',
-      '3" STRUT 18\' - ST-18-3',
-      '3" STRUT 20\' - ST-20-3',
-      '3" STRUT 24\' - ST-24-3',
+      "3\" STRUT 16' - ST-16-3",
+      "3\" STRUT 18' - ST-18-3",
+      "3\" STRUT 20' - ST-20-3",
+      "3\" STRUT 24' - ST-24-3",
     ],
   },
 ];
@@ -81,9 +81,7 @@ const CollarList: PartItem[] = [
     code: "COL-1-1",
     label: '1" COLLAR',
     image: "/images/ShaftStrut/collar.png",
-    description: ['1" COLLAR - COL-1-1',
-      '1-1/4" COLLAR - COL-1-125'
-    ],
+    description: ['1" COLLAR - COL-1-1', '1-1/4" COLLAR - COL-1-125'],
   },
 ];
 
@@ -92,21 +90,18 @@ const CouplingList: PartItem[] = [
     code: "CL-1-1",
     label: '1" COUPLING',
     image: "/images/ShaftStrut/coupling.png",
-    description: ['1" COUPLING - CL-1-1',
-      '1-1/4" COUPLING - CL-1-125'
-    ],
+    description: ['1" COUPLING - CL-1-1', '1-1/4" COUPLING - CL-1-125'],
   },
 ];
 
-
-
 export default function ShaftnStrut() {
   return (
-    <CatalogLayout title={`TUBE SHAFTS \n& STRUTS`} bgcolor="bg-teal-800" textcolor="text-teal-800">
+    <CatalogLayout
+      title={`TUBE SHAFTS \n& STRUTS`}
+      bgcolor="bg-teal-800"
+      textcolor="text-teal-800"
+    >
       <div className="grid grid-cols-2 gap-6 p-5 ">
-
-     
-
         {/* Shafts */}
         <section className="flex  ">
           <div className="leading-tight ">
@@ -115,35 +110,38 @@ export default function ShaftnStrut() {
             {tubeShafts.map((part) => (
               <StrutBox key={part.code} part={part} />
             ))}
-           
           </div>
           <div>
-            <h1 className="text-2xl font-bold text-teal-800 mb-6">SOLID SHAFTS</h1>
+            <h1 className="text-2xl font-bold text-teal-800 mb-6">
+              SOLID SHAFTS
+            </h1>
             {solidShafts.map((part) => (
               <StrutBox key={part.code} part={part} />
             ))}
-           
           </div>
-         
         </section>
 
         {/* Struts */}
         <section className="flex space-x-10  pb-2">
           <div>
-            <h1 className="text-2xl font-bold text-teal-800 mb-6 ">2" STRUTS</h1>
+            <h1 className="text-2xl font-bold text-teal-800 mb-6 ">
+              2" STRUTS
+            </h1>
             {struts2.map((part) => (
               <StrutBox key={part.code} part={part} />
             ))}
           </div>
           <div>
-            <h1 className="text-2xl font-bold text-teal-800 mb-6 ">3" STRUTS</h1>
+            <h1 className="text-2xl font-bold text-teal-800 mb-6 ">
+              3" STRUTS
+            </h1>
             {struts3.map((part) => (
               <StrutBox key={part.code} part={part} />
             ))}
           </div>
         </section>
 
-               {/* Collars and Couplings */}
+        {/* Collars and Couplings */}
         <section className="flex justify-between">
           <div className="mr-20">
             <h1 className="text-2xl font-bold text-teal-800 mb-6">COLLARS</h1>
@@ -157,17 +155,16 @@ export default function ShaftnStrut() {
               <StrutBox key={part.code} part={part} />
             ))}
           </div>
+          <div></div>
           <Image
-                      src="/images/ShaftStrut/shafts.png"
-                      alt="shafts"
-                      width={500}
-                      height={200}
-                      className="object-contain ml-20 rotate-180"
-                    />
+            src="/images/ShaftStrut/shafts.png"
+            alt="shafts"
+            width={400}
+            height={200}
+            className="object-contain  rotate-180 absolute bottom-0 right-0 mb-20"
+          />
         </section>
-
       </div>
     </CatalogLayout>
   );
 }
-

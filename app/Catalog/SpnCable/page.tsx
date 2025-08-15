@@ -1,7 +1,6 @@
 import Image from "next/image";
 import CableBox from "@/components/CableBox/CableBox";
-import CatalogLayout from "../../components/CatalogLayout"
-
+import CatalogLayout from "../../components/CatalogLayout";
 
 type PartItem = {
   code: string;
@@ -24,9 +23,7 @@ const SpList: PartItem[] = [
     code: "USB-*",
     label: "U-STYLE DOOR BUMPERS",
     image: "/images/cables/ubumper.png",
-    description: [
-      'U-STYLE DOOR BUMPERS, 2PCS - USB-2',
-    ],
+    description: ["U-STYLE DOOR BUMPERS, 2PCS - USB-2"],
   },
 ];
 
@@ -37,26 +34,21 @@ const CableList: PartItem[] = [
     image: "/images/cables/ext.png",
     description: [
       "7FT EXTENSION CABLES",
-       "8FT EXTENSION CABLES",
-        "9FT EXTENSION CABLES",
+      "8FT EXTENSION CABLES",
+      "9FT EXTENSION CABLES",
     ],
   },
   {
     code: "EXTCC-*",
     label: "EXTENSION CC CLIP CABLES",
     image: "/images/cables/extcc.png",
-    description: [
-      "8FT EXTENSION CC CLIP CABLES",
-    ],
+    description: ["8FT EXTENSION CC CLIP CABLES"],
   },
   {
     code: "TOR-*",
     label: "TORSION CABLES",
     image: "/images/cables/tor.png",
-    description: [
-      "7FT TORSION CABLES",
-      "8FT TORSION CABLES",
-    ],
+    description: ["7FT TORSION CABLES", "8FT TORSION CABLES"],
   },
   {
     code: "CAB-*",
@@ -72,54 +64,44 @@ const CableList: PartItem[] = [
     code: "SLV-*",
     label: "SLEEVES",
     image: "/images/cables/sleeves.png",
-    description: [
-      '1/8" SLEEVES',
-      '5/32" SLEEVES',
-      '3/16" SLEEVES',
-    ],
+    description: ['1/8" SLEEVES', '5/32" SLEEVES', '3/16" SLEEVES'],
   },
   {
     code: "STP-*",
     label: "STOPS",
     image: "/images/cables/stops.png",
-    description: [
-      '1/8" STOPS',
-      '5/32" STOPS',
-      '3/16" STOPS',
-    ],
+    description: ['1/8" STOPS', '5/32" STOPS', '3/16" STOPS'],
   },
 ];
 
-
-
-
-export default function SpnCable(){
-    return (
-  <>
-
-  <CatalogLayout title={"SPRING PUSHERS \n& CABLES"} bgcolor="bg-blue-800" textcolor="text-blue-800">
-    <section className="p-5">
-<h1 className="text-3xl font-bold text-blue-800 mb-2">CABLES</h1>
-  <div className="grid grid-cols-4  space-x-3">
-   {Object.entries(CableList).map(([key, value]) => (
-    <CableBox key={key} part={value} />
-  ))}
-  </div>
-    </section>
-<div className="border-t mx-10">
-
-</div>
-  <section className="p-5">
-<h1 className="text-3xl font-bold text-blue-800 mb-2">SPRING PUSHERS</h1>
-  <div className="grid grid-cols-2">
-    {Object.entries(SpList).map(([key, value]) => (
-    <CableBox key={key} part={value} />
-  ))}
-  </div>
-  </section>
-    </CatalogLayout>
-    
+export default function SpnCable() {
+  return (
+    <>
+      <CatalogLayout
+        title={"SPRING PUSHERS \n& CABLES"}
+        bgcolor="bg-blue-800"
+        textcolor="text-blue-800"
+      >
+        <section className="p-5">
+          <h1 className="text-3xl font-bold text-blue-800 mb-2">CABLES</h1>
+          <div className="grid grid-cols-4  space-x-3">
+            {Object.entries(CableList).map(([key, value]) => (
+              <CableBox key={key} part={value} />
+            ))}
+          </div>
+        </section>
+        <div className="border-t mx-10"></div>
+        <section className="p-5">
+          <h1 className="text-3xl font-bold text-blue-800 mb-2">
+            SPRING PUSHERS
+          </h1>
+          <div className="grid grid-cols-2">
+            {Object.entries(SpList).map(([key, value]) => (
+              <CableBox key={key} part={value} />
+            ))}
+          </div>
+        </section>
+      </CatalogLayout>
     </>
-    )
+  );
 }
-    

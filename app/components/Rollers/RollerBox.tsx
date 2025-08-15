@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import Image from "next/image";
 
 type RollerInfo = {
@@ -13,22 +13,22 @@ type ItemBoxProps = {
   description: RollerInfo;
 };
 
-
 export default function RollerBox({ id, description }: ItemBoxProps) {
   return (
-    <div className="flex flex-col mt-5 ">
-<div className="h-[100px] flex items-center justify-center ">
-<Image
-        src={description.image}
-        alt={description.label}
-        width={150}
-        height={100}
-      />
-
-</div>
-      <h1 className=" text-2xl text-red-800 absolute mt-25 font-bold">{description.title}</h1>
+    <div className="flex flex-col  ">
+      <div className=" flex items-center justify-center mt-2 ">
+        <Image
+          src={description.image}
+          alt={description.label}
+          width={120}
+          height={120}
+        />
+      </div>
+      <h1 className=" text-2xl text-red-800 w-100 font-bold">
+        {description.title}
+      </h1>
       {/* Description */}
-      <div className="mt-10 text-[12px]  ">
+      <div className="mt-3 text-[14px]  ">
         <ul className="list-disc list-inside text-gray-700  whitespace-pre ">
           {description.description.map((line, i) => (
             <li className="" key={i}>
@@ -36,16 +36,12 @@ export default function RollerBox({ id, description }: ItemBoxProps) {
             </li>
           ))}
         </ul>
-        
+
         <h1 className="font-semibold flex flex-col">
           <span className="text-red-800">{id}</span>
           <span className="text-gray-700">Part: {description.label}</span>
-          
         </h1>
-       
       </div>
     </div>
   );
 }
-
-
