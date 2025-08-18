@@ -10,43 +10,43 @@ type PulleyInfo = {
 };
 
 const pulleyList: { [key: string]: PulleyInfo } = {
-  "3-cast-iron": {
+  PUL3CI: {
     label: '3" Cast Iron Pulley',
     image: "/images/pulleys/3CastIronPulley.png",
     title: "PULLEYS",
     description: ["Durable 3-inch cast iron body"],
   },
-  "3-gold": {
+  PUL3GD: {
     label: '3" Gold Pulley',
     image: "/images/pulleys/3GoldPulley.png",
     title: "PULLEYS",
     description: ["3-inch anodized gold finish"],
   },
-  "3-steel": {
+  PUL3ST: {
     label: '3" Steel Pulley',
     image: "/images/pulleys/3SteelPulley.png",
     title: "PULLEYS",
     description: ["Zinc-coated steel construction"],
   },
-  "4-cast-iron": {
+  PUL4CI: {
     label: '4" Cast Iron Pulley',
     image: "/images/pulleys/4CastIronPulley.png",
     title: "PULLEYS",
     description: ["Heavy-duty 4-inch cast iron body"],
   },
-  "4-steel": {
+  PUL4ST: {
     label: '4" Steel Pulley',
     image: "/images/pulleys/4Steelpulley.png",
     title: "PULLEYS",
     description: ["Sturdy steel 4-inch pulley"],
   },
-  "4-steel-stud": {
+  PUL4SD: {
     label: '4" Steel Stud Pulley',
     image: "/images/pulleys/4steelstudpulley.png",
     title: "PULLEYS",
     description: ["4-inch pulley with welded steel stud"],
   },
-  "5-steel-stud": {
+  PUL5SD: {
     label: '5" Steel Stud Pulley',
     image: "/images/pulleys/5steelstudpulley.png",
     title: "PULLEYS",
@@ -55,19 +55,19 @@ const pulleyList: { [key: string]: PulleyInfo } = {
 };
 
 const forkList: { [key: string]: PulleyInfo } = {
-  "3-fork": {
+  FRK300: {
     label: '3" Fork',
     image: "/images/pulleys/3Fork.png",
     title: "FORKS",
     description: [`Sheave Fork for 3" Extension Spring Pulley`],
   },
-  "3-safety-fork": {
+  SFRK03: {
     label: '3" Safety Fork',
     image: "/images/pulleys/3SafetyFork.png",
     title: "FORKS",
     description: ["Nylon bushing for restraint cable"],
   },
-  "4-fork": {
+  FRK400: {
     label: '4" Fork',
     image: "/images/pulleys/4Fork.png",
     title: "FORKS",
@@ -79,6 +79,7 @@ export default function Pulleys() {
   return (
     <CatalogLayout
       title={"HARDWARE\n PULLEYS & FORKS"}
+      pagenum="6"
       bgcolor={"bg-red-800"}
       textcolor={"text-red-800"}
     >

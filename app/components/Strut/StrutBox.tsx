@@ -14,7 +14,7 @@ export default function StrutBox({ part }: { part: PartItem }) {
     <div className="flex flex-col w-full  aaa items-center ">
       {/* Image */}
       {part.image ? (
-        <div className=" w-full flex justify-center items-center my-5 mb-5">
+        <div className=" w-full flex justify-center items-center my-2 ">
           {" "}
           {part.image && (
             <Image
@@ -31,12 +31,12 @@ export default function StrutBox({ part }: { part: PartItem }) {
       )}
 
       {/* Description */}
-      <ul className="mt-2 list-disc text-xs pl-4 w-full">
+      <ul className="mt-2 list-disc text-[15px] pl-4 w-full">
         {part.description.map((line, i) => {
           const [label, code] = line.split(" - ");
           return (
             <li key={i}>
-              <div className="text-[14px] leading-tight">{label} </div>
+              <div className="text-[15px] leading-tight">{label} </div>
               <div className="text-gray-500 font-semibold">
                 <span className="">Part: </span>
                 <span className="text-gray-800 text-[14px]">{code}</span>

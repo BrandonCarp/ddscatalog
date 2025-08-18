@@ -1,7 +1,6 @@
 import RollerBox from "@/components/Rollers/RollerBox";
 import CatalogLayout from "../../components/CatalogLayout";
 import Image from "next/image";
-// import rollers from "/images/Rollers/rollers.png"
 
 type rollerInfo = {
   label: string;
@@ -12,7 +11,7 @@ type rollerInfo = {
 
 const rollerList: { [key: string]: rollerInfo } = {
   '2" SHORT STEM NYLON, 4"': {
-    label: "SN-4-2",
+    label: "SS2N4",
     title: `2" NYLON ROLLERS`,
     image: "/images/rollers/SN-4-2.jpg",
     description: [
@@ -20,7 +19,7 @@ const rollerList: { [key: string]: rollerInfo } = {
     ],
   },
   '2" LONG STEM NYLON, 7"': {
-    label: "LN-7-2",
+    label: "SS2N7",
     title: "",
     image: "/images/rollers/LN-7-2.jpg",
     description: [
@@ -31,7 +30,7 @@ const rollerList: { [key: string]: rollerInfo } = {
 
 const rollerList2: { [key: string]: rollerInfo } = {
   '2" SHORT STEM STEEL, 4"': {
-    label: "SS-4-2",
+    label: "SS2S4",
     title: "",
     image: "/images/rollers/SS-4-2.jpg",
     description: [
@@ -39,7 +38,7 @@ const rollerList2: { [key: string]: rollerInfo } = {
     ],
   },
   '2" LONG STEM STEEL, 7"': {
-    label: "LS-7-2",
+    label: "SS2S7",
     title: ``,
     image: "/images/rollers/LS-7-2.jpg",
     description: [
@@ -47,7 +46,7 @@ const rollerList2: { [key: string]: rollerInfo } = {
     ],
   },
   '2" LONG STEM STEEL, 9"': {
-    label: "LS-9-2",
+    label: "SS2S9",
     title: ``,
     image: "/images/rollers/LS-7-2.jpg",
     description: [
@@ -58,7 +57,7 @@ const rollerList2: { [key: string]: rollerInfo } = {
 
 const rollerList3: { [key: string]: rollerInfo } = {
   '3" SHORT STEM NYLON, 4"': {
-    label: "SN-4-3",
+    label: "SS3S4",
     title: `3" NYLON ROLLERS`,
     image: "/images/rollers/SN-4-2.jpg",
     description: [
@@ -66,7 +65,7 @@ const rollerList3: { [key: string]: rollerInfo } = {
     ],
   },
   '3" LONG STEM NYLON, 7"': {
-    label: "LN-7-3",
+    label: "SS3N7",
     title: ``,
     image: "/images/rollers/LN-7-2.jpg",
     description: [
@@ -74,7 +73,7 @@ const rollerList3: { [key: string]: rollerInfo } = {
     ],
   },
   '3" SHORT STEM STEEL, 4"': {
-    label: "SS-4-3",
+    label: "SS3S4",
     title: ``,
     image: "/images/rollers/SS-4-2.jpg",
     description: [
@@ -82,7 +81,7 @@ const rollerList3: { [key: string]: rollerInfo } = {
     ],
   },
   '3" LONG STEM STEEL, 7"': {
-    label: "LS-7-3",
+    label: "SS3S7",
     title: ``,
     image: "/images/rollers/LS-7-2.jpg",
     description: [
@@ -96,6 +95,7 @@ export default function Rollers() {
     <>
       <CatalogLayout
         title={"Rollers"}
+        pagenum="3"
         bgcolor="bg-blue-800"
         textcolor="text-blue-800"
       >

@@ -12,20 +12,20 @@ type PartItem = {
 
 const tubeShafts: PartItem[] = [
   {
-    code: "TS-8-1",
+    code: "TBSH08",
     label: "TUBE SHAFT",
     feature: "GALVANZIED",
     image: "/images/ShaftStrut/tubeshaft.png",
     description: [
-      '1" TUBE SHAFT, 8\'9" - TS-8-1',
-      '1" TUBE SHAFT, 9\'9" - TS-9-1',
-      '1" TUBE SHAFT, 10\'9" - TS-10-1',
-      '1" TUBE SHAFT, 12\'9" - TS-12-1',
-      '1" TUBE SHAFT, 14\'9" - TS-14-1',
-      '1" TUBE SHAFT, 15\'9" - TS-15-1',
-      '1" TUBE SHAFT, 16\'9" - TS-16-1',
-      '1" TUBE SHAFT, 16\'9" HEAVY - TS-16H-1',
-      '1" TUBE SHAFT, 18\'9" HEAVY - TS-18H-1',
+      '1" TUBE SHAFT, 8\'9" - TBSH08',
+      '1" TUBE SHAFT, 9\'9" - TBSH09',
+      '1" TUBE SHAFT, 10\'9" - TBSH10',
+      '1" TUBE SHAFT, 12\'9" - TBSH12',
+      '1" TUBE SHAFT, 14\'9" - TBSH14',
+      '1" TUBE SHAFT, 15\'9" - TBSH15',
+      '1" TUBE SHAFT, 16\'9" - TBSH16',
+      '1" TUBE SHAFT, 16\'9" HEAVY - TBSH16H',
+      '1" TUBE SHAFT, 18\'9" HEAVY - TBSH18H',
     ],
   },
 ];
@@ -36,28 +36,28 @@ const solidShafts: PartItem[] = [
     label: "SOLID SHAFT",
     image: "/images/ShaftStrut/solidshaft.png",
     description: [
-      '1" SOLID SHAFT, 12\'6" - SS-12-1',
-      '1" SOLID SHAFT, 21\'0" - SS-21-1',
-      '1.25" SOLID SHAFT, 12\'6" - SS-12-125',
-      '1.25" SOLID SHAFT, 17\'6" - SS-17-125',
+      '1" SOLID SHAFT, 12\'6" - SLTB10012',
+      '1" SOLID SHAFT, 21\'0" - SLTB10021',
+      '1.25" SOLID SHAFT, 12\'6" - SLTB12512',
+      '1.25" SOLID SHAFT, 17\'6" - SLTB12517',
     ],
   },
 ];
 
 const struts2: PartItem[] = [
   {
-    code: "ST-8-2",
+    code: "STRT08",
     label: '2-1/4" STRUTS',
     image: "/images/ShaftStrut/struts.png",
     description: [
-      "2-1/4\" STRUT 8' - ST-8-2",
-      "2-1/4\" STRUT 9' - ST-9-2",
-      "2-1/4\" STRUT 10' - ST-10-2",
-      "2-1/4\" STRUT 12' - ST-12-2",
-      "2-1/4\" STRUT 14' - ST-14-2",
-      "2-1/4\" STRUT 15' - ST-15-2",
-      "2-1/4\" STRUT 16' - ST-16-2",
-      "2-1/4\" STRUT 18' - ST-18-2",
+      "2-1/4\" STRUT 8' - STRT08",
+      "2-1/4\" STRUT 9' - STRT09",
+      "2-1/4\" STRUT 10' - STRT10",
+      "2-1/4\" STRUT 12' - STRT12",
+      "2-1/4\" STRUT 14' - STRT14",
+      "2-1/4\" STRUT 15' - STRT15",
+      "2-1/4\" STRUT 16' - STRT16",
+      "2-1/4\" STRUT 18' - STRT18",
     ],
   },
 ];
@@ -68,29 +68,29 @@ const struts3: PartItem[] = [
     label: '3" STRUTS',
 
     description: [
-      "3\" STRUT 16' - ST-16-3",
-      "3\" STRUT 18' - ST-18-3",
-      "3\" STRUT 20' - ST-20-3",
-      "3\" STRUT 24' - ST-24-3",
+      "3\" STRUT 16' - ST316",
+      "3\" STRUT 18' - ST318",
+      "3\" STRUT 20' - ST320",
+      "3\" STRUT 24' - ST324",
     ],
   },
 ];
 
 const CollarList: PartItem[] = [
   {
-    code: "COL-1-1",
+    code: "COL100",
     label: '1" COLLAR',
     image: "/images/ShaftStrut/collar.png",
-    description: ['1" COLLAR - COL-1-1', '1-1/4" COLLAR - COL-1-125'],
+    description: ['1" COLLAR - COL100', '1-1/4" COLLAR - COL125'],
   },
 ];
 
 const CouplingList: PartItem[] = [
   {
-    code: "CL-1-1",
+    code: "CUP100",
     label: '1" COUPLING',
     image: "/images/ShaftStrut/coupling.png",
-    description: ['1" COUPLING - CL-1-1', '1-1/4" COUPLING - CL-1-125'],
+    description: ['1" COUPLING - CUP100', '1-1/4" COUPLING - CUP125'],
   },
 ];
 
@@ -98,6 +98,7 @@ export default function ShaftnStrut() {
   return (
     <CatalogLayout
       title={`TUBE SHAFTS \n& STRUTS`}
+      pagenum="2"
       bgcolor="bg-teal-800"
       textcolor="text-teal-800"
     >

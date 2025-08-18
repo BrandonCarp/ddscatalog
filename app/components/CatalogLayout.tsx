@@ -18,7 +18,7 @@ export default function CatalogLayout({
       <main className="flex-grow">{children}</main>
       <footer className="bg-gray-100 h-[80px] flex w-full w-[100%]">
         <div
-          className={`${bgcolor} w-[30px] h-full text-sm pl-4 pt-1 text-white font-black`}
+          className={`${bgcolor} w-[30px] h-full text-sm pl-2 pt-1 text-white `}
         >
           {pagenum}
         </div>

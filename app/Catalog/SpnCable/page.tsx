@@ -15,15 +15,15 @@ const SpList: PartItem[] = [
     label: "PUSH DOWN DOOR BUMPERS",
     image: "/images/cables/pusher.png",
     description: [
-      'PUSH DOWN DOOR BUMPERS, 15", 2PCS - PDB-15-2',
-      'PUSH DOWN DOOR BUMPERS, 27", 2PCS - PDB-27-2',
+      'PUSH DOWN DOOR BUMPERS, 15", 2PCS - PDB15',
+      'PUSH DOWN DOOR BUMPERS, 27", 2PCS - PDB27',
     ],
   },
   {
     code: "USB-*",
     label: "U-STYLE DOOR BUMPERS",
     image: "/images/cables/ubumper.png",
-    description: ["U-STYLE DOOR BUMPERS, 2PCS - USB-2"],
+    description: ["U-STYLE DOOR BUMPERS, 2PCS - LEAF2"],
   },
 ];
 
@@ -33,44 +33,52 @@ const CableList: PartItem[] = [
     label: "EXTENSION CABLES",
     image: "/images/cables/ext.png",
     description: [
-      "7FT EXTENSION CABLES",
-      "8FT EXTENSION CABLES",
-      "9FT EXTENSION CABLES",
+      "7FT EXTENSION CABLES - EC7FT",
+      "8FT EXTENSION CABLES - EC8FT",
+      "9FT EXTENSION CABLES - EC9FT",
     ],
   },
   {
     code: "EXTCC-*",
     label: "EXTENSION CC CLIP CABLES",
     image: "/images/cables/extcc.png",
-    description: ["8FT EXTENSION CC CLIP CABLES"],
+    description: ["8FT EXTENSION CC CLIP CABLES - ECC8FT"],
   },
   {
     code: "TOR-*",
     label: "TORSION CABLES",
     image: "/images/cables/tor.png",
-    description: ["7FT TORSION CABLES", "8FT TORSION CABLES"],
+    description: ["7FT TORSION CABLES - TC7FT", "8FT TORSION CABLES - TC8FT"],
   },
   {
     code: "CAB-*",
     label: "BULK CABLE",
     image: "/images/cables/cable.png",
     description: [
-      '1/8" CABLE, 500FT',
-      '5/32" CABLE, 500FT',
-      '3/16" CABLE, 500FT',
+      '1/8" CABLE, 500FT - ROLL18',
+      '5/32" CABLE, 500FT - ROLL32',
+      '3/16" CABLE, 500FT - ROLL16',
     ],
   },
   {
     code: "SLV-*",
     label: "SLEEVES",
     image: "/images/cables/sleeves.png",
-    description: ['1/8" SLEEVES', '5/32" SLEEVES', '3/16" SLEEVES'],
+    description: [
+      '1/8" SLEEVES - SLEV18',
+      '5/32" SLEEVES - SLEV32',
+      '3/16" SLEEVES - SLEV16',
+    ],
   },
   {
     code: "STP-*",
     label: "STOPS",
     image: "/images/cables/stops.png",
-    description: ['1/8" STOPS', '5/32" STOPS', '3/16" STOPS'],
+    description: [
+      '1/8" STOPS - STOP18',
+      '5/32" STOPS - STOP32',
+      '3/16" STOPS - STOP16',
+    ],
   },
 ];
 
@@ -79,6 +87,7 @@ export default function SpnCable() {
     <>
       <CatalogLayout
         title={"SPRING PUSHERS \n& CABLES"}
+        pagenum="11"
         bgcolor="bg-blue-800"
         textcolor="text-blue-800"
       >

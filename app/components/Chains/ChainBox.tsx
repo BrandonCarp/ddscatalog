@@ -10,10 +10,10 @@ export type PartItem = {
 
 export default function ChainBox({ part }: { part: PartItem }) {
   return (
-    <div className="flex flex-col  w-full p-5  rounded text-xs">
-      {/* Image area */}
-      <div className="flex ">
-        {part.image && (
+    <div className="flex flex-col w-full p-5 rounded text-xs">
+      {/* Image */}
+      {part.image && (
+        <div className="flex">
           <Image
             src={part.image}
             alt={part.label}
@@ -21,26 +21,34 @@ export default function ChainBox({ part }: { part: PartItem }) {
             height={100}
             className="object-contain"
           />
-        )}
-      </div>
+        </div>
+      )}
 
       {/* Label */}
-      <div className=" flex  text-center text-blue-800 font-bold text-lg ">
+      <div className="flex text-center text-blue-800 font-bold text-2xl">
         {part.label}
       </div>
 
-      {/* Description + Part code */}
-      <div className="flex flex-col justify-start overflow-hidden">
-        <ul className="list-disc list-inside text-gray-800 text-[14px] leading-tight mb-1">
-          {part.description.map((line, i) => (
-            <li key={i}>{line}</li>
-          ))}
-        </ul>
-        <div className="font-semibold text-gray-700 ">
-          <span className="text-gray-500 text-[16px]">Part:</span>{" "}
-          <span className="text-sm">{part.code}</span>
-        </div>
-      </div>
+      {/* Description */}
+      <ul className="list-disc list-inside text-gray-800 text-[15px] leading-tight mb-1">
+        {part.description.map((line, i) => {
+          // Split line at ": Part" so we can style separately
+          const [itemText, partText] = line.split(": Part");
+          return (
+            <li key={i}>
+              <span>{itemText}</span>
+              {partText && (
+                <>
+                  <span className="text-[14px] font-semibold"> : Part: </span>
+                  <span className="text-[16px] font-semibold">
+                    {partText.trim()}
+                  </span>
+                </>
+              )}
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 }

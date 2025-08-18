@@ -1,43 +1,54 @@
-'use client';
+"use client";
 import Image from "next/image";
 import CatalogLayout from "@/components/CatalogLayout";
 
 type VinylGroup = {
   color: string;
-  codes: string[]; 
+  codes: string[];
 };
 
 const vinylGroups: VinylGroup[] = [
-  { color: "White Vinyl", codes: ["WT-7", "WT-8", "WT-9", "WT-10", "WT-12", "WT-16", "WT-18"] },
-  { color: "Almond Vinyl", codes: ["AL-7", "AL-8", "AL-9", "AL-16"] },
-  { color: "Brown Vinyl", codes: ["CB-7", "CB-8", "CB-9", "CB-16"] },
-  { color: "Sandtone Vinyl", codes: ["ST-7", "ST-8", "ST-9", "ST-16"] },
-  { color: "Black Vinyl", codes: ["BK-7", "BK-8", "BK-9", "BK-16", "BK-18"] },
-  { color: "Bronze Vinyl", codes: ["BZ-16"] },
-  { color: "Gray Vinyl", codes: ["GY-16"] },
-  { color: "Charcoal Vinyl", codes: ["CL-16"] },
-  { color: "Mocha Brown Vinyl", codes: ["MB-16"] },
-  { color: "Desert Tan Vinyl", codes: ["DT-16"] },
-  { color: "Hunter Green Vinyl", codes: ["HG-16"] },
-  { color: "Cherry Vinyl", codes: ["CC-16"] },
-  { color: "Walnut Vinyl", codes: ["WO-16"] },
-  { color: "Medium Oak Vinyl", codes: ["MO-16"] },
-  { color: "Dark Oak Vinyl", codes: ["DO-16"] },
-  { color: "Slate Vinyl", codes: ["SL-16"] },
+  {
+    color: "White Vinyl",
+    codes: ["VWH07", "VWH08", "VWH09", "VWH10", "VWH12", "VWH16", "VWH18"],
+  },
+  { color: "Almond Vinyl", codes: ["VAL07", "VAL08", "VAL09", "VAL16"] },
+  { color: "Brown Vinyl", codes: ["VCB07", "VCB08", "VCB09", "VCB16"] },
+  { color: "Sandtone Vinyl", codes: ["VST07", "VST08", "VST09", "VST16"] },
+  {
+    color: "Black Vinyl",
+    codes: ["VBK07", "VBK08", "VBK09", "VBK16", "VBK18"],
+  },
+  { color: "Bronze Vinyl", codes: ["VBZ16"] },
+  { color: "Gray Vinyl", codes: ["VGY16"] },
+  { color: "Charcoal Vinyl", codes: ["VCL16"] },
+  { color: "Mocha Brown Vinyl", codes: ["VMB16"] },
+  { color: "Desert Tan Vinyl", codes: ["VDT16"] },
+  { color: "Hunter Green Vinyl", codes: ["VHG16"] },
+  { color: "Cherry Vinyl", codes: ["VCC16"] },
+  { color: "Walnut Vinyl", codes: ["VWO16"] },
+  { color: "Medium Oak Vinyl", codes: ["VMO16"] },
+  { color: "Dark Oak Vinyl", codes: ["VDO16"] },
+  { color: "Slate Vinyl", codes: ["VSL16"] },
 ];
 
 // Collect all sizes across groups:
 const allSizes = Array.from(
   new Set(
-    vinylGroups.flatMap(group =>
-      group.codes.map(code => code.split('-')[1])
+    vinylGroups.flatMap((group) =>
+      group.codes.map((code) => code.split("-")[1])
     )
   )
 ).sort((a, b) => parseInt(a) - parseInt(b));
 
 export default function VinylTable() {
   return (
-    <CatalogLayout title={"WEATHER\nSEAL"} bgcolor={"bg-green-800"} textcolor={"text-green-800"}>
+    <CatalogLayout
+      title={"WEATHER\nSEAL"}
+      pagenum="11"
+      bgcolor={"bg-green-800"}
+      textcolor={"text-green-800"}
+    >
       <div className="relative w-full h-55 overflow-hidden">
         <Image
           src="/images/Vinyl/house.png"
@@ -49,7 +60,9 @@ export default function VinylTable() {
       </div>
 
       <div className="overflow-x-auto mx-10">
-        <h1 className="font-bold text-3xl text-green-800 p-4">Vinyl Weather Seal</h1>
+        <h1 className="font-bold text-3xl text-green-800 p-4">
+          Vinyl Weather Seal
+        </h1>
 
         <table className="min-w-full border border-gray-300 text-sm">
           <thead>
@@ -58,8 +71,10 @@ export default function VinylTable() {
                 <span>Length</span>
                 <span className="text-[11px]">(15 pc/box)</span>
               </th>
-              {allSizes.map(size => (
-                <th key={size} className="px-2 py-2 text-center">{size}'</th>
+              {allSizes.map((size) => (
+                <th key={size} className="px-2 py-2 text-center">
+                  {size}'
+                </th>
               ))}
             </tr>
           </thead>
@@ -69,11 +84,13 @@ export default function VinylTable() {
 
               return (
                 <tr key={color} className={rowColor}>
-                  <td className="px-2 py-2 font-semibold text-blue-800">{color}</td>
+                  <td className="px-2 py-2 font-semibold text-blue-800">
+                    {color}
+                  </td>
 
-                  {allSizes.map(size => {
+                  {allSizes.map((size) => {
                     // Find code that matches this size
-                    const code = codes.find(c => c.endsWith(`-${size}`));
+                    const code = codes.find((c) => c.endsWith(`-${size}`));
                     const label = code ? `V-${code}` : "-";
                     return (
                       <td key={size} className="px-2 py-2 text-center">

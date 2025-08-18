@@ -4,28 +4,43 @@ import CatalogLayout from "@/components/CatalogLayout";
 
 const chainHoists: PartItem[] = [
   {
-    code: "CH4-1-BW",
+    code: "CH100BW",
     label: "CHAIN HOIST",
     image: "/images/chainhoist/ch41-1.png",
-    description: ["4:1 Ratio", '1\" Bore', "Bolt-On Wall Mount"],
+    description: [
+      "CHAIN HOIST : Part CH100BW",
+      "4:1 Ratio",
+      '1" Bore',
+      "Bolt-On Wall Mount",
+    ],
   },
   {
-    code: "CH4-1.25-BW",
-    label: "",
+    code: "CH125BW",
+    label: "CHAIN HOIST",
     image: "/images/chainhoist/ch41-1-4.png",
-    description: ["4:1 Ratio", '1-1/4\" Bore', "Bolt-On Wall Mount"],
+    description: [
+      "CHAIN HOIST : Part CH125BW",
+      "4:1 Ratio",
+      '1-1/4" Bore',
+      "Bolt-On Wall Mount",
+    ],
   },
   {
-    code: "CH3-1-SS",
-    label: "",
+    code: "CH100SS",
+    label: "CHAIN HOIST",
     image: "/images/chainhoist/ch31.png",
-    description: ["3:1 Ratio", '1\" Bore', "Slide-On Shaft"],
+    description: [
+      "CHAIN HOIST : Part CH100SS",
+      "3:1 Ratio",
+      '1" Bore',
+      "Slide-On Shaft",
+    ],
   },
   {
-    code: "SA-B2",
+    code: "SPARM",
     label: "SPREADER ARM",
     image: "/images/chainhoist/spreadarm.png",
-    description: ["Spreader Arm", "Includes Bearings", "2 Pieces"],
+    description: ["SPREADER ARM : Part SPARM", "Includes Bearings", "2 Pieces"],
   },
 ];
 
@@ -34,10 +49,10 @@ const chains: PartItem = {
   label: "CHAINS",
   image: "/images/chains/40-10.png",
   description: [
-    "#40 CHAIN, 10FT",
-    "#41 CHAIN, 10FT",
-    "#50 CHAIN, 10FT",
-    "#65 CHAIN",
+    "#40 CHAIN, 10FT : Part CH40",
+    "#41 CHAIN, 10FT : Part CH41",
+    "#50 CHAIN, 10FT : Part CH50",
+    "#65 CHAIN : Part CH65",
   ],
 };
 
@@ -46,10 +61,10 @@ const masterLinks: PartItem = {
   label: "MASTER LINKS",
   image: "/images/chains/40ml.png",
   description: [
-    "#40 MASTER LINK",
-    "#41 MASTER LINK",
-    "#50 MASTER LINK",
-    "#65 MASTER LINK",
+    "#40 MASTER LINK : Part ML40",
+    "#41 MASTER LINK : Part ML41",
+    "#50 MASTER LINK : Part ML50",
+    "#65 MASTER LINK : Part ML65",
   ],
 };
 
@@ -58,10 +73,10 @@ const halfLinks: PartItem = {
   label: "HALF LINKS",
   image: "/images/chains/40hl.png",
   description: [
-    "#40 HALF LINK",
-    "#41 HALF LINK",
-    "#50 HALF LINK",
-    "#65 HALF LINK",
+    "#40 HALF LINK : Part HL40",
+    "#41 HALF LINK : Part HL41",
+    "#50 HALF LINK : Part HL50",
+    "#65 HALF LINK : Part HL65",
   ],
 };
 

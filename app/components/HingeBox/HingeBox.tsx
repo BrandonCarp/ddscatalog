@@ -1,19 +1,19 @@
-'use client';
+"use client";
 import Image from "next/image";
 
-type LmInfo = {
+type HingeInfo = {
   label: string;
   image: string;
   details: string;
   description: string[];
 };
 
-type LmBoxProps = {
+type HingeBoxProps = {
   id: string;
-  description: LmInfo;
+  description: string | HingeInfo;
 };
 
-export default function HingeBox({ id, description }: LmBoxProps) {
+export default function HingeBox({ id, description }: HingeBoxProps) {
   return (
     <div className="flex flex-col items-center justify-between text-xs w-[240px] h-[320px] p-3 border">
       <div className="h-[110px] flex items-center justify-center">
@@ -34,7 +34,7 @@ export default function HingeBox({ id, description }: LmBoxProps) {
 
       <div className="flex flex-col items-center text-center mt-2">
         <h1 className="font-semibold">
-          <span className="text-gray-700">PART</span>{' '}
+          <span className="text-gray-700">PART</span>{" "}
           <span className="text-red-800">{id}</span>
         </h1>
         <h2 className="text-gray-600 text-xs">{description.label}</h2>
