@@ -82,12 +82,7 @@ const angles: PartItem[] = [
 export default function FastAng() {
   return (
     <>
-      <CatalogLayout
-        title={`FASTENERS \n& ANGLES`}
-        pagenum="10"
-        bgcolor="bg-teal-800"
-        textcolor="text-teal-800"
-      >
+      <CatalogLayout title={`FASTENERS \n& ANGLES`} pagenum="10">
         <div className="relative w-full h-60">
           {" "}
           <Image

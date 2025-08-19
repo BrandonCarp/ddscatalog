@@ -43,12 +43,7 @@ const insertList: { [key: string]: string } = {
 
 export default function InsertTable() {
   return (
-    <CatalogLayout
-      title={"INSERTS"}
-      pagenum="12"
-      bgcolor={"bg-green-800"}
-      textcolor={"text-green-800"}
-    >
+    <CatalogLayout title={"INSERTS"} pagenum="12">
       <div className="overflow-x-auto mx-4 max-w-5xl text-xs">
         <h1 className="font-bold text-3xl text-green-800 p-4">
           CLOPAY INSERTS

@@ -85,12 +85,7 @@ const CableList: PartItem[] = [
 export default function SpnCable() {
   return (
     <>
-      <CatalogLayout
-        title={"SPRING PUSHERS \n& CABLES"}
-        pagenum="11"
-        bgcolor="bg-blue-800"
-        textcolor="text-blue-800"
-      >
+      <CatalogLayout title={"SPRING PUSHERS \n& CABLES"} pagenum="11">
         <section className="p-5">
           <h1 className="text-3xl font-bold text-blue-800 mb-2">CABLES</h1>
           <div className="grid grid-cols-4  space-x-3">

@@ -1,8 +1,6 @@
-'use client';
+"use client";
 import Image from "next/image";
 import CatalogLayout from "@/components/CatalogLayout";
-
-
 
 type VinylInfo = {
   label: string;
@@ -48,7 +46,8 @@ const VinylList: {
   },
   "Bronze Vinyl": {
     "BZ-16": { label: "V-BZ-16", details: "16' Bronze Vinyl Molding" },
-  },  "Gray Vinyl": {
+  },
+  "Gray Vinyl": {
     "GY-16": { label: "V-GY-16", details: "16' Gray Vinyl Molding" },
   },
   "Charcoal Vinyl": {
@@ -77,41 +76,44 @@ const VinylList: {
   },
   "Slate Vinyl": {
     "SL-16": { label: "V-SL-16", details: "16' Slate Vinyl Molding" },
-  },}
+  },
+};
 
 const allSizes = Array.from(
   new Set(
-    Object.values(VinylList).flatMap(group =>
-      Object.keys(group).map(code => code.split('-')[1])
+    Object.values(VinylList).flatMap((group) =>
+      Object.keys(group).map((code) => code.split("-")[1])
     )
   )
 ).sort((a, b) => parseInt(a) - parseInt(b));
 
 export default function VinylTable() {
   return (
-    <CatalogLayout title={"WEATHER\nSEAL"} color={"green"}>
-          <div className="relative w-full h-57 overflow-hidden">
-            <Image
-              src="/images/Vinyl/house.png"
-              alt="Vinyl Hero"
-              fill
-              className="object-cover object-bottom"
-              priority
-            />
-          </div>
-          
-      <div className="overflow-x-auto mx-10">
-        
-        <div className="">
-<h1 className="font-bold text-3xl text-green-800 p-4">Vinyl Weather Seal</h1>
+    <CatalogLayout title={"WEATHER\nSEAL"} pagenum="3">
+      <div className="relative w-full h-57 overflow-hidden">
+        <Image
+          src="/images/Vinyl/house.png"
+          alt="Vinyl Hero"
+          fill
+          className="object-cover object-bottom"
+          priority
+        />
+      </div>
 
+      <div className="overflow-x-auto mx-10">
+        <div className="">
+          <h1 className="font-bold text-3xl text-green-800 p-4">
+            Vinyl Weather Seal
+          </h1>
         </div>
         <table className="min-w-full border border-gray-300 text-sm">
           <thead>
             <tr className="bg-gray-100">
-   
-              <th className="px-2 py-2 text-left flex flex-col"><span>Length</span> <span className="text-[11px]">(15 pc/box)</span></th>
-              {allSizes.map(size => (
+              <th className="px-2 py-2 text-left flex flex-col">
+                <span>Length</span>{" "}
+                <span className="text-[11px]">(15 pc/box)</span>
+              </th>
+              {allSizes.map((size) => (
                 <th key={size} className="px-2 py-2 text-center">
                   {size}'
                 </th>
@@ -120,18 +122,22 @@ export default function VinylTable() {
           </thead>
           <tbody>
             {Object.entries(VinylList).map(([color, items], index) => {
-             
               const rowColor = index % 2 === 0 ? "bg-white" : "bg-gray-200";
-              const imageName = color.replace(/\s/g, '').replace("Vinyl", "Vinyl") + ".png";
-          
+              const imageName =
+                color.replace(/\s/g, "").replace("Vinyl", "Vinyl") + ".png";
 
               return (
                 <tr key={color} className={rowColor}>
-             
-                  <td className="px-2 py-2 font-semibold text-blue-800">{color}</td>
-                  {allSizes.map(size => {
-                    const matchingCode = Object.keys(items).find(code => code.endsWith(`-${size}`));
-                    const value = matchingCode ? items[matchingCode].label : "-";
+                  <td className="px-2 py-2 font-semibold text-blue-800">
+                    {color}
+                  </td>
+                  {allSizes.map((size) => {
+                    const matchingCode = Object.keys(items).find((code) =>
+                      code.endsWith(`-${size}`)
+                    );
+                    const value = matchingCode
+                      ? items[matchingCode].label
+                      : "-";
                     return (
                       <td key={size} className="px-2 py-2 text-center">
                         {value}

@@ -33,28 +33,30 @@ export default function DropDownBtn() {
   }, [isOpen]);
 
   return (
-    <div className=" font-semibold inline-block relative" ref={dropdownRef}>
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="bg-blue-400 py-1 px-4 hover:bg-blue-600"
-      >
-        Click
-      </button>
+    <>
+      <div className=" font-semibold inline-block relative" ref={dropdownRef}>
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="bg-blue-400 py-1 px-4 hover:bg-blue-600"
+        >
+          Click
+        </button>
 
-      <div
-        ref={contentRef}
-        style={{ maxHeight: height }}
-        className="overflow-hidden transition-max-height duration-300 ease-in-out bg-blue-400 w-full absolute left-0 top-full"
-      >
-        <ul className="  flex flex-col items-center">
-          <li className=" px-3 hover:bg-blue-500 cursor-pointer border-t py-1">
-            Home
-          </li>
-          <li className="px-3 hover:bg-blue-500 cursor-pointer border-t py-1">
-            Settings
-          </li>
-        </ul>
+        <div
+          ref={contentRef}
+          style={{ maxHeight: height }}
+          className="overflow-hidden transition-max-height duration-300 ease-in-out bg-blue-400 w-full absolute left-0 top-full"
+        >
+          <ul className="  flex flex-col items-center">
+            <li className=" px-3 hover:bg-blue-500 cursor-pointer border-t py-1">
+              Home
+            </li>
+            <li className="px-3 hover:bg-blue-500 cursor-pointer border-t py-1">
+              Settings
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </>
   );
 }

@@ -15,7 +15,7 @@ const ConsoleList: { [key: string]: LmInfo } = {
     details: "Wireless Secondary Multi-Function Control Panel",
     description: [
       "Wireless wall-mounted control",
-      "Easy programming of remote devices"
+      "Easy programming of remote devices",
     ],
   },
   "880LM": {
@@ -24,7 +24,7 @@ const ConsoleList: { [key: string]: LmInfo } = {
     details: "Smart Control Panel®",
     description: [
       "Displays time, temperature, and diagnostics",
-      "Locks out remote access for security"
+      "Locks out remote access for security",
     ],
   },
   "882LMW": {
@@ -34,17 +34,14 @@ const ConsoleList: { [key: string]: LmInfo } = {
     description: [
       "Compatible with Security+ 2.0®",
       "Light control button",
-      "Remote control programming support"
+      "Remote control programming support",
     ],
   },
   "885LM": {
     label: "885LM",
     image: "/images/ControlPanels/885lm.png",
     details: "Garage Door Control Button",
-    description: [
-      "Single push-button operation",
-      "Surface mount design"
-    ],
+    description: ["Single push-button operation", "Surface mount design"],
   },
   "886LM": {
     label: "886LM",
@@ -52,7 +49,7 @@ const ConsoleList: { [key: string]: LmInfo } = {
     details: "Motion Detecting Control Panel",
     description: [
       "Turns on garage lights automatically with motion",
-      "Compatible with Security+ 2.0® systems"
+      "Compatible with Security+ 2.0® systems",
     ],
   },
   "889LM": {
@@ -61,9 +58,9 @@ const ConsoleList: { [key: string]: LmInfo } = {
     details: "myQ® Control Panel",
     description: [
       "Enables myQ® smart technology",
-      "Upgrade for compatible garage door openers"
+      "Upgrade for compatible garage door openers",
     ],
-  }
+  },
 };
 
 const RemList: { [key: string]: LmInfo } = {
@@ -73,7 +70,7 @@ const RemList: { [key: string]: LmInfo } = {
     details: "2-Button Universal Remote Control",
     description: [
       "Operates up to two garage or gate openers",
-      "Universal compatibility across multiple protocols"
+      "Universal compatibility across multiple protocols",
     ],
   },
   "811LMX": {
@@ -82,7 +79,7 @@ const RemList: { [key: string]: LmInfo } = {
     details: "Commercial Gate Opener Remote",
     description: [
       "For LiftMaster commercial operators only",
-      "Not compatible with residential openers"
+      "Not compatible with residential openers",
     ],
   },
   "890MAX": {
@@ -91,7 +88,7 @@ const RemList: { [key: string]: LmInfo } = {
     details: "3-Button Remote - MAX Series",
     description: [
       "Controls up to 3 openers or myQ® lights",
-      "Works with openers from 1993-present"
+      "Works with openers from 1993-present",
     ],
   },
   "893LM": {
@@ -100,7 +97,7 @@ const RemList: { [key: string]: LmInfo } = {
     details: "3-Button Mini Remote",
     description: [
       "Mini-visor; works with Security+ 2.0®",
-      "Controls up to 3 devices"
+      "Controls up to 3 devices",
     ],
   },
   "893MAX": {
@@ -109,39 +106,38 @@ const RemList: { [key: string]: LmInfo } = {
     details: "3-Button Remote - MAX",
     description: [
       "Full-sized; supports 3 openers/myQ® accessories",
-      "Universal compatibility since 1993"
+      "Universal compatibility since 1993",
     ],
   },
   "894LT": {
     label: "894LT",
     image: "/images/Remotes/894lt.png",
     details: "Unknown / Unlisted Remote Model",
-    description: [
-      "Limited public data; contact dealer for specs"
-    ],
+    description: ["Limited public data; contact dealer for specs"],
   },
 };
 
-export default function Operators(){
+export default function Operators() {
   return (
-    <CatalogLayout title={"RESIDENTIAL\nLIFTMASTER"} bgcolor={"bg-yellow-600"} textcolor={"text-yellow-600"}>
+    <CatalogLayout title={"RESIDENTIAL\nLIFTMASTER"} pagenum="1">
       <div className="mx-5">
         {/* Wall Console */}
-       
-          <div className="leading-tight p-1">
-            <h1 className="font-bold text-[30px] text-red-800 ">WALL CONSOLE</h1>
-            <h4 className="font-semibold text-[13px] ">FOR LIFTMASTER RESIDENTIAL OPERATORS</h4>
-          </div>
-          <div className="grid grid-cols-3 gap-3 mt-1">
-            {Object.entries(ConsoleList).map(([key, value]) => (
-              <LMBox key={key} id={key} description={value} />
-            ))}
-          </div>
-            
+
+        <div className="leading-tight p-1">
+          <h1 className="font-bold text-[30px] text-red-800 ">WALL CONSOLE</h1>
+          <h4 className="font-semibold text-[13px] ">
+            FOR LIFTMASTER RESIDENTIAL OPERATORS
+          </h4>
+        </div>
+        <div className="grid grid-cols-3 gap-3 mt-1">
+          {Object.entries(ConsoleList).map(([key, value]) => (
+            <LMBox key={key} id={key} description={value} />
+          ))}
+        </div>
 
         <div className="border-t mx-5 mt-2"></div>
 
-        {/* Remotes */} 
+        {/* Remotes */}
         <div className="">
           <h1 className="font-bold text-[30px] text-red-800  p-1">REMOTES</h1>
           <div className="grid grid-cols-3 lg:grid-cols-5 gap-3 mt-1">

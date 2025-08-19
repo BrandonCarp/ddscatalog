@@ -85,11 +85,7 @@ export default function Operators() {
   return (
     <>
       <div className="">
-        <CatalogLayout
-          title={"RESIDENTIAL\nLIFTMASTER"}
-          bgcolor="bg-red-800"
-          textcolor="text-red-800"
-        >
+        <CatalogLayout title={"RESIDENTIAL\nLIFTMASTER"} pagenum="5">
           <h1 className="text-3xl font-bold text-red-800 p-5">
             LIFTMASTER OPERATORS
           </h1>

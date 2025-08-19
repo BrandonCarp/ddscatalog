@@ -5,12 +5,7 @@ import Tor9 from "@/components/TorSprings/Tor9";
 
 export default function TorsionSprings() {
   return (
-    <CatalogLayout
-      title="TORSION SPRINGS"
-      pagenum="13"
-      bgcolor="bg-red-800"
-      textcolor="text-red-800"
-    >
+    <CatalogLayout title="TORSION SPRINGS" pagenum="13">
       <section className="flex flex-col m-5">
         <Tor7 />
         <Tor8 />

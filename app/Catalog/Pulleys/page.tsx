@@ -77,12 +77,7 @@ const forkList: { [key: string]: PulleyInfo } = {
 
 export default function Pulleys() {
   return (
-    <CatalogLayout
-      title={"HARDWARE\n PULLEYS & FORKS"}
-      pagenum="6"
-      bgcolor={"bg-red-800"}
-      textcolor={"text-red-800"}
-    >
+    <CatalogLayout title={"HARDWARE\n PULLEYS & FORKS"} pagenum="6">
       <div className="flex flex-col items-center justify-center   ">
         {/* Forks */}
         <section className="p-3 ">

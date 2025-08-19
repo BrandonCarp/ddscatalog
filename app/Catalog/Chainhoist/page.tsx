@@ -83,12 +83,7 @@ const halfLinks: PartItem = {
 export default function Chainhoist() {
   return (
     <>
-      <CatalogLayout
-        title={`CHAIN HOISTS \n & ACCESSORIES`}
-        pagenum="1"
-        bgcolor="bg-blue-800"
-        textcolor="text-blue-800"
-      >
+      <CatalogLayout title={`CHAIN HOISTS \n & ACCESSORIES`} pagenum="1">
         <div className="p-5">
           <h1 className="text-3xl font-bold text-blue-800 ml-5 mt-3">
             CHAIN HOISTS & ACCESSORIES

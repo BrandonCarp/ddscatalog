@@ -97,12 +97,7 @@ const vertList: { [key: string]: DrumInfo } = {
 
 export default function Drums() {
   return (
-    <CatalogLayout
-      title={"Drums"}
-      pagenum="7"
-      bgcolor={"bg-red-800"}
-      textcolor="text-red-800"
-    >
+    <CatalogLayout title={"Drums"} pagenum="7">
       <div className="px-5 mt-10">
         {/* STANDARD LIFT */}
         <div className="mt-2 py-1">

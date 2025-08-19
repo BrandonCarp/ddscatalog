@@ -93,12 +93,7 @@ const rollerList3: { [key: string]: rollerInfo } = {
 export default function Rollers() {
   return (
     <>
-      <CatalogLayout
-        title={"Rollers"}
-        pagenum="3"
-        bgcolor="bg-blue-800"
-        textcolor="text-blue-800"
-      >
+      <CatalogLayout title={"Rollers"} pagenum="3">
         <div className="relative w-full h-56 overflow-hidden ">
           {" "}
           <Image
