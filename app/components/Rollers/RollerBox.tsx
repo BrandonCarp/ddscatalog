@@ -16,7 +16,7 @@ type ItemBoxProps = {
 export default function RollerBox({ id, description }: ItemBoxProps) {
   return (
     <div className="flex flex-col  ">
-      <div className=" flex items-center justify-center mt-2 ">
+      <div className=" flex items-center justify-center mt-2 ml-2">
         <Image
           src={description.image}
           alt={description.label}
@@ -38,8 +38,10 @@ export default function RollerBox({ id, description }: ItemBoxProps) {
         </ul>
 
         <h1 className="font-semibold flex flex-col">
-          <span className="text-red-800">{id}</span>
-          <span className="text-gray-700">Part: {description.label}</span>
+          <span className="text-gray-700">{id}</span>
+          <span className="text-gray-700">
+            Part: <span className="text-red-700">{description.label}</span>
+          </span>
         </h1>
       </div>
     </div>

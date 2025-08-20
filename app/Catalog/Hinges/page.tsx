@@ -31,7 +31,7 @@ const hingeList: { [key: string]: string } = {
 export default function Hinges() {
   return (
     <>
-      <CatalogLayout title="Hinges" pagenum="4">
+      <CatalogLayout title="Hinges" pagenum="15">
         {" "}
         <div className="relative w-full h-70 overflow-hidden">
           <Image

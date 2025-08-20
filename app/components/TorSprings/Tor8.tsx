@@ -15,7 +15,7 @@ const torList8: { [key: string]: string } = {
 export default function Tor8() {
   return (
     <>
-      <section className="flex-none h-[300px] mb-4 ">
+      <section className="flex-none  mb-1 ">
         <h1 className="text-2xl font-bold text-red-800 pb-1  mt-4">
           8' TORSION SPRINGS
         </h1>

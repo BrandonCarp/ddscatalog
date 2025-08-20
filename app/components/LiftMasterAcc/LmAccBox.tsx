@@ -15,13 +15,13 @@ type LmBoxProps = {
 
 export default function LmAccBox({ id, description }: LmBoxProps) {
   return (
-    <div className="flex flex-col  w-full p-3  text-xs">
+    <div className="flex flex-col  w-full  ">
       {/* Image */}
       <div className=" flex items-center justify-center">
         <Image
           src={description.image}
           alt={description.label}
-          width={150}
+          width={120}
           height={100}
           className="object-contain"
         />
@@ -34,14 +34,14 @@ export default function LmAccBox({ id, description }: LmBoxProps) {
 
       {/* Description */}
       <div className="flex flex-col justify-start overflow-hidden">
-        <ul className="list-disc list-inside text-gray-700 text-[11px] leading-tight mb-1 whitespace-pre-line">
+        <ul className="list-disc list-inside text-gray-700 text-[13px] leading-tight mb-1 whitespace-pre-line">
           {description.description.map((line, i) => (
             <li key={i}>{line}</li>
           ))}
         </ul>
         <h1 className="font-semibold mt-auto">
-          <span className="text-gray-700 text-xs">PART</span>{" "}
-          <span className="text-red-800 text-sm">{id}</span>
+          <span className="text-gray-700 text-[13px]">PART</span>{" "}
+          <span className="text-red-800 text-[15px]">{id}</span>
         </h1>
       </div>
     </div>

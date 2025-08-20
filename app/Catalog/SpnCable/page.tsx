@@ -85,9 +85,13 @@ const CableList: PartItem[] = [
 export default function SpnCable() {
   return (
     <>
-      <CatalogLayout title={"SPRING PUSHERS \n& CABLES"} pagenum="11">
+      <CatalogLayout
+        title={"SPRING PUSHERS \n& CABLES"}
+        pagenum="20"
+        reverseFooter
+      >
         <section className="p-5">
-          <h1 className="text-3xl font-bold text-blue-800 mb-2">CABLES</h1>
+          <h1 className="text-3xl font-bold text-red-700 mb-2">CABLES</h1>
           <div className="grid grid-cols-4  space-x-3">
             {Object.entries(CableList).map(([key, value]) => (
               <CableBox key={key} part={value} />
@@ -96,7 +100,7 @@ export default function SpnCable() {
         </section>
         <div className="border-t mx-10"></div>
         <section className="p-5">
-          <h1 className="text-3xl font-bold text-blue-800 mb-2">
+          <h1 className="text-3xl font-bold text-red-700 mb-2">
             SPRING PUSHERS
           </h1>
           <div className="grid grid-cols-2">

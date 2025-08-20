@@ -35,15 +35,13 @@ const vinylGroups: VinylGroup[] = [
 // Collect all sizes across groups:
 const allSizes = Array.from(
   new Set(
-    vinylGroups.flatMap((group) =>
-      group.codes.map((code) => code.split("-")[1])
-    )
+    vinylGroups.flatMap((group) => group.codes.map((code) => code.slice(-2)))
   )
 ).sort((a, b) => parseInt(a) - parseInt(b));
 
 export default function VinylTable() {
   return (
-    <CatalogLayout title={"WEATHER\nSEAL"} pagenum="11">
+    <CatalogLayout title={"WEATHER\nSEAL"} pagenum="21">
       <div className="relative w-full h-55 overflow-hidden">
         <Image
           src="/images/Vinyl/house.png"
@@ -55,7 +53,7 @@ export default function VinylTable() {
       </div>
 
       <div className="overflow-x-auto mx-10">
-        <h1 className="font-bold text-3xl text-green-800 p-4">
+        <h1 className="font-bold text-3xl text-red-700 p-4">
           Vinyl Weather Seal
         </h1>
 
@@ -79,14 +77,14 @@ export default function VinylTable() {
 
               return (
                 <tr key={color} className={rowColor}>
-                  <td className="px-2 py-2 font-semibold text-blue-800">
+                  <td className="px-2 py-2 font-semibold text-gray-700">
                     {color}
                   </td>
 
                   {allSizes.map((size) => {
                     // Find code that matches this size
-                    const code = codes.find((c) => c.endsWith(`-${size}`));
-                    const label = code ? `V-${code}` : "-";
+                    const code = codes.find((c) => c.endsWith(size));
+                    const label = code ? `${code}` : "-";
                     return (
                       <td key={size} className="px-2 py-2 text-center">
                         {label}

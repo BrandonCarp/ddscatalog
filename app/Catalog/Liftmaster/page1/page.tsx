@@ -112,20 +112,20 @@ const RemList: { [key: string]: LmInfo } = {
   "894LT": {
     label: "894LT",
     image: "/images/Remotes/894lt.png",
-    details: "Unknown / Unlisted Remote Model",
-    description: ["Limited public data; contact dealer for specs"],
+    details: "4-Button Security+ 2.0® Learning Remote Control",
+    description: ["Controls up to four operators"],
   },
 };
 
 export default function Operators() {
   return (
-    <CatalogLayout title={"RESIDENTIAL\nLIFTMASTER"} pagenum="1">
+    <CatalogLayout title={"RESIDENTIAL\nLIFTMASTER"} pagenum="8" reverseFooter>
       <div className="mx-5">
         {/* Wall Console */}
 
         <div className="leading-tight p-1">
           <h1 className="font-bold text-[30px] text-red-800 ">WALL CONSOLE</h1>
-          <h4 className="font-semibold text-[13px] ">
+          <h4 className="font-semibold text-[16px] ">
             FOR LIFTMASTER RESIDENTIAL OPERATORS
           </h4>
         </div>

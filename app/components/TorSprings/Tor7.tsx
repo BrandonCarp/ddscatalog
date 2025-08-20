@@ -17,7 +17,7 @@ const torList7: { [key: string]: string } = {
 export default function Tor7() {
   return (
     <>
-      <section className="flex-none h-[300px] mb-8 ">
+      <section className="flex-none  ">
         <h1 className="text-2xl font-bold text-red-800 pb-1">
           7' TORSION SPRINGS
         </h1>

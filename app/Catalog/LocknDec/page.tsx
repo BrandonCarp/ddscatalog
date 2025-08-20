@@ -121,13 +121,17 @@ const DecList: DecInfo[] = [
 export default function LocknDec() {
   return (
     <>
-      <CatalogLayout title={"Decorative Hardware \n& Locks"} pagenum="9">
+      <CatalogLayout
+        title={"Decorative Hardware \n& Locks"}
+        pagenum="22"
+        reverseFooter
+      >
         {/* Container */}
-        <div className="mx-5 mt-5">
+        <div className="mx-5 mt-2">
           {/* Lock Section */}
           <section className="flex p-2   w-[95vw]">
             <div className="">
-              <h1 className="text-4xl font-bold text-teal-800 mb-6">LOCKS</h1>
+              <h1 className="text-4xl font-bold text-red-700 mb-6">LOCKS</h1>
 
               <div className="flex">
                 {LockList.map((item) => (
@@ -138,10 +142,8 @@ export default function LocknDec() {
 
             {/* LOCKBAR */}
             <div className="flex flex-col items-center ml-10 w-[40%]">
-              <div className="h-15 w-full flex flex-col justify-center  items-center  mb-20 mt-3 pt-20">
-                <h1 className="text-4xl font-bold  text-green-800 ">
-                  LOCKBARS
-                </h1>
+              <div className="h-15 w-full flex flex-col justify-center  items-center  mb-12 mt-3 pt-20">
+                <h1 className="text-4xl font-bold  text-red-700 ">LOCKBARS</h1>
                 <Image
                   src="/images/Locks/lockbar.png"
                   alt="Lock Bar"
@@ -168,7 +170,7 @@ export default function LocknDec() {
           </section>
           {/* Decorative Hardware Section */}
           <section className="">
-            <h1 className="text-4xl font-bold text-teal-800 mb-6">
+            <h1 className="text-4xl font-bold text-red-700 mb-4">
               DECORATIVE HARDWARE
             </h1>
             <div className="grid grid-cols-4  gap-5 mx-5">

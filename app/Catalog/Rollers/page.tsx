@@ -93,7 +93,7 @@ const rollerList3: { [key: string]: rollerInfo } = {
 export default function Rollers() {
   return (
     <>
-      <CatalogLayout title={"Rollers"} pagenum="3">
+      <CatalogLayout title={"Rollers"} pagenum="18" reverseFooter>
         <div className="relative w-full h-56 overflow-hidden ">
           {" "}
           <Image

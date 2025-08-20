@@ -118,8 +118,8 @@ const EbpList: PartItem[] = [
 
 export default function FixJambEndb() {
   return (
-    <CatalogLayout title="FIXTURES" pagenum="8">
-      <div className="flex   mx-auto p-5 bg-white ml-3">
+    <CatalogLayout title="FIXTURES" pagenum="14" reverseFooter>
+      <div className="flex   mx-auto p-3 bg-white ml-3">
         <section className="mx-3">
           {/* RESIDENTIAL FIXTURES */}
           <h1 className="text-3xl font-bold text-red-800 mb-1">

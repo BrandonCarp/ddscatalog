@@ -22,7 +22,7 @@ export default function OperatorBox({ id, description }: OperatorBoxProps) {
   const secondHalf = description.description.slice(midpoint);
 
   return (
-    <div className="flex w-full first:border-t-0 border-t border-gray-300 p-2 text-[12px]">
+    <div className="flex w-full first:border-t-0 border-t border-gray-300 p-2 ">
       <div className="flex items-start justify-center mr-6">
         <Image
           src={description.image}
@@ -36,13 +36,13 @@ export default function OperatorBox({ id, description }: OperatorBoxProps) {
       <div className="flex flex-col justify-between w-full pr-3">
         <div>
           <h1 className="text-red-800 font-semibold text-3xl">{id}</h1>
-          <h2 className="text-gray-800 font-semibold text-lg whitespace-pre">
+          <h2 className="text-gray-800 font-semibold text-lg whitespace-pre ">
             {description.details}
           </h2>
         </div>
 
         <div className="grid grid-cols-2 gap-x-4 mt-2 text-gray-700">
-          <ul className="list-disc list-inside whitespace-pre-wrap">
+          <ul className="list-disc list-inside whitespace-nowrap text-[13px]">
             {firstHalf.map((line, i) => (
               <li key={i}>{line}</li>
             ))}

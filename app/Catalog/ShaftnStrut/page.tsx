@@ -96,19 +96,19 @@ const CouplingList: PartItem[] = [
 
 export default function ShaftnStrut() {
   return (
-    <CatalogLayout title={`TUBE SHAFTS \n& STRUTS`} pagenum="2">
+    <CatalogLayout title={`TUBE SHAFTS \n& STRUTS`} pagenum="19">
       <div className="grid grid-cols-2 gap-6 p-5 ">
         {/* Shafts */}
         <section className="flex  ">
           <div className="leading-tight ">
-            <h1 className="text-2xl font-bold text-teal-800 ">TUBE SHAFTS</h1>
+            <h1 className="text-2xl font-bold text-red-700 ">TUBE SHAFTS</h1>
             <h3 className="font-bold text-gray-700 mb-6">GALVANIZED</h3>
             {tubeShafts.map((part) => (
               <StrutBox key={part.code} part={part} />
             ))}
           </div>
           <div>
-            <h1 className="text-2xl font-bold text-teal-800 mb-6">
+            <h1 className="text-2xl font-bold text-red-700 mb-6">
               SOLID SHAFTS
             </h1>
             {solidShafts.map((part) => (
@@ -120,17 +120,13 @@ export default function ShaftnStrut() {
         {/* Struts */}
         <section className="flex space-x-10  pb-2">
           <div>
-            <h1 className="text-2xl font-bold text-teal-800 mb-6 ">
-              2" STRUTS
-            </h1>
+            <h1 className="text-2xl font-bold text-red-700 mb-6 ">2" STRUTS</h1>
             {struts2.map((part) => (
               <StrutBox key={part.code} part={part} />
             ))}
           </div>
           <div>
-            <h1 className="text-2xl font-bold text-teal-800 mb-6 ">
-              3" STRUTS
-            </h1>
+            <h1 className="text-2xl font-bold text-red-700 mb-6 ">3" STRUTS</h1>
             {struts3.map((part) => (
               <StrutBox key={part.code} part={part} />
             ))}
@@ -140,13 +136,13 @@ export default function ShaftnStrut() {
         {/* Collars and Couplings */}
         <section className="flex justify-between">
           <div className="mr-20">
-            <h1 className="text-2xl font-bold text-teal-800 mb-6">COLLARS</h1>
+            <h1 className="text-2xl font-bold text-red-700 mb-2">COLLARS</h1>
             {CollarList.map((part) => (
               <StrutBox key={part.code} part={part} />
             ))}
           </div>
           <div>
-            <h1 className="text-2xl font-bold text-teal-800 mb-6">COUPLINGS</h1>
+            <h1 className="text-2xl font-bold text-red-700 mb-2">COUPLINGS</h1>
             {CouplingList.map((part) => (
               <StrutBox key={part.code} part={part} />
             ))}
@@ -157,7 +153,7 @@ export default function ShaftnStrut() {
             alt="shafts"
             width={400}
             height={200}
-            className="object-contain  rotate-180 absolute bottom-0 right-0 mb-20"
+            className="object-contain  rotate-180 absolute bottom-0 right-0 mb-25"
           />
         </section>
       </div>

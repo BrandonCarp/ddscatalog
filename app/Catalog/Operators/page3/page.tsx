@@ -85,8 +85,12 @@ export default function Operators() {
   return (
     <>
       <div className="">
-        <CatalogLayout title={"RESIDENTIAL\nLIFTMASTER"} pagenum="5">
-          <h1 className="text-3xl font-bold text-red-800 p-5">
+        <CatalogLayout
+          title={"RESIDENTIAL\nLIFTMASTER"}
+          pagenum="12"
+          reverseFooter
+        >
+          <h1 className="text-3xl font-bold text-red-800 p-3">
             LIFTMASTER OPERATORS
           </h1>
           <div className="flex flex-col justify-center items-center ">

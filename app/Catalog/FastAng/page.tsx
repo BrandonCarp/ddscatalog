@@ -82,7 +82,7 @@ const angles: PartItem[] = [
 export default function FastAng() {
   return (
     <>
-      <CatalogLayout title={`FASTENERS \n& ANGLES`} pagenum="10">
+      <CatalogLayout title={`FASTENERS \n& ANGLES`} pagenum="6" reverseFooter>
         <div className="relative w-full h-60">
           {" "}
           <Image
@@ -93,14 +93,14 @@ export default function FastAng() {
             priority
           />
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center ">
           {/* Fasterns */}
           <div className="p-1 w-[100%]  border-r  my-3">
-            <h1 className="text-4xl font-bold text-teal-800 ml-5 mt-5 mb-5">
+            <h1 className="text-4xl font-bold text-red-700 ml-5 mt-5 mb-5">
               FASTENERS
             </h1>
 
-            <div className="grid grid-cols-3 gap-10 px-4">
+            <div className="grid grid-cols-3  px-4">
               {fasteners.map((part) => (
                 <FastAngBox key={part.code} part={part} />
               ))}
@@ -109,7 +109,7 @@ export default function FastAng() {
           {/* Angle */}
 
           <div className="flex flex-col  justify-center items-center  p-3      w-[35%]">
-            <h1 className="text-4xl font-bold text-teal-800   ">ANGLE</h1>
+            <h1 className="text-4xl font-bold text-red-700   ">ANGLE</h1>
 
             <div className="flex flex-col  mt-5">
               {angles.map((part) => (

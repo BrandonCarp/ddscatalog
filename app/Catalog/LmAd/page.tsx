@@ -7,7 +7,7 @@ export default function LmAd() {
       <div className="relative h-[100vh] w-[100vw] bg-gray-200">
         {/* Black BG Drop */}
         <Image
-          src={"/images/ad/lmop.png"}
+          src={"/images/ad/lmtrans.png"}
           alt="Lift Master Operator"
           height={850}
           width={850}

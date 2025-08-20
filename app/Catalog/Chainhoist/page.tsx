@@ -83,29 +83,22 @@ const halfLinks: PartItem = {
 export default function Chainhoist() {
   return (
     <>
-      <CatalogLayout title={`CHAIN HOISTS \n & ACCESSORIES`} pagenum="1">
-        <div className="p-5">
-          <h1 className="text-3xl font-bold text-blue-800 ml-5 mt-3">
+      <CatalogLayout title={`CHAIN HOISTS \n & ACCESSORIES`} pagenum="2">
+        <div className="">
+          <h1 className="text-3xl font-bold text-red-700 ml-5 mt-3">
             CHAIN HOISTS & ACCESSORIES
           </h1>
 
           {/* Chain Hoists Section */}
 
           <div className="">
-            <div className="grid grid-cols-3 gap-3 ">
+            <div className="grid grid-cols-3 gap-5">
               {chainHoists.map((part) => (
                 <ChainBox key={part.code} part={part} />
               ))}
               {[chains, masterLinks, halfLinks].map((part) => (
                 <ChainBox key={part.code} part={part} />
               ))}
-              {/* <Image
-                src="/images/ChainHoist/hoist.png"
-                alt="live chain hoist"
-                width={800}
-                height={800}
-                className="object-contain"
-              /> */}
             </div>
           </div>
         </div>

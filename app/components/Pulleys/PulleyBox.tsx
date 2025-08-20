@@ -20,7 +20,7 @@ export default function PulleyBox({ id, description }: PulleyBoxProps) {
         <Image
           src={description.image}
           alt={description.label}
-          width={120}
+          width={140}
           height={100}
           style={{ objectFit: "contain" }}
         />

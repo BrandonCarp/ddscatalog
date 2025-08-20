@@ -78,7 +78,7 @@ const KeypadList: { [key: string]: LmInfo } = {
 export default function Operators() {
   return (
     <>
-      <CatalogLayout title={"RESIDENTIAL\nLIFTMASTER"} pagenum="2">
+      <CatalogLayout title={"RESIDENTIAL\nLIFTMASTER"} pagenum="9">
         {/* Wall Console */}
         <div className="relative w-full h-55 overflow-hidden">
           {" "}
