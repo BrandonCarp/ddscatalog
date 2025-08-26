@@ -14,33 +14,33 @@ type ItemBoxProps = {
 
 export default function ItemBox({ id, description }: ItemBoxProps) {
   return (
-    <div className="flex flex-col w-full p-3  ">
-      {" "}
-      {/* was text-xs */}
+    <div className="flex flex-col w-full p-2 max-h-[300px]">
       {/* Image */}
-      <div className="flex items-center justify-center">
+      <div className="flex ">
         <Image
           src={description.image}
           alt={description.label}
-          width={150}
-          height={100}
-          className="object-contain"
+          width={125}
+          height={85}
+          className="object-contain ml-5"
         />
       </div>
+
       {/* Label */}
-      <div className=" flex items-center justify-center font-semibold text-gray-600 text-lg text-center">
+      <div className=" font-semibold text-gray-700 text-[16px] leading-tight">
         {description.label}
       </div>
-      {/* Description & Part */}
-      <div className="flex flex-col justify-start overflow-hidden">
-        <ul className="list-disc list-inside text-gray-700 text-base leading-snug ">
+
+      {/* Description */}
+      <div className="flex flex-col justify-start overflow-hidden text-[14px] leading-snug">
+        <ul className="list-disc list-inside text-gray-700 space-y-[1px]">
           {description.description.map((line, i) => (
             <li key={i}>{line}</li>
           ))}
         </ul>
-        <h1 className="font-semibold ">
-          <span className="text-gray-700 text-[14px]">Part</span>{" "}
-          <span className="text-red-800 text-[16px]">{id}</span>
+        <h1 className="font-semibold mt-1">
+          <span className="text-gray-700 text-[14px]">PART: </span>
+          <span className="text-red-800 text-[16px]"> {id}</span>
         </h1>
       </div>
     </div>

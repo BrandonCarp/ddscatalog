@@ -13,11 +13,11 @@ const AccessoryList: { [key: string]: LmInfo } = {
   "485LM": {
     label: "485LM",
     image: "/images/accessories/485lm.png",
-    details: "12 V Garage Door Opener Battery Backup",
+    details: "12V Opener Backup Battery",
     description: [
-      "Fast and easy replacement battery for integrated backup systems",
-      "Works with LiftMaster integrated battery-backup openers like 8360, 8500, 8550",
-      "Keeps opener operational during power outages",
+      "Quick replacement for backup systems",
+      "Fits LiftMaster models 8360, 8500, 8550",
+      "Keeps opener running during outages",
     ],
   },
   "828LM": {
@@ -25,19 +25,19 @@ const AccessoryList: { [key: string]: LmInfo } = {
     image: "/images/accessories/828lm.png",
     details: "myQ® Internet Gateway",
     description: [
-      "Adds smartphone control to myQ-enabled garage/gate openers and lights",
-      "Supports up to 16 myQ devices with real-time alerts and scheduling",
-      "Enables Amazon Key in-garage delivery where available",
+      "Adds smartphone control to myQ openers/lights",
+      "Connect up to 16 myQ devices with alerts & schedules",
+      "Supports Amazon Key in-garage delivery",
     ],
   },
   "850LM": {
     label: "850LM",
     image: "/images/accessories/850lm.png",
-    details: "Universal Receiver, Security+ 2.0",
+    details: "3-Channel Universal Receiver",
     description: [
-      "Universal commercial-grade 3-channel receiver using Security+ 2.0 rolling-code tech",
-      "Supports multiple access points per receiver",
-      "Compatible with MAX remotes and 811LM/813LM remotes",
+      "Commercial-grade Security+ 2.0 receiver",
+      "Handles multiple access points",
+      "Works with MAX, 811LM, and 813LM remotes",
     ],
   },
 };
@@ -81,7 +81,6 @@ export default function Operators() {
       <CatalogLayout title={"RESIDENTIAL\nLIFTMASTER"} pagenum="9">
         {/* Wall Console */}
         <div className="relative w-full h-55 overflow-hidden">
-          {" "}
           <Image
             src="/images/accessories/gd.png"
             alt="Operator Hero"

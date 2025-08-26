@@ -67,28 +67,28 @@ const RemList: { [key: string]: LmInfo } = {
   "380UT": {
     label: "380UT",
     image: "/images/Remotes/380ut.png",
-    details: "2-Button Universal Remote Control",
+    details: "2-Button Universal Remote",
     description: [
-      "Operates up to two garage or gate openers",
-      "Universal compatibility across multiple protocols",
+      "Controls 2 garage or gate openers",
+      "Works with most brands/protocols",
     ],
   },
   "811LMX": {
     label: "811LMX",
     image: "/images/Remotes/811lmx.png",
-    details: "Commercial Gate Opener Remote",
+    details: "Commercial Gate Remote",
     description: [
-      "For LiftMaster commercial operators only",
-      "Not compatible with residential openers",
+      "For LiftMaster commercial units",
+      "Not for residential openers",
     ],
   },
   "890MAX": {
     label: "890MAX",
     image: "/images/Remotes/890max.png",
-    details: "3-Button Remote - MAX Series",
+    details: "3-Button Remote - MAX",
     description: [
-      "Controls up to 3 openers or myQ® lights",
-      "Works with openers from 1993-present",
+      "Runs 3 openers or myQ® lights",
+      "Compatible with 1993+ models",
     ],
   },
   "893LM": {
@@ -96,7 +96,7 @@ const RemList: { [key: string]: LmInfo } = {
     image: "/images/Remotes/893lm.png",
     details: "3-Button Mini Remote",
     description: [
-      "Mini-visor; works with Security+ 2.0®",
+      "Compact visor clip, Security+ 2.0®",
       "Controls up to 3 devices",
     ],
   },
@@ -105,15 +105,15 @@ const RemList: { [key: string]: LmInfo } = {
     image: "/images/Remotes/893max.png",
     details: "3-Button Remote - MAX",
     description: [
-      "Full-sized; supports 3 openers/myQ® accessories",
-      "Universal compatibility since 1993",
+      "Full-size, runs 3 openers/myQ®",
+      "Works with 1993+ openers",
     ],
   },
   "894LT": {
     label: "894LT",
     image: "/images/Remotes/894lt.png",
-    details: "4-Button Security+ 2.0® Learning Remote Control",
-    description: ["Controls up to four operators"],
+    details: "4-Button Remote",
+    description: ["Controls 4 operators"],
   },
 };
 
@@ -140,7 +140,7 @@ export default function Operators() {
         {/* Remotes */}
         <div className="">
           <h1 className="font-bold text-[30px] text-red-800  p-1">REMOTES</h1>
-          <div className="grid grid-cols-3 lg:grid-cols-5 gap-3 mt-1">
+          <div className="grid grid-cols-3  gap-3 mt-1 ">
             {Object.entries(RemList).map(([key, value]) => (
               <LMBox key={key} id={key} description={value} />
             ))}

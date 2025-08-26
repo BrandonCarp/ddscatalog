@@ -1,14 +1,14 @@
-  'use client';
+"use client";
 
 type SpringInfo = {
-  label: string;   
-  prefix: string;  
-  wireSize: string; 
-  wireLength: string; 
+  label: string;
+  prefix: string;
+  wireSize: string;
+  wireLength: string;
 };
 
 interface SpringProps {
-  id: string;        
+  id: string;
   description: SpringInfo;
 }
 
@@ -22,4 +22,4 @@ export default function SpringBox({ id, description }: SpringProps) {
       <td className="border px-3  text-center">{description.wireLength}"</td>
     </tr>
   );
-}  
+}

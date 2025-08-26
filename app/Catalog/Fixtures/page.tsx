@@ -42,9 +42,14 @@ const ResFixtureList: PartItem[] = [
     image: "/images/Fixtures/reslhrtop.png",
     description: ["RESIDENTIAL LHR TOP FIXTURES - RESLHRTF"],
   },
+  {
+    code: "RESQUICKT",
+    label: "QUICK TURN TOP BRACKETS",
+    image: "/images/Fixtures/QUICK.png",
+    description: ["RQUICK TURN TOP BRACKET - RESQUICKT"],
+  },
 ];
 
-// === COMMERCIAL FIXTURES ===
 const ComFixtureList: PartItem[] = [
   {
     code: "COMTF",
@@ -79,47 +84,18 @@ const ComFixtureList: PartItem[] = [
     image: "/images/Fixtures/combb5.png",
     description: ["COMMERCIAL LHR BOTTOM FIXTURE BB-5 - CLHBB5"],
   },
-  {
-    code: "CLHBB6",
-    label: "COMMERCIAL LHR BTM BB-6",
-    image: "/images/Fixtures/combb6.png",
-    description: ["COMMERCIAL LHR BOTTOM FIXTURE BB-6 - CLHBB6"],
-  },
+  // {
+  //   code: "CLHBB6",
+  //   label: "COMMERCIAL LHR BTM BB-6",
+  //   image: "/images/Fixtures/combb6.png",
+  //   description: ["COMMERCIAL LHR BOTTOM FIXTURE BB-6 - CLHBB6"],
+  // },
 ];
 
-// === JAMB BRACKETS ===
-const JambList: PartItem[] = [
-  {
-    code: "",
-    label: "JAMB BRACKETS",
-    image: "/images/jbeb/jb1.png",
-    description: Array.from(
-      { length: 12 },
-      (_, i) => `#${i + 1} JAMB BRACKET - JAM${i + 1}`
-    ),
-  },
-];
-
-// === END BEARING PLATES ===
-const EbpList: PartItem[] = [
-  {
-    code: "EP-*",
-    label: "END BEARING PLATES",
-    image: "/images/jbeb/ebp.png",
-    description: [
-      '3-3/8" RES, END BEARING PLATE - EBR338',
-      '3-3/8" COMM, END BEARING PLATE - EBC338',
-      '4-3/8" END BEARING PLATE - EBC438',
-      '5" END BEARING PLATE - EBC500',
-      '6" END BEARING PLATE - EBC600',
-    ],
-  },
-];
-
-export default function FixJambEndb() {
+export default function Fixtures() {
   return (
     <CatalogLayout title="FIXTURES" pagenum="14" reverseFooter>
-      <div className="flex   mx-auto p-3 bg-white ml-3">
+      <div className="flex   mx-auto p-3  ml-3">
         <section className="mx-3">
           {/* RESIDENTIAL FIXTURES */}
           <h1 className="text-3xl font-bold text-red-800 mb-1">
@@ -135,62 +111,10 @@ export default function FixJambEndb() {
           <h1 className="text-3xl font-bold text-red-800 mb-1 ml-2">
             COMMERCIAL FIXTURES
           </h1>
-          <div className="grid grid-cols-3 gap-1  ">
+          <div className="grid grid-cols-3 gap-3  ">
             {ComFixtureList.map((part) => (
               <FixtureBox key={part.code} part={part} />
             ))}
-          </div>
-        </section>
-
-        {/* JB / EB */}
-        <section className="flex flex-col items-center justify-center ">
-          <div className="">
-            <h1 className="text-2xl font-bold text-red-800 ">JAMB BRACKETS</h1>
-            <div className=" flex justify-center mr-10">
-              <Image
-                src="/images/jbeb/jb1.png"
-                alt="Jamb Bracket"
-                width={120}
-                height={80}
-                className="object-contain"
-              />
-            </div>
-            <div className="grid grid-cols-2 mx-5 leading-tight gap-1">
-              {Array.from({ length: 12 }, (_, i) => (
-                <FixtureBox
-                  key={`JAM${i + 1}`}
-                  part={{
-                    code: `JAM${i + 1}`,
-                    label: `#${i + 1} JAMB BRACKET`,
-                    description: [`#${i + 1} JAMB BRACKET  - JAM${i + 1}`],
-                  }}
-                />
-              ))}
-            </div>
-          </div>
-
-          {/* End Bearing Plates */}
-          <div className="">
-            <h1 className="text-2xl font-bold text-red-800 mt-2  ">
-              END BEARING PLATES
-            </h1>
-            <div className=" flex justify-center mr-10">
-              <Image
-                src="/images/jbeb/ebp.png"
-                alt="End Bearing Plate"
-                width={120}
-                height={80}
-                className="object-contain"
-              />
-            </div>
-            <div className="grid grid-cols-1 gap-2 leading-tight">
-              {EbpList.map((part) => (
-                <FixtureBox
-                  key={part.code}
-                  part={{ ...part, image: undefined }}
-                />
-              ))}
-            </div>
           </div>
         </section>
       </div>

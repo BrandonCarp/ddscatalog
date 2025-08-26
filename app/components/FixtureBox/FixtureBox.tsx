@@ -35,9 +35,9 @@ export default function FixtureBox({ part }: { part: PartItem }) {
           const [label, code] = line.split(" - ");
           return (
             <li key={i}>
-              <div className="text-[12px] leading-tight pr-5">{label} </div>
-              <div className="text-gray-500 font-semibold text-[14px] ">
-                Part: <span className="text-gray-800 text-[15px]">{code}</span>
+              <div className="text-[15px] leading-tight pr-5">{label} </div>
+              <div className="text-gray-800 font-semibold text-[14px] ">
+                PART: <span className="text-red-800 text-[15px]">{code}</span>
               </div>
             </li>
           );

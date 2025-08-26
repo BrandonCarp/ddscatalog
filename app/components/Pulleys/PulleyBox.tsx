@@ -14,31 +14,44 @@ type PulleyBoxProps = {
 };
 
 export default function PulleyBox({ id, description }: PulleyBoxProps) {
-  return (
-    <div className="flex flex-col items-center justify-between  ">
-      <div className=" flex items-center justify-center">
-        <Image
-          src={description.image}
-          alt={description.label}
-          width={140}
-          height={100}
-          style={{ objectFit: "contain" }}
-        />
-      </div>
+  const groupIds = ["FRK_GROUP", "SFRK_GROUP"];
+  const hideGroupId = groupIds.includes(id);
 
-      <ul className="list-disc list-inside text-gray-700   overflow-hidden text-[14px]">
-        {description.description.map((line, i) => (
-          <li key={i}>{line}</li>
-        ))}
+  return (
+    <div className="flex flex-col ">
+      {/* Image */}
+
+      <Image
+        src={description.image}
+        alt={description.label}
+        width={110}
+        height={100}
+      />
+
+      {/* Description bullets */}
+      <ul className="list-disc list-inside text-gray-700 text-[16px] ">
+        {description.description.map((line, i) => {
+          const [label, code] = line.split(" - ");
+          return (
+            <div key={i}>
+              <li className="leading-tight text-[15px]">{label}</li>
+              {code && (
+                <span className="text-gray-800 font-semibold ">
+                  PART: <span className="text-red-800">{code}</span>
+                </span>
+              )}
+            </div>
+          );
+        })}
       </ul>
 
-      <div className="flex flex-col items-center text-center ">
-        <h2 className="text-gray-800 font-semibold">{description.label}</h2>
-        <h1 className="font-semibold">
-          <span className="text-gray-700 text-[15px]">PART:</span>{" "}
-          <span className="text-red-800 text-[17px]">{id}</span>
-        </h1>
-      </div>
+      {/* PART code (only for non-grouped items) */}
+      {!hideGroupId && (
+        <div className="font-semibold text-[15px] ">
+          PART:{" "}
+          <span className="font-semibold text-red-800 text-[16px]">{id}</span>
+        </div>
+      )}
     </div>
   );
 }

@@ -55,50 +55,73 @@ const pulleyList: { [key: string]: PulleyInfo } = {
 };
 
 const forkList: { [key: string]: PulleyInfo } = {
-  FRK300: {
-    label: '3" Fork',
+  SFRK_GROUP: {
+    label: '3" Safety Fork',
     image: "/images/pulleys/3Fork.png",
     title: "FORKS",
-    description: [`Sheave Fork for 3" Extension Spring Pulley`],
+    description: ["Nylon bushing for restraint cable - SFRK03"],
   },
-  SFRK03: {
-    label: '3" Safety Fork',
-    image: "/images/pulleys/3SafetyFork.png",
+  FRK_GROUP: {
+    label: '3" & 4" Forks',
+    image: "/images/pulleys/3Fork.png",
     title: "FORKS",
-    description: ["Nylon bushing for restraint cable"],
+    description: ['3" Fork  - FRK300', '4" Fork  - FRK400'],
   },
-  FRK400: {
-    label: '4" Fork',
-    image: "/images/pulleys/4Fork.png",
-    title: "FORKS",
-    description: ['4" Fork For Pulley'],
+};
+
+const hdwList: { [key: string]: PulleyInfo } = {
+  "3HC": {
+    label: "3-Hole Clips",
+    image: "/images/pulleyhdw/3holeclip.png",
+    title: "3-Hole Clip",
+    description: ["Durable 3-Hole Clip", "Bag of 100"],
+  },
+  SHK: {
+    label: "S Hooks",
+    image: "/images/pulleyhdw/shook.png",
+    title: "S Hook",
+    description: ["Durable S Hook", "Bag of 25"],
+  },
+  EB35: {
+    label: "5/16 x 3-1/2 Eyebolts with Nuts",
+    image: "/images/pulleyhdw/eyebolt.png",
+    title: "Eyebolt with Nut",
+    description: ["5/16 x 3-1/2 Eyebolt", "Includes Nuts", "Bag of 25"],
   },
 };
 
 export default function Pulleys() {
   return (
     <CatalogLayout title={"HARDWARE\n PULLEYS & FORKS"} pagenum="17">
-      <div className="flex flex-col items-center justify-center   ">
-        {/* Forks */}
-        <section className="p-3 ">
-          <div className="">
-            <h1 className="font-bold text-[28px] text-red-800">FORK</h1>
-            <h2 className="font-bold text-[15px] text-gray-600">
-              FASTENERS SOLD SEPARATELY
-            </h2>
-          </div>
-          <div className="grid grid-cols-4 gap-4 mt-2">
-            {Object.entries(forkList).map(([key, value]) => (
+      <div className="mx-5 ">
+        {/* Pulleys */}
+        <section className="py-3">
+          <h1 className="font-bold text-[28px] text-red-800 ">PULLEYS</h1>
+          <div className="grid grid-cols-4 gap-5 ">
+            {Object.entries(pulleyList).map(([key, value]) => (
               <PulleyBox key={key} id={key} description={value} />
             ))}
           </div>
         </section>
-
-        {/* Pulleys */}
-        <section className=" mx-5">
-          <h1 className="font-bold text-[28px] text-red-800 ">PULLEYS</h1>
-          <div className="grid grid-cols-4 gap-4 mt-2">
-            {Object.entries(pulleyList).map(([key, value]) => (
+        {/* HDW */}
+        <section className="border-t py-3">
+          <h1 className="font-bold text-[28px] text-red-800 ">HARDWARE</h1>
+          <div className="grid grid-cols-3 ">
+            {Object.entries(hdwList).map(([key, value]) => (
+              <PulleyBox key={key} id={key} description={value} />
+            ))}
+          </div>
+        </section>
+        {/* Forks */}
+        <section className="flex flex-col border-t py-1">
+          <div className="">
+            <h1 className="font-bold text-[28px] text-red-800">FORKS</h1>
+            <h2 className="font-bold text-[15px] text-gray-600">
+              FASTENERS SOLD SEPARATELY
+            </h2>
+          </div>
+          <div className="grid grid-cols-2">
+            {Object.entries(forkList).map(([key, value]) => (
               <PulleyBox key={key} id={key} description={value} />
             ))}
           </div>

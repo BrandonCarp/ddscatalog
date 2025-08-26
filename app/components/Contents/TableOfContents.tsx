@@ -11,7 +11,7 @@ export default function TableofContents({ name, page }: SectionProps) {
         <span className="overflow-hidden text-ellipsis">{name}</span>
 
         {/* Dots filler */}
-        <span className="flex-grow border-b border-dotted border-gray-500 mx-2"></span>
+        <span className="flex-grow border-b-2 border-dotted border-gray-500 mx-2"></span>
 
         {/* Page number */}
         <span>{page}</span>

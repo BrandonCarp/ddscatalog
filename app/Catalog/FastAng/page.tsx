@@ -64,25 +64,10 @@ const fasteners: PartItem[] = [
   },
 ];
 
-const angles: PartItem[] = [
-  {
-    code: "GA-1-1/4-8",
-    label: "GALV ANGLE",
-    image: "/images/AngleFastern/galvangle.png",
-    description: ['1-1/4" X 1-1/4" X 8FT - GALVA', '2" X 2" X 10FT - COMMA'],
-  },
-  {
-    code: "WA-1-1/4-8",
-    label: "WHITE ANGLE",
-    image: "/images/AngleFastern/whiteangle.png",
-    description: ['1-1/4" X 1-1/4" X 8FT - WHITA'],
-  },
-];
-
 export default function FastAng() {
   return (
     <>
-      <CatalogLayout title={`FASTENERS \n& ANGLES`} pagenum="6" reverseFooter>
+      <CatalogLayout title={`FASTENERS`} pagenum="6" reverseFooter>
         <div className="relative w-full h-60">
           {" "}
           <Image
@@ -96,23 +81,12 @@ export default function FastAng() {
         <div className="flex items-center ">
           {/* Fasterns */}
           <div className="p-1 w-[100%]  border-r  my-3">
-            <h1 className="text-4xl font-bold text-red-700 ml-5 mt-5 mb-5">
+            <h1 className="text-4xl font-bold text-red-800 ml-5 mt-5 mb-5">
               FASTENERS
             </h1>
 
-            <div className="grid grid-cols-3  px-4">
+            <div className=" grid grid-cols-4  px-4 items-start">
               {fasteners.map((part) => (
-                <FastAngBox key={part.code} part={part} />
-              ))}
-            </div>
-          </div>
-          {/* Angle */}
-
-          <div className="flex flex-col  justify-center items-center  p-3      w-[35%]">
-            <h1 className="text-4xl font-bold text-red-700   ">ANGLE</h1>
-
-            <div className="flex flex-col  mt-5">
-              {angles.map((part) => (
                 <FastAngBox key={part.code} part={part} />
               ))}
             </div>

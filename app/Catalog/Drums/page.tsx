@@ -34,6 +34,15 @@ const drumList: { [key: string]: DrumInfo } = {
 };
 
 const highList: { [key: string]: DrumInfo } = {
+  D40054: {
+    label: "400-54",
+    image: "/images/drums/400-54.jpg",
+    description: [
+      `Maximum High Lift 54"`,
+      "Capacity: 275 lbs per drum",
+      'Maximum cable size: 5/32"',
+    ],
+  },
   D525054: {
     label: "5250-54",
     image: "/images/drums/5250-54.jpg",
@@ -52,27 +61,9 @@ const highList: { [key: string]: DrumInfo } = {
       `Maximum cable size: 3/16"`,
     ],
   },
-  D40054: {
-    label: "400-54",
-    image: "/images/drums/400-54.jpg",
-    description: [
-      `Maximum High Lift 54"`,
-      "Capacity: 275 lbs per drum",
-      'Maximum cable size: 5/32"',
-    ],
-  },
 };
 
 const vertList: { [key: string]: DrumInfo } = {
-  D110018: {
-    label: "1100-18",
-    image: "/images/drums/1100-18.jpg",
-    description: [
-      "18' Vertical High Lift",
-      "Capacity: 600lbs per drum",
-      'Maximum cable size: 3/16"',
-    ],
-  },
   D85011: {
     label: "850-11",
     image: "/images/drums/850-11.jpg",
@@ -80,6 +71,15 @@ const vertList: { [key: string]: DrumInfo } = {
       "Maximum door height: 11'",
       "Capacity: 425 lbs per drum",
       `Maximum cable size: 3/16"`,
+    ],
+  },
+  D110018: {
+    label: "1100-18",
+    image: "/images/drums/1100-18.jpg",
+    description: [
+      "18' Vertical High Lift",
+      "Capacity: 600lbs per drum",
+      'Maximum cable size: 3/16"',
     ],
   },
 };
@@ -96,7 +96,7 @@ export default function Drums() {
             </h1>
             <h5 className="font-semibold  text-slate-600">SOLD IN PAIRS</h5>
           </div>
-          <div className="grid grid-cols-4 gap-3 mt-1">
+          <div className="grid grid-cols-3 gap-2 mt-1">
             {Object.entries(drumList).map(([key, value]) => (
               <ItemBox key={key} id={key} description={value} />
             ))}
@@ -104,14 +104,14 @@ export default function Drums() {
         </div>
 
         {/* HI-LIFT + VERTICAL LIFT */}
-        <div className="border-t w-[70%]" />
+        {/* <div className="border-t w-[70%]" /> */}
         {/* HI-LIFT */}
         <div className="">
           <div>
             <h1 className="font-bold text-[26px] text-red-800">HI-LIFT</h1>
             <h5 className="font-semibold  text-slate-600">SOLD IN PAIRS</h5>
           </div>
-          <div className="grid grid-cols-4 gap-3 mt-1">
+          <div className="grid grid-cols-3 gap-2 mt-1">
             {Object.entries(highList).map(([key, value]) => (
               <ItemBox key={key} id={key} description={value} />
             ))}
@@ -119,10 +119,10 @@ export default function Drums() {
         </div>
 
         {/* VERTICAL LIFT */}
-        <div className="flex flex-col justify-center items-center absolute top-0 right-0 mt-4 border-l">
+        <div className="flex  flex-col  ">
           <h1 className="font-bold text-[26px] text-red-800">VERTICAL LIFT</h1>
-          <h5 className="font-semibold  text-slate-600">SOLD IN PAIRS</h5>
-          <div className="">
+          <h5 className="font-semibold  text-slate-600 ">SOLD IN PAIRS</h5>
+          <div className="grid grid-cols-3 gap-2 mt-1">
             {Object.entries(vertList).map(([key, value]) => (
               <ItemBox key={key} id={key} description={value} />
             ))}

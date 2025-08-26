@@ -28,19 +28,19 @@ export default function LMBox({ id, description }: LmBoxProps) {
       </div>
 
       {/* Description */}
-      <ul className="list-disc list-inside text-gray-700 text-[13px] leading-tight whitespace-nowrap">
+      <ul className="list-disc list-inside text-gray-700 text-[13px]  leading-tight whitespace-nowrap ">
         {description.description.map((line, i) => (
           <li key={i}>{line}</li>
         ))}
       </ul>
 
       {/* Details */}
-      <p className="text-gray-500 text-[12px] text-center leading-tight  ">
+      <p className="text-gray-500 text-[12px]  leading-tight  ">
         {description.details}
       </p>
 
       {/* Part Label */}
-      <div className="text-center ">
+      <div className=" ">
         <h1 className="font-semibold  ">
           <span className="text-gray-700 text-[14px]">PART: </span>{" "}
           <span className="text-red-800 text-[16px]"> {id}</span>
