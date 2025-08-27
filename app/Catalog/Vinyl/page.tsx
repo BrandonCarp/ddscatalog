@@ -39,6 +39,46 @@ const allSizes = Array.from(
   )
 ).sort((a, b) => parseInt(a) - parseInt(b));
 
+// Helper function to map color names to hex
+function getColorHex(color: string) {
+  switch (color) {
+    case "White Vinyl":
+      return "#FFFFFF";
+    case "Almond Vinyl":
+      return "#EFDECD";
+    case "Brown Vinyl":
+      return "#8B4513";
+    case "Sandtone Vinyl":
+      return "#D2B48C";
+    case "Black Vinyl":
+      return "#000000";
+    case "Bronze Vinyl":
+      return "#CD7F32";
+    case "Gray Vinyl":
+      return "#808080";
+    case "Charcoal Vinyl":
+      return "#36454F";
+    case "Mocha Brown Vinyl":
+      return "#654321";
+    case "Desert Tan Vinyl":
+      return "#EDC9AF";
+    case "Hunter Green Vinyl":
+      return "#355E3B";
+    case "Cherry Vinyl":
+      return "#D2042D";
+    case "Walnut Vinyl":
+      return "#773F1A";
+    case "Medium Oak Vinyl":
+      return "#C68642";
+    case "Dark Oak Vinyl":
+      return "#8B4513";
+    case "Slate Vinyl":
+      return "#708090";
+    default:
+      return "#CCCCCC"; // fallback
+  }
+}
+
 export default function VinylTable() {
   return (
     <CatalogLayout title={"WEATHER\nSEAL"} pagenum="21">
@@ -77,12 +117,17 @@ export default function VinylTable() {
 
               return (
                 <tr key={color} className={rowColor}>
-                  <td className="px-2 py-2 font-semibold text-gray-700">
-                    {color}
+                  {/* Color cell with small block */}
+                  <td className="px-2 py-2 font-semibold text-gray-700 flex items-center space-x-2">
+                    <div
+                      className="w-4 h-4 rounded-sm border border-gray-400"
+                      style={{ backgroundColor: getColorHex(color) }}
+                    />
+                    <span>{color}</span>
                   </td>
 
+                  {/* Sizes */}
                   {allSizes.map((size) => {
-                    // Find code that matches this size
                     const code = codes.find((c) => c.endsWith(size));
                     const label = code ? `${code}` : "-";
                     return (

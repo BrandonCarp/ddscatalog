@@ -36,10 +36,12 @@ export default function StrutBox({ part }: { part: PartItem }) {
           const [label, code] = line.split(" - ");
           return (
             <li key={i}>
-              <div className="text-[15px] leading-tight">{label} </div>
+              <div className="text-[15px] leading-tight whitespace-nowrap">
+                {label}{" "}
+              </div>
               <div className="text-gray-500 font-semibold">
-                <span className="">Part: </span>
-                <span className="text-gray-800 text-[14px]">{code}</span>
+                <span className="text-[14px]">PART: </span>
+                <span className="text-red-800 text-[16px]">{code}</span>
               </div>
             </li>
           );

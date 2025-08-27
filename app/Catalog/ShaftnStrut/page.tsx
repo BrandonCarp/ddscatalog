@@ -66,7 +66,6 @@ const struts3: PartItem[] = [
   {
     code: "ST-16-3",
     label: '3" STRUTS',
-
     description: [
       "3\" STRUT 16' - ST316",
       "3\" STRUT 18' - ST318",
@@ -97,20 +96,18 @@ const CouplingList: PartItem[] = [
 export default function ShaftnStrut() {
   return (
     <CatalogLayout title={`TUBE SHAFTS \n& STRUTS`} pagenum="19">
-      <div className="grid grid-cols-2 gap-6 p-5 ">
+      <div className="grid grid-cols-2   p-5 ">
         {/* Shafts */}
-        <section className="flex  ">
-          <div className="leading-tight ">
-            <h1 className="text-2xl font-bold text-red-700 ">TUBE SHAFTS</h1>
+        <section className="flex ml-10">
+          <div className="leading-tight">
+            <h1 className="text-2xl font-bold text-red-700">TUBE SHAFTS</h1>
             <h3 className="font-bold text-gray-700 mb-6">GALVANIZED</h3>
             {tubeShafts.map((part) => (
               <StrutBox key={part.code} part={part} />
             ))}
           </div>
           <div>
-            <h1 className="text-2xl font-bold text-red-700 mb-6">
-              SOLID SHAFTS
-            </h1>
+            <h1 className="text-2xl font-bold text-red-700 ">SOLID SHAFTS</h1>
             {solidShafts.map((part) => (
               <StrutBox key={part.code} part={part} />
             ))}
@@ -118,43 +115,70 @@ export default function ShaftnStrut() {
         </section>
 
         {/* Struts */}
-        <section className="flex space-x-10  pb-2">
+        <section className="flex space-x-10 pb-2 ml-10">
           <div>
-            <h1 className="text-2xl font-bold text-red-700 mb-6 ">2" STRUTS</h1>
+            <h1 className="text-2xl font-bold text-red-700 ">2" STRUTS</h1>
             {struts2.map((part) => (
               <StrutBox key={part.code} part={part} />
             ))}
           </div>
           <div>
-            <h1 className="text-2xl font-bold text-red-700 mb-6 ">3" STRUTS</h1>
+            <h1 className="text-2xl font-bold text-red-700 ">3" STRUTS</h1>
             {struts3.map((part) => (
               <StrutBox key={part.code} part={part} />
             ))}
           </div>
         </section>
 
-        {/* Collars and Couplings */}
-        <section className="flex justify-between">
-          <div className="mr-20">
+        {/* Collars, Couplings, Angle */}
+        <section className="flex ml-25 space-x-20 mt-5">
+          <div>
             <h1 className="text-2xl font-bold text-red-700 mb-2">COLLARS</h1>
             {CollarList.map((part) => (
               <StrutBox key={part.code} part={part} />
             ))}
           </div>
+
           <div>
             <h1 className="text-2xl font-bold text-red-700 mb-2">COUPLINGS</h1>
             {CouplingList.map((part) => (
               <StrutBox key={part.code} part={part} />
             ))}
           </div>
-          <div></div>
-          <Image
-            src="/images/ShaftStrut/shafts.png"
-            alt="shafts"
-            width={400}
-            height={200}
-            className="object-contain  rotate-180 absolute bottom-0 right-0 mb-25"
-          />
+
+          {/* Angle Iron */}
+          <div>
+            <h1 className="text-2xl font-bold text-red-700 mb-2">ANGLE IRON</h1>
+            <div className="w-[150px]">
+              <Image
+                src="/images/ShaftStrut/galvangle.png"
+                alt="Angle Iron"
+                width={800} // fixed width
+                height={800} // fixed height
+              />
+            </div>
+            <ul className="list-disc ">
+              <li>
+                <div className="text-[15px] leading-tight whitespace-nowrap">
+                  GALVANIZED ANGLE IRON
+                </div>
+                <div className="text-gray-500 font-semibold">
+                  <span className="text-[14px]">Part: </span>
+                  <span className="text-red-800 text-[16px]">GALANGLE</span>
+                </div>
+              </li>
+              <li>
+                {/* White Angle */}
+                <div className="text-[15px] leading-tight whitespace-nowrap">
+                  WHITE ANGLE IRON
+                </div>
+                <div className="text-gray-500 font-semibold">
+                  <span className="text-[14px]">Part: </span>
+                  <span className="text-red-800 text-[16px]">WHANGLE</span>
+                </div>
+              </li>
+            </ul>
+          </div>
         </section>
       </div>
     </CatalogLayout>

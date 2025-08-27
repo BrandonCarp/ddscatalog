@@ -16,7 +16,7 @@ type ItemBoxProps = {
 export default function RollerBox({ id, description }: ItemBoxProps) {
   return (
     <div className="flex flex-col  ">
-      <div className=" flex items-center justify-center mt-2 ml-2">
+      <div className=" flex items-center justify-center  ml-2">
         <Image
           src={description.image}
           alt={description.label}
@@ -24,11 +24,9 @@ export default function RollerBox({ id, description }: ItemBoxProps) {
           height={120}
         />
       </div>
-      <h1 className=" text-2xl text-red-800 w-100 font-bold">
-        {description.title}
-      </h1>
+      <h1 className=" text-2xl text-red-800  font-bold">{description.title}</h1>
       {/* Description */}
-      <div className="mt-3 text-[14px]  ">
+      <div className=" text-[14px]  ">
         <ul className="list-disc list-inside text-gray-700  whitespace-pre ">
           {description.description.map((line, i) => (
             <li className="" key={i}>
@@ -40,7 +38,7 @@ export default function RollerBox({ id, description }: ItemBoxProps) {
         <h1 className="font-semibold flex flex-col">
           <span className="text-gray-700">{id}</span>
           <span className="text-gray-700">
-            Part: <span className="text-red-700">{description.label}</span>
+            Part: <span className="text-red-800">{description.label}</span>
           </span>
         </h1>
       </div>
