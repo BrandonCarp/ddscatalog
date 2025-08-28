@@ -13,7 +13,7 @@ export default function LmAd() {
           width={850}
           className="ml-20 z-3 absolute"
         />
-        <div className="flex flex-col items-center justify-center  space-y-3 bottom-0 mb-20 ml-42 z-3 absolute text-white">
+        <div className="flex flex-col items-center justify-center  space-y-3 bottom-0 mb-20 ml-33 z-3 absolute text-white">
           <Image
             src={"/images/ad/lmlogo2.png"}
             alt="Lift Master Logo"
@@ -22,14 +22,14 @@ export default function LmAd() {
             className=""
           />
           <div className="flex space-x-2">
-            <h1 className="font-bold text-xl">
+            <h1 className="font-bold text-xl mt-3">
               Where Reliability Meets Supply
             </h1>
             <Image
               src={"/images/ad/tlogo4.png"}
               alt="Doors Direct"
-              height={80}
-              width={80}
+              height={140}
+              width={140}
               className=""
             />
           </div>

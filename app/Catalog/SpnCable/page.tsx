@@ -82,29 +82,61 @@ const CableList: PartItem[] = [
   },
 ];
 
+const cableHdwList: PartItem[] = [
+  {
+    code: "FELCO",
+    label: "FELCO C-7 CABLE CUTTER",
+    image: "/images/cables/felco.png",
+    description: ["FELCO C-7  CABLE CUTTER - FELCC"],
+  },
+  {
+    code: "THIMBLES",
+    label: "THIMBLES",
+    image: "/images/cables/thimble.png",
+    description: ["CABLE THIMBLES - CTHIMB"],
+  },
+  {
+    code: "1/8 CABLE CLAMPS",
+    label: "1/8 CABLE CLAMPS",
+    image: "/images/cables/cableclamp.png",
+    description: ["1/8 CABLE CLAMPS - CABLECLAMP"],
+  },
+];
+
 export default function SpnCable() {
   return (
     <>
       <CatalogLayout
-        title={"SPRING PUSHERS \n& CABLES"}
+        title={"CABLES \n& SPRING PUSHERS"}
         pagenum="20"
         reverseFooter
       >
-        <section className="p-5">
-          <h1 className="text-3xl font-bold text-red-700 mb-2">CABLES</h1>
-          <div className="grid grid-cols-4  space-x-3">
+        <section className="p-5 leading-tight">
+          <div className="grid grid-cols-4 gap-6">
+            {/* Cables Header */}
+            <div className="col-span-4">
+              <h1 className="text-3xl font-bold text-red-700 mb-2">
+                CABLES & SPRING PUSHERS
+              </h1>
+            </div>
+
+            {/* Cable Items */}
             {Object.entries(CableList).map(([key, value]) => (
+              <CableBox key={key} part={value} />
+            ))}
+
+            {/* Spring Pusher Items */}
+            {Object.entries(SpList).map(([key, value]) => (
               <CableBox key={key} part={value} />
             ))}
           </div>
         </section>
+
         <div className="border-t mx-10"></div>
         <section className="p-5">
-          <h1 className="text-3xl font-bold text-red-700 mb-2">
-            SPRING PUSHERS
-          </h1>
-          <div className="grid grid-cols-2">
-            {Object.entries(SpList).map(([key, value]) => (
+          <h1 className="text-3xl font-bold text-red-700 ">CABLE HARDWARE</h1>
+          <div className="grid grid-cols-3">
+            {Object.entries(cableHdwList).map(([key, value]) => (
               <CableBox key={key} part={value} />
             ))}
           </div>

@@ -47,6 +47,12 @@ const LockList: DecInfo[] = [
     image: "/images/Locks/slidelock.png",
     description: ["INSIDE SLIDE LOCK - INSLLK"],
   },
+  {
+    code: "QDIS",
+    label: "QUICK DISCONNECT",
+    image: "/images/Locks/quickdis.png",
+    description: ["QUICK DISCONNECT - QDIS"],
+  },
 ];
 
 const DecList: DecInfo[] = [
@@ -71,19 +77,19 @@ const DecList: DecInfo[] = [
   {
     code: "DCSH14",
     label: "COLONIAL STRAP HINGES & HANDLES",
-    image: "/images/DecHDW/spadehandle.png",
+    image: "/images/DecHDW/colonial.png",
     description: [
-      "COLONIAL STRAP HANDLES, 2PCS - DCSH14",
+      "COLONIAL STRAP HINGES, 4PCS - DCSH14",
       "COLONIAL STRAP HANDLES, 2PCS - DCSHD2",
     ],
   },
   {
     code: "DSPH14",
     label: "SPEAR STRAP HINGES & SPEAR STRAP HANDLES",
-    image: "/images/DecHDW/spadehandle.png",
+    image: "/images/DecHDW/spear.png",
     description: [
-      "SPADE STRAP HANDLES, 2PCS - DSPH14",
-      "MAGNETIC SPADE STRAP HANDLES, 2PCS - DSPHD2",
+      "SPEAR STRAP HINGES, 4PCS - DSPH14",
+      "SPEAR STRAP HANDLES, 2PCS - DSPHD2",
     ],
   },
   {
@@ -114,6 +120,7 @@ const DecList: DecInfo[] = [
     code: "DDHKH",
     label: "DUMMY HANDLES WITH KEYHOLE",
     image: "/images/DecHDW/dummy.png",
+
     description: ["DUMMY HANDLES WITH KEYHOLE - DDHKH"],
   },
 ];
@@ -127,11 +134,22 @@ export default function LocknDec() {
         reverseFooter
       >
         {/* Container */}
-        <div className="mx-5 mt-2">
+        <div className="mx-10 p-3">
+          {/* Decorative Hardware Section */}
+          <section className="mb-3">
+            <h1 className="text-4xl font-bold text-red-700 ">
+              DECORATIVE HARDWARE
+            </h1>
+            <div className="grid grid-cols-4  ">
+              {DecList.map((item) => (
+                <DecBox key={item.code} part={item} />
+              ))}
+            </div>
+          </section>
           {/* Lock Section */}
-          <section className="flex p-2   w-[95vw]">
+          <section className="flex p-2   border-t ">
             <div className="">
-              <h1 className="text-4xl font-bold text-red-700 mb-6">LOCKS</h1>
+              <h1 className="text-4xl font-bold text-red-800 ">LOCKS</h1>
 
               <div className="flex">
                 {LockList.map((item) => (
@@ -141,9 +159,9 @@ export default function LocknDec() {
             </div>
 
             {/* LOCKBAR */}
-            <div className="flex flex-col items-center ml-10 w-[40%]">
+            <div className="flex flex-col items-center ml-5 w-[400px]">
               <div className="h-15 w-full flex flex-col justify-center  items-center  mb-12 mt-3 pt-20">
-                <h1 className="text-4xl font-bold  text-red-700 ">LOCKBARS</h1>
+                <h1 className="text-4xl font-bold  text-red-800 ">LOCKBARS</h1>
                 <Image
                   src="/images/Locks/lockbar.png"
                   alt="Lock Bar"
@@ -153,14 +171,14 @@ export default function LocknDec() {
                 />
               </div>
 
-              <div className="grid grid-cols-2 gap-x-4  w-full px-4 text-[12px]">
+              <div className="grid grid-cols-2 gap-x-4  w-full px-4 text-[14px]">
                 {LockBarList[0].description.map((line, i) => {
                   const [label, code] = line.split(" - ");
                   return (
                     <ul key={i} className="">
-                      <li className="list-disc text-[13px]">{label}</li>
-                      <div className="text-gray-500 font-semibold">
-                        Part: <span className="text-gray-800">{code}</span>
+                      <li className="list-disc text-[14px]">{label}</li>
+                      <div className="text-gray-800 font-semibold">
+                        Part: <span className="text-red-800">{code}</span>
                       </div>
                     </ul>
                   );
@@ -168,17 +186,17 @@ export default function LocknDec() {
               </div>
             </div>
           </section>
-          {/* Decorative Hardware Section */}
+          {/* Decorative Hardware Section
           <section className="">
             <h1 className="text-4xl font-bold text-red-700 mb-4">
               DECORATIVE HARDWARE
             </h1>
-            <div className="grid grid-cols-4  gap-5 mx-5">
+            <div className="grid grid-cols-4  ">
               {DecList.map((item) => (
                 <DecBox key={item.code} part={item} />
               ))}
             </div>
-          </section>
+          </section> */}
         </div>
       </CatalogLayout>
     </>

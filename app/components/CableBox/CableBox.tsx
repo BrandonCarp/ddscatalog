@@ -36,8 +36,8 @@ export default function CableBox({ part }: { part: PartItem }) {
           return (
             <li key={i}>
               <div className="text-[13px] leading-tight mr-6">{label} </div>
-              <div className="text-gray-500 font-semibold text-[14px] ">
-                Part: <span className="text-red-700 text-[15px]">{code}</span>
+              <div className="text-gray-800 font-semibold text-[14px] ">
+                PART: <span className="text-red-700 text-[15px]">{code}</span>
               </div>
             </li>
           );

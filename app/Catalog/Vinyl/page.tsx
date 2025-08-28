@@ -94,7 +94,7 @@ export default function VinylTable() {
 
       <div className="overflow-x-auto mx-10">
         <h1 className="font-bold text-3xl text-red-700 p-4">
-          Vinyl Weather Seal
+          VINYL WEATHER SEAL IN STOCK
         </h1>
 
         <table className="min-w-full border border-gray-300 text-sm">
