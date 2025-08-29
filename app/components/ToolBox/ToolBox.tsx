@@ -15,21 +15,19 @@ interface ToolItem {
 export default function ToolBox({ label, image, description }: ToolItem) {
   return (
     <div className="">
-      <div style={{ width: 140, height: 140, position: "relative" }}>
+      <div style={{ width: 150, height: 150, position: "relative" }}>
         <Image src={image} alt={label} fill style={{ objectFit: "contain" }} />
       </div>
-
-      <ul className="list-disc list-inside mt-3 font-semibold">
+      {/* list-disc list-inside */}
+      <ul className=" mt-3 list-disc list-inside ">
         {description.map((desc, i) => (
-          <>
-            <li key={i}>
-              <span>{desc.name}</span>
-            </li>
-            <h1 className="ml-6 ">
+          <li key={desc.code} className="mb-2 font-semibold">
+            <span className="text-[16px] font-gray-500">{desc.name}</span>
+            <h1 className="ml-6">
               <span className="text-[14px]">PART:</span>
               <span className="text-red-800 text-[16px]"> {desc.code}</span>
             </h1>
-          </>
+          </li>
         ))}
       </ul>
     </div>

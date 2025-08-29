@@ -69,9 +69,9 @@ export default function Tools() {
   return (
     <>
       <CatalogLayout pagenum="23" title="TOOLS">
-        <div className=" p-3">
+        <div className=" p-3 mx-5">
           <h1 className="text-red-800 text-[38px] font-bold">TOOLS</h1>
-          <section className="grid grid-cols-4 gap-10">
+          <section className="grid grid-cols-4 gap-5">
             {toolList.map((tool, index) => (
               <ToolBox key={index} {...tool} />
             ))}
