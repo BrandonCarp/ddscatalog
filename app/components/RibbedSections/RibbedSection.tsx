@@ -8,23 +8,23 @@ export function Section1() {
         <div className="flex flex-col items-center space-y-2">
           {/* garage door section */}
           <div
-            className="w-[350px] h-28 rounded-md shadow-lg relative overflow-hidden
+            className="border-x-10 border-gray-500 w-[350px] h-28 rounded-sm shadow-lg relative overflow-hidden
     bg-[repeating-linear-gradient(to_bottom,#cfd6dc_0,#cfd6dc_26px,#b8c0c6_26px,#b8c0c6_34px)]"
           >
             {/* vertical slits */}
             <div
               className="absolute inset-0 
-      bg-[repeating-linear-gradient(to_right,transparent_0,transparent_calc(33.333%-2px),#7d8790_calc(33.333%-2px),#7d8790_calc(33.333%+2px),transparent_calc(33.333%+2px),transparent_calc(66.666%-2px),#7d8790_calc(66.666%-2px),#7d8790_calc(66.666%+2px),transparent_calc(66.666%+2px))]"
+      bg-[repeating-linear-gradient(to_right,transparent_0,transparent_calc(33.333%-6px),#7d8790_calc(33.333%-5px),#7d8790_calc(33.333%+5px),transparent_calc(33.333%+5px),transparent_calc(66.666%-5px),#7d8790_calc(66.666%-5px),#7d8790_calc(66.666%+5px),transparent_calc(66.666%+5px))]"
             ></div>
 
             {/* top bead */}
             <div
-              className="absolute top-0 left-0 right-0 h-[6px] 
+              className="absolute top-0 left-0 right-0 h-[1px] 
       bg-gradient-to-b from-black/20 to-white/40"
             ></div>
             {/* bottom bead */}
             <div
-              className="absolute bottom-0 left-0 right-0 h-[6px] 
+              className="absolute bottom-0 left-0 right-0 h-[1px] 
       bg-gradient-to-b from-black/20 to-white/40"
             ></div>
           </div>
@@ -82,23 +82,23 @@ export function Section2() {
 
           {/* garage door section */}
           <div
-            className="w-[350px] h-28 rounded-md shadow-lg relative overflow-hidden ml-8
+            className="border-x-10 border-gray-500 w-[350px] h-28 rounded-md shadow-lg relative overflow-hidden ml-8
               bg-[repeating-linear-gradient(to_bottom,#cfd6dc_0,#cfd6dc_26px,#b8c0c6_26px,#b8c0c6_34px)]"
           >
             {/* vertical slits */}
             <div
               className="absolute inset-0 
-        bg-[repeating-linear-gradient(to_right,transparent_0,transparent_calc(33.333%-2px),#7d8790_calc(33.333%-2px),#7d8790_calc(33.333%+2px),transparent_calc(33.333%+2px),transparent_calc(66.666%-2px),#7d8790_calc(66.666%-2px),#7d8790_calc(66.666%+2px),transparent_calc(66.666%+2px))]"
+        bg-[repeating-linear-gradient(to_right,transparent_0,transparent_calc(33.333%-5px),#7d8790_calc(33.333%-5px),#7d8790_calc(33.333%+5px),transparent_calc(33.333%+5px),transparent_calc(66.666%-5px),#7d8790_calc(66.666%-5px),#7d8790_calc(66.666%+5px),transparent_calc(66.666%+5px))]"
             ></div>
 
             {/* top bead */}
             <div
-              className="absolute top-0 left-0 right-0 h-[6px] 
+              className="absolute top-0 left-0 right-0 h-[1px] 
         bg-gradient-to-b from-black/20 to-white/40"
             ></div>
             {/* bottom bead */}
             <div
-              className="absolute bottom-0 left-0 right-0 h-[6px] 
+              className="absolute bottom-0 left-0 right-0 h-[1px] 
         bg-gradient-to-b from-black/20 to-white/40"
             ></div>
           </div>
@@ -118,19 +118,19 @@ export function Section3() {
       <div className="flex items-center justify-center space-x-4">
         {/* garage door section */}
         <div
-          className="w-[400px] h-28 rounded-md shadow-lg relative overflow-hidden
+          className="border-x-10 border-gray-500 w-[400px] h-28 rounded-md shadow-lg relative overflow-hidden
             bg-[repeating-linear-gradient(to_bottom,#cfd6dc_0,#cfd6dc_26px,#b8c0c6_26px,#b8c0c6_34px)]"
         >
           {/* inner slits */}
           <div
             className="absolute inset-0
-              bg-[repeating-linear-gradient(to_right,transparent_0,transparent_calc(33.333%-2px),#7d8790_calc(33.333%-2px),#7d8790_calc(33.333%+2px),transparent_calc(33.333%+2px),transparent_calc(66.666%-2px),#7d8790_calc(66.666%-2px),#7d8790_calc(66.666%+2px),transparent_calc(66.666%+2px))]"
+              bg-[repeating-linear-gradient(to_right,transparent_0,transparent_calc(33.333%-5px),#7d8790_calc(33.333%-5px),#7d8790_calc(33.333%+5px),transparent_calc(33.333%+5px),transparent_calc(66.666%-5px),#7d8790_calc(66.666%-5px),#7d8790_calc(66.666%+5px),transparent_calc(66.666%+5px))]"
           ></div>
 
           {/* top bead */}
-          <div className="absolute top-0 left-0 right-0 h-[6px] bg-gradient-to-b from-black/20 to-white/40"></div>
+          <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-b from-black/20 to-white/40"></div>
           {/* bottom bead */}
-          <div className="absolute bottom-0 left-0 right-0 h-[6px] bg-gradient-to-b from-black/20 to-white/40"></div>
+          <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-b from-black/20 to-white/40"></div>
         </div>
 
         {/* label to the right */}
@@ -155,19 +155,19 @@ export function Section4() {
       <div className="relative flex items-center justify-center">
         {/* garage door section */}
         <div
-          className="w-[400px] h-28 rounded-md shadow-lg relative overflow-hidden
+          className="border-x-10 border-gray-500 w-[400px] h-28 rounded-md shadow-lg relative overflow-hidden
             bg-[repeating-linear-gradient(to_bottom,#cfd6dc_0,#cfd6dc_26px,#b8c0c6_26px,#b8c0c6_34px)]"
         >
           {/* inner slits */}
           <div
             className="absolute inset-0
-              bg-[repeating-linear-gradient(to_right,transparent_0,transparent_calc(33.333%-2px),#7d8790_calc(33.333%-2px),#7d8790_calc(33.333%+2px),transparent_calc(33.333%+2px),transparent_calc(66.666%-2px),#7d8790_calc(66.666%-2px),#7d8790_calc(66.666%+2px),transparent_calc(66.666%+2px))]"
+              bg-[repeating-linear-gradient(to_right,transparent_0,transparent_calc(33.333%-5px),#7d8790_calc(33.333%-5px),#7d8790_calc(33.333%+5px),transparent_calc(33.333%+5px),transparent_calc(66.666%-5px),#7d8790_calc(66.666%-5px),#7d8790_calc(66.666%+5px),transparent_calc(66.666%+5px))]"
           ></div>
 
           {/* top bead */}
-          <div className="absolute top-0 left-0 right-0 h-[6px] bg-gradient-to-b from-black/20 to-white/40"></div>
+          <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-b from-black/20 to-white/40"></div>
           {/* bottom bead */}
-          <div className="absolute bottom-0 left-0 right-0 h-[6px] bg-gradient-to-b from-black/20 to-white/40"></div>
+          <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-b from-black/20 to-white/40"></div>
         </div>
 
         {/* label to the right */}
