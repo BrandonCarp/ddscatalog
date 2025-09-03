@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import React, { useState } from "react";
 import DoorTable from "@/components/StockDoors/DoorTable";
 import {
@@ -35,14 +35,19 @@ const StockDoors = () => {
   return (
     <CatalogLayout title="STOCK DOORS" pagenum="27">
       <div className="p-5">
-        <h1 className="font-bold text-[28px] text-red-800 mb-5">
-          {" "}
-          STOCK DOORS
-        </h1>
-        <DoorTable doors={filterDoors(StockDoors1)} title="Stock Doors 1" />
-        {/* <DoorTable doors={filterDoors(StockDoors2)} title="Stock Doors 2" />
-        <DoorTable doors={filterDoors(StockDoors3)} title="Stock Doors 3" />
-        <DoorTable doors={filterDoors(StockDoors4)} title="Stock Doors 4" /> */}
+        <h1 className="font-bold text-[28px] text-red-800 mb-5">STOCK DOORS</h1>
+
+        <DoorTable doors={filterDoors(StockDoors4)} title="Stock Doors 4" />
+      </div>
+
+      {/* Image at the bottom */}
+      <div className="relative w-full h-[40vh] mt-24">
+        <Image
+          src="/images/DoorAd/stockdoor.png"
+          alt="Stock Door Ad"
+          fill
+          className="object-cover"
+        />
       </div>
     </CatalogLayout>
   );

@@ -49,11 +49,6 @@ const toolList: ToolItem[] = [
     ],
   },
   {
-    label: "YELLOW SPRING BLOCK",
-    image: "/images/tools/yllwblock.jpg",
-    description: [{ name: "YELLOW SPRING BLOCK", code: "YELSB" }],
-  },
-  {
     label: "RED SPRING BLOCK",
     image: "/images/tools/redblock.jpg",
     description: [{ name: "RED SPRING BLOCK", code: "REDSB" }],
@@ -63,6 +58,11 @@ const toolList: ToolItem[] = [
     image: "/images/tools/blueblock.jpg",
     description: [{ name: "BLUE SPRING BLOCK", code: "BLUSB" }],
   },
+  {
+    label: "YELLOW SPRING BLOCK",
+    image: "/images/tools/yllwblock.jpg",
+    description: [{ name: "YELLOW SPRING BLOCK", code: "YELSB" }],
+  },
 ];
 
 export default function Tools() {
@@ -71,7 +71,7 @@ export default function Tools() {
       <CatalogLayout pagenum="23" title="TOOLS">
         <div className=" p-3 mx-5">
           <h1 className="text-red-800 text-[38px] font-bold">TOOLS</h1>
-          <section className="grid grid-cols-4 gap-5">
+          <section className="grid grid-cols-3 gap-4">
             {toolList.map((tool, index) => (
               <ToolBox key={index} {...tool} />
             ))}

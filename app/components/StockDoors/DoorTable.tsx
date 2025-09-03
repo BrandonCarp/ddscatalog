@@ -29,13 +29,13 @@ const colorMap: Record<string, string> = {
 
 const DoorTable: React.FC<DoorTableProps> = ({ doors, title }) => {
   return (
-    <div className="space-y-5">
+    <div className="space-y-2 ">
       {/* {title && <h2 className="text-2xl font-bold text-red-700">{title}</h2>} */}
 
       {doors.map((door) => (
         <div key={door.label}>
           <h3 className="text-xl font-semibold mb-1 text-red-800">
-            {door.label} {door.brand && `- ${door.brand}`}
+            {door.label}
           </h3>
 
           <table className="min-w-full border border-gray-300 text-sm">

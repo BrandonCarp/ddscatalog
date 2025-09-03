@@ -349,91 +349,39 @@ export const StockDoors3 = [
       },
     ],
   },
-  {
-    label: "8700",
-    description: [
-      {
-        color: "WHITE",
-        width: ["8'0", "9'0", "16'0"],
-        height: ["6'3", "6'6", "6'9", "7'0", "7'6", "7'9", "8'0"],
-      },
-    ],
-  },
-  {
-    label: "660",
-    description: [
-      {
-        color: "WHITE",
-        width: ["8'0", "9'0", "16'0"],
-        height: ["6'3", "6'6", "6'9", "7'0", "7'6", "7'9", "8'0"],
-      },
-    ],
-  },
-  {
-    label: "680",
-    description: [
-      {
-        color: "WHITE",
-        width: ["8'0", "9'0", "16'0"],
-        height: ["6'3", "6'6", "6'9", "7'0", "7'6", "7'9", "8'0"],
-      },
-    ],
-  },
+  // {
+  //   label: "8700",
+  //   description: [
+  //     {
+  //       color: "WHITE",
+  //       width: ["8'0", "9'0", "16'0"],
+  //       height: ["6'3", "6'6", "6'9", "7'0", "7'6", "7'9", "8'0"],
+  //     },
+  //   ],
+  // },
+  // {
+  //   label: "660",
+  //   description: [
+  //     {
+  //       color: "WHITE",
+  //       width: ["8'0", "9'0", "16'0"],
+  //       height: ["6'3", "6'6", "6'9", "7'0", "7'6", "7'9", "8'0"],
+  //     },
+  //   ],
+  // },
+  // {
+  //   label: "680",
+  //   description: [
+  //     {
+  //       color: "WHITE",
+  //       width: ["8'0", "9'0", "16'0"],
+  //       height: ["6'3", "6'6", "6'9", "7'0", "7'6", "7'9", "8'0"],
+  //     },
+  //   ],
+  // },
 ];
 
 export const StockDoors4 = [
-  {
-    label: "3720",
-    description: [
-      {
-        color: "WHITE",
-        width: ["Any desired up to 28'0"],
-        height: ['21"', '24"'],
-      },
-      {
-        color: "BROWN",
-        width: ["Any desired up to 28'0"],
-        height: ['21"', '24"'],
-      },
-    ],
-  },
-  {
-    label: "524",
-    description: [
-      {
-        color: "WHITE",
-        width: ["Any desired up to 28'0", "8'2", "9'2", "10'2", "12'2"],
-        height: [
-          "8'0",
-          "9'0",
-          "10'0", // Full vertical lift + 15R
-          "12'0",
-          "14'0",
-        ],
-      },
-      {
-        color: "BROWN",
-        width: ["Any desired up to 28'0"],
-        height: ['21"', '24"'],
-      },
-    ],
-  },
-  {
-    label: "3200",
-    description: [
-      {
-        color: "WHITE",
-        width: ["8'2", "9'2", "10'2", "12'2"],
-        height: [
-          "8'0",
-          "9'0",
-          "10'0",
-          "12'0",
-          "14'0", // Full vertical lift + 15R only
-        ],
-      },
-    ],
-  },
   {
     label: "8700",
     description: [
