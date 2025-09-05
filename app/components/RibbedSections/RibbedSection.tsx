@@ -2,7 +2,7 @@ export function Section1() {
   return (
     <>
       <section className="leading-tight">
-        <h1 className="text-red-800 font-semibold ml-8 text-[20px]">
+        <h1 className="text-red-900 font-semibold ml-8 text-[20px]">
           MEASURE OVERALL LENGTH
         </h1>
         <div className="flex flex-col items-center space-y-2">
@@ -59,7 +59,7 @@ export function Section2() {
   return (
     <>
       <section className="flex flex-col   leading-tight">
-        <h1 className="ml-8 text-red-800 font-semibold text-[20px]">
+        <h1 className="ml-8 text-red-900 font-semibold text-[20px]">
           MEASURE OVERALL HEIGHT
         </h1>
         <div className="relative flex items-center">
@@ -111,7 +111,7 @@ export function Section2() {
 export function Section3() {
   return (
     <section className="flex flex-col  ml-34 leading-tight">
-      <h1 className="text-red-800 font-semibold text-[20px]">
+      <h1 className="text-red-900 font-semibold text-[20px]">
         IDENTIFY LOCATION OF SECTION
       </h1>
 
@@ -147,7 +147,7 @@ export function Section3() {
 export function Section4() {
   return (
     <section className="flex flex-col leading-tight">
-      <h1 className="text-red-800 font-semibold text-[20px]">
+      <h1 className="text-red-900 font-semibold text-[20px]">
         MEASURE STILE LOCATIONS
       </h1>
 

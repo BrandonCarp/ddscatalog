@@ -30,13 +30,13 @@ const extList7: { [key: string]: string } = {
 export default function Ext7() {
   return (
     <section className="mb-8">
-      <h1 className="text-3xl font-bold text-red-800 pb-2">
+      <h1 className="text-3xl font-bold text-red-900 pb-2">
         7' EXTENSION SPRINGS
       </h1>
 
       <table className="min-w-full border-collapse border ">
         <thead>
-          <tr className="text-red-800">
+          <tr className="text-red-900">
             <th className="border border-gray-600 px-4  text-left">PART</th>
             <th className="border border-gray-600 px-4  text-left">
               ITEM NUMBER

@@ -13,7 +13,7 @@ export default function CableBox({ part }: { part: PartItem }) {
     <div className="flex flex-col w-full  items-center ">
       {/* Image */}
       {part.image ? (
-        <div className=" w-full flex justify-center items-center  mt-2 ">
+        <div className=" w-full flex justify-center items-center  mt-1 ">
           {" "}
           {part.image && (
             <Image
@@ -30,14 +30,17 @@ export default function CableBox({ part }: { part: PartItem }) {
       )}
 
       {/* Description */}
-      <ul className="list-disc mt-2 ">
+      <ul className="list-disc mt-1 ">
         {part.description.map((line, i) => {
           const [label, code] = line.split(" - ");
           return (
             <li key={i}>
-              <div className="text-[13px] leading-tight mr-6">{label} </div>
+              <div className="text-[14px] leading-tight mr-6">{label} </div>
               <div className="text-gray-800 font-semibold text-[14px] ">
-                PART: <span className="text-red-700 text-[15px]">{code}</span>
+                PART:{" "}
+                <span className="text-red-900 text-[16px] font-bold">
+                  {code}
+                </span>
               </div>
             </li>
           );

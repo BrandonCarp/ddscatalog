@@ -25,7 +25,7 @@ export default function ChainBox({ part }: { part: PartItem }) {
       )}
 
       {/* Label */}
-      <div className="flex  text-red-700 font-bold text-2xl">{part.label}</div>
+      <div className="flex  text-gray-800 font-bold text-2xl">{part.label}</div>
 
       {/* Description */}
       <ul className="list-disc list-inside text-gray-800 text-[15px] leading-tight ">
@@ -37,8 +37,8 @@ export default function ChainBox({ part }: { part: PartItem }) {
               <span>{itemText}</span>
               {partText && (
                 <>
-                  <span className="text-[14px] font-semibold"> : Part: </span>
-                  <span className="text-[16px] font-semibold text-red-700">
+                  <span className="text-[14px] font-semibold"> : PART: </span>
+                  <span className="text-[16px] font-bold text-red-900">
                     {partText.trim()}
                   </span>
                 </>

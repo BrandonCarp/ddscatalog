@@ -36,8 +36,9 @@ export default function PulleyBox({ id, description }: PulleyBoxProps) {
             <div key={i}>
               <li className="leading-tight text-[15px]">{label}</li>
               {code && (
-                <span className="text-gray-800 font-semibold ">
-                  PART: <span className="text-red-800">{code}</span>
+                <span className="text-gray-800 font-semibold text-[14px] ">
+                  PART:{" "}
+                  <span className="text-red-900 text-[16px] bold">{code}</span>
                 </span>
               )}
             </div>

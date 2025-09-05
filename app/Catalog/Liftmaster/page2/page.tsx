@@ -78,7 +78,7 @@ const KeypadList: { [key: string]: LmInfo } = {
 export default function Operators() {
   return (
     <>
-      <CatalogLayout title={"RESIDENTIAL\nLIFTMASTER"} pagenum="9">
+      <CatalogLayout title={"RESIDENTIAL\nLIFTMASTER"} pagenum="14">
         {/* Wall Console */}
         <div className="relative w-full h-55 overflow-hidden">
           <Image
@@ -92,7 +92,7 @@ export default function Operators() {
         <div className="mt-1 mx-2">
           <div className="p-4">
             <div className="leading-tight ">
-              <h1 className="font-bold text-[28px] text-red-800 ">KEYPAD</h1>
+              <h1 className="font-black text-[28px] text-red-900 ">KEYPAD</h1>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-3 gap-5 mt-1">
@@ -105,12 +105,12 @@ export default function Operators() {
           {/* Remotes */}
           <div className="p-4 ">
             <div>
-              <h1 className="font-bold text-[28px] text-red-800 ">
+              <h1 className="font-black text-[28px] text-red-900 ">
                 ACCESSORIES
               </h1>
             </div>
 
-            <div className="grid grid-cols-4 md:grid-cols-3 mt-1">
+            <div className="grid grid-cols-4 gap-5 md:grid-cols-3 mt-1">
               {Object.entries(AccessoryList).map(([key, value]) => (
                 <LmAccBox key={key} id={key} description={value} />
               ))}

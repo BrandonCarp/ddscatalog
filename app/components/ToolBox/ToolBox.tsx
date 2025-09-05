@@ -24,8 +24,11 @@ export default function ToolBox({ label, image, description }: ToolItem) {
           <li key={desc.code} className="mb-2 font-semibold whitespace-nowrap ">
             <span className="text-[14px] font-gray-500 ">{desc.name}</span>
             <h1 className="ml-6">
-              <span className="text-[14px]">PART:</span>
-              <span className="text-red-800 text-[16px]"> {desc.code}</span>
+              <span className="text-[14px] font-semibold">PART:</span>
+              <span className="text-red-900 text-[16px] font-bold">
+                {" "}
+                {desc.code}
+              </span>
             </h1>
           </li>
         ))}

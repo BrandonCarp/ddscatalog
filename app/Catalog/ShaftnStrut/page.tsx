@@ -95,19 +95,19 @@ const CouplingList: PartItem[] = [
 
 export default function ShaftnStrut() {
   return (
-    <CatalogLayout title={`TUBE SHAFTS \n& STRUTS`} pagenum="19">
+    <CatalogLayout title={`TUBE SHAFTS \n& STRUTS`} pagenum="15" reverseFooter>
       <div className="grid grid-cols-2   p-5 ">
         {/* Shafts */}
         <section className="flex ml-10">
           <div className="leading-tight">
-            <h1 className="text-2xl font-bold text-red-700">TUBE SHAFTS</h1>
+            <h1 className="text-2xl font-black text-red-900">TUBE SHAFTS</h1>
             <h3 className="font-bold text-gray-700 mb-6">GALVANIZED</h3>
             {tubeShafts.map((part) => (
               <StrutBox key={part.code} part={part} />
             ))}
           </div>
           <div>
-            <h1 className="text-2xl font-bold text-red-700 ">SOLID SHAFTS</h1>
+            <h1 className="text-2xl font-black text-red-900 ">SOLID SHAFTS</h1>
             {solidShafts.map((part) => (
               <StrutBox key={part.code} part={part} />
             ))}
@@ -117,13 +117,13 @@ export default function ShaftnStrut() {
         {/* Struts */}
         <section className="flex space-x-10 pb-2 ml-10">
           <div>
-            <h1 className="text-2xl font-bold text-red-700 ">2" STRUTS</h1>
+            <h1 className="text-2xl font-black text-red-900 ">2" STRUTS</h1>
             {struts2.map((part) => (
               <StrutBox key={part.code} part={part} />
             ))}
           </div>
           <div>
-            <h1 className="text-2xl font-bold text-red-700 ">3" STRUTS</h1>
+            <h1 className="text-2xl font-black text-red-900 ">3" STRUTS</h1>
             {struts3.map((part) => (
               <StrutBox key={part.code} part={part} />
             ))}
@@ -133,14 +133,14 @@ export default function ShaftnStrut() {
         {/* Collars, Couplings, Angle */}
         <section className="flex ml-25 space-x-20 mt-5">
           <div>
-            <h1 className="text-2xl font-bold text-red-700 mb-2">COLLARS</h1>
+            <h1 className="text-2xl font-black text-red-900 mb-2">COLLARS</h1>
             {CollarList.map((part) => (
               <StrutBox key={part.code} part={part} />
             ))}
           </div>
 
           <div>
-            <h1 className="text-2xl font-bold text-red-700 mb-2">COUPLINGS</h1>
+            <h1 className="text-2xl font-black text-red-900 mb-2">COUPLINGS</h1>
             {CouplingList.map((part) => (
               <StrutBox key={part.code} part={part} />
             ))}
@@ -148,7 +148,9 @@ export default function ShaftnStrut() {
 
           {/* Angle Iron */}
           <div>
-            <h1 className="text-2xl font-bold text-red-700 mb-2">ANGLE IRON</h1>
+            <h1 className="text-2xl font-black text-red-900 mb-2">
+              ANGLE IRON
+            </h1>
             <div className="w-[150px]">
               <Image
                 src="/images/ShaftStrut/galvangle.png"
@@ -162,9 +164,11 @@ export default function ShaftnStrut() {
                 <div className="text-[15px] leading-tight whitespace-nowrap">
                   GALVANIZED ANGLE IRON
                 </div>
-                <div className="text-gray-500 font-semibold">
-                  <span className="text-[14px]">Part: </span>
-                  <span className="text-red-800 text-[16px]">GALANGLE</span>
+                <div className="TEXT-GRAY-800 font-semibold">
+                  <span className="text-[14px]">PART: </span>
+                  <span className="text-red-900 text-[16px] font-bold">
+                    GALANGLE
+                  </span>
                 </div>
               </li>
               <li>
@@ -172,9 +176,11 @@ export default function ShaftnStrut() {
                 <div className="text-[15px] leading-tight whitespace-nowrap">
                   WHITE ANGLE IRON
                 </div>
-                <div className="text-gray-500 font-semibold">
-                  <span className="text-[14px]">Part: </span>
-                  <span className="text-red-800 text-[16px]">WHANGLE</span>
+                <div className="TEXT-GRAY-800 font-semibold">
+                  <span className="text-[14px]">PART: </span>
+                  <span className="text-red-900 text-[16px] font-bold">
+                    WHANGLE
+                  </span>
                 </div>
               </li>
             </ul>

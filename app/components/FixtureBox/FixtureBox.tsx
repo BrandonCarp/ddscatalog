@@ -37,7 +37,10 @@ export default function FixtureBox({ part }: { part: PartItem }) {
             <li key={i}>
               <div className="text-[15px] leading-tight pr-5">{label} </div>
               <div className="text-gray-800 font-semibold text-[14px] ">
-                PART: <span className="text-red-800 text-[15px]">{code}</span>
+                PART:{" "}
+                <span className="text-red-900 text-[16px] font-bold">
+                  {code}
+                </span>
               </div>
             </li>
           );

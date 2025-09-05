@@ -34,13 +34,13 @@ export default function Tor8() {
   return (
     <>
       <section className="flex-none mb-1">
-        <h1 className="text-2xl font-bold text-red-800 pb-1 mt-4">
+        <h1 className="text-2xl font-black text-red-900 pb-1 mt-4">
           8' TORSION SPRINGS
         </h1>
 
         <table className="min-w-full border-collapse border">
           <thead>
-            <tr className="text-red-800">
+            <tr className="text-red-900">
               <th className="border border-gray-600 px-4 text-left">PART</th>
               <th className="border border-gray-600 px-4 text-left">
                 ITEM NUMBER

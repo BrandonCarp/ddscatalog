@@ -119,12 +119,12 @@ const RemList: { [key: string]: LmInfo } = {
 
 export default function Operators() {
   return (
-    <CatalogLayout title={"RESIDENTIAL\nLIFTMASTER"} pagenum="8" reverseFooter>
+    <CatalogLayout title={"RESIDENTIAL\nLIFTMASTER"} pagenum="13" reverseFooter>
       <div className="mx-5">
         {/* Wall Console */}
 
         <div className="leading-tight p-1">
-          <h1 className="font-bold text-[30px] text-red-800 ">WALL CONSOLE</h1>
+          <h1 className="font-black text-[30px] text-red-900 ">WALL CONSOLE</h1>
           <h4 className="font-semibold text-[16px] ">
             FOR LIFTMASTER RESIDENTIAL OPERATORS
           </h4>
@@ -139,7 +139,7 @@ export default function Operators() {
 
         {/* Remotes */}
         <div className="">
-          <h1 className="font-bold text-[30px] text-red-800  p-1">REMOTES</h1>
+          <h1 className="font-bold text-[30px] text-red-900  p-1">REMOTES</h1>
           <div className="grid grid-cols-3  gap-3 mt-1 ">
             {Object.entries(RemList).map(([key, value]) => (
               <LMBox key={key} id={key} description={value} />

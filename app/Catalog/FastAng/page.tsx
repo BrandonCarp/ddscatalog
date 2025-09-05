@@ -67,7 +67,7 @@ const fasteners: PartItem[] = [
 export default function FastAng() {
   return (
     <>
-      <CatalogLayout title={`FASTENERS`} pagenum="6" reverseFooter>
+      <CatalogLayout title={`FASTENERS`} pagenum="4" reverseFooter>
         <div className="relative w-full h-60">
           {" "}
           <Image
@@ -81,7 +81,7 @@ export default function FastAng() {
         <div className="flex items-center ">
           {/* Fasterns */}
           <div className="p-1 w-[100%]  border-r  my-3">
-            <h1 className="text-4xl font-bold text-red-800 ml-5 mt-5 mb-5">
+            <h1 className="text-4xl font-black text-red-900 ml-5 mt-5 mb-5">
               FASTENERS
             </h1>
 

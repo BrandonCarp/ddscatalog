@@ -81,7 +81,7 @@ function getColorHex(color: string) {
 
 export default function VinylTable() {
   return (
-    <CatalogLayout title={"WEATHER\nSEAL"} pagenum="21">
+    <CatalogLayout title={"WEATHER\nSEAL"} pagenum="25">
       <div className="relative w-full h-55 overflow-hidden">
         <Image
           src="/images/Vinyl/house.png"
@@ -93,7 +93,7 @@ export default function VinylTable() {
       </div>
 
       <div className="overflow-x-auto mx-10">
-        <h1 className="font-bold text-3xl text-red-700 p-4">
+        <h1 className="font-black text-3xl text-red-900 p-4">
           VINYL WEATHER SEAL IN STOCK
         </h1>
 

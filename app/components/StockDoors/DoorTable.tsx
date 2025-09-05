@@ -34,9 +34,7 @@ const DoorTable: React.FC<DoorTableProps> = ({ doors, title }) => {
 
       {doors.map((door) => (
         <div key={door.label}>
-          <h3 className="text-xl font-semibold mb-1 text-red-800">
-            {door.label}
-          </h3>
+          <h3 className="text-xl font-bold mb-1 text-red-900">{door.label}</h3>
 
           <table className="min-w-full border border-gray-300 text-sm">
             <thead>

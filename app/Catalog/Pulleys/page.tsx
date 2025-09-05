@@ -92,11 +92,15 @@ const hdwList: { [key: string]: PulleyInfo } = {
 
 export default function Pulleys() {
   return (
-    <CatalogLayout title={"HARDWARE\n PULLEYS & FORKS"} pagenum="17">
+    <CatalogLayout
+      title={"HARDWARE\n PULLEYS & FORKS"}
+      pagenum="26"
+      reverseFooter
+    >
       <div className="mx-5 ">
         {/* Pulleys */}
         <section className="py-3">
-          <h1 className="font-bold text-[28px] text-red-800 ">PULLEYS</h1>
+          <h1 className="font-bold text-[28px] text-red-900 ">PULLEYS</h1>
           <div className="grid grid-cols-4 gap-5 ">
             {Object.entries(pulleyList).map(([key, value]) => (
               <PulleyBox key={key} id={key} description={value} />
@@ -105,7 +109,7 @@ export default function Pulleys() {
         </section>
         {/* HDW */}
         <section className="border-t py-3">
-          <h1 className="font-bold text-[28px] text-red-800 ">HARDWARE</h1>
+          <h1 className="font-bold text-[28px] text-red-900 ">HARDWARE</h1>
           <div className="grid grid-cols-3 ">
             {Object.entries(hdwList).map(([key, value]) => (
               <PulleyBox key={key} id={key} description={value} />
@@ -115,7 +119,7 @@ export default function Pulleys() {
         {/* Forks */}
         <section className="flex flex-col border-t py-1">
           <div className="">
-            <h1 className="font-bold text-[28px] text-red-800">FORKS</h1>
+            <h1 className="font-bold text-[28px] text-red-900">FORKS</h1>
             <h2 className="font-bold text-[15px] text-gray-600">
               FASTENERS SOLD SEPARATELY
             </h2>

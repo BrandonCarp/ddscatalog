@@ -21,7 +21,7 @@ export default function CatalogLayout({
         }`}
       >
         {/* Page number */}
-        <div className="bg-red-800 w-[40px] h-full text-sm font-semibold justify-center pt-1 text-white flex items-start">
+        <div className="bg-red-900 w-[40px] h-full text-sm font-semibold justify-center pt-1 text-white flex items-start">
           {pagenum}
         </div>
 
@@ -32,7 +32,7 @@ export default function CatalogLayout({
           }`}
         >
           <div className="flex flex-col justify-between">
-            <h1 className="font-bold text-2xl text-red-800 whitespace-pre-line">
+            <h1 className="font-black text-2xl text-red-900 whitespace-pre-line">
               {title}
             </h1>
             <span className="mb-1 font-semibold text-gray-600">

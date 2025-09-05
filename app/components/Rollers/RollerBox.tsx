@@ -24,7 +24,9 @@ export default function RollerBox({ id, description }: ItemBoxProps) {
           height={120}
         />
       </div>
-      <h1 className=" text-2xl text-red-800  font-bold">{description.title}</h1>
+      <h1 className=" text-2xl text-gray-800  font-bold">
+        {description.title}
+      </h1>
       {/* Description */}
       <div className=" text-[14px]  ">
         <ul className="list-disc list-inside text-gray-700  whitespace-pre ">
@@ -37,8 +39,11 @@ export default function RollerBox({ id, description }: ItemBoxProps) {
 
         <h1 className="font-semibold flex flex-col">
           <span className="text-gray-700">{id}</span>
-          <span className="text-gray-700">
-            Part: <span className="text-red-800">{description.label}</span>
+          <span className="text-gray-700 text-[14px] font-semibold">
+            PART:{" "}
+            <span className="text-red-900 text-[16px] font-bold">
+              {description.label}
+            </span>
           </span>
         </h1>
       </div>

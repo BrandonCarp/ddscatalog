@@ -68,9 +68,9 @@ const toolList: ToolItem[] = [
 export default function Tools() {
   return (
     <>
-      <CatalogLayout pagenum="23" title="TOOLS">
+      <CatalogLayout pagenum="29" title="TOOLS">
         <div className=" p-3 mx-5">
-          <h1 className="text-red-800 text-[38px] font-bold">TOOLS</h1>
+          <h1 className="text-red-900 text-[38px] font-black">TOOLS</h1>
           <section className="grid grid-cols-3 gap-4">
             {toolList.map((tool, index) => (
               <ToolBox key={index} {...tool} />

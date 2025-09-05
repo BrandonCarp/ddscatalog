@@ -65,9 +65,9 @@ const RubberList: Retainer[] = [
 export default function Retainers() {
   return (
     <>
-      <CatalogLayout pagenum="25" title="RETAINERS">
-        <div className="mx-10  flex flex-col justify-center  space-y-3">
-          <h1 className="font-semibold text-[36px] text-red-800">RETAINERS</h1>
+      <CatalogLayout pagenum="27" title={`RETAINERS \n & SEAL`}>
+        <div className="mx-10  flex flex-col justify-center  space-y-3 mt-3">
+          <h1 className="font-black text-[36px] text-red-900">RETAINERS</h1>
 
           {/* Retainer Section */}
           <section className="retainers-grid grid grid-cols-3 ">

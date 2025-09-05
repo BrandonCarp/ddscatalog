@@ -86,12 +86,12 @@ const vertList: { [key: string]: DrumInfo } = {
 
 export default function Drums() {
   return (
-    <CatalogLayout title={"Drums"} pagenum="2" reverseFooter>
-      <div className="px-5 mt-4">
+    <CatalogLayout title={"DRUMS"} pagenum="2" reverseFooter>
+      <div className="px-5 mt-4 space-y-2">
         {/* STANDARD LIFT */}
         <div className="mt-2 py-1">
           <div>
-            <h1 className="font-bold text-[26px] text-red-800">
+            <h1 className="font-black text-[26px] text-red-900">
               STANDARD LIFT
             </h1>
             <h5 className="font-semibold  text-slate-600">SOLD IN PAIRS</h5>
@@ -108,7 +108,7 @@ export default function Drums() {
         {/* HI-LIFT */}
         <div className="">
           <div>
-            <h1 className="font-bold text-[26px] text-red-800">HI-LIFT</h1>
+            <h1 className="font-black text-[26px] text-red-900">HI-LIFT</h1>
             <h5 className="font-semibold  text-slate-600">SOLD IN PAIRS</h5>
           </div>
           <div className="grid grid-cols-3 gap-2 mt-1">
@@ -120,7 +120,7 @@ export default function Drums() {
 
         {/* VERTICAL LIFT */}
         <div className="flex  flex-col  ">
-          <h1 className="font-bold text-[26px] text-red-800">VERTICAL LIFT</h1>
+          <h1 className="font-black text-[26px] text-red-800">VERTICAL LIFT</h1>
           <h5 className="font-semibold  text-slate-600 ">SOLD IN PAIRS</h5>
           <div className="grid grid-cols-3 gap-2 mt-1">
             {Object.entries(vertList).map(([key, value]) => (

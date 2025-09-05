@@ -48,13 +48,15 @@ export default function Cover4() {
               width={322}
               className="w-1/2 h-auto object-cover"
             />
-            <Image
-              src="/images/Cover2/lm.jpg"
-              alt="Lift Master Operator"
-              height={180}
-              width={321}
-              className="w-1/2 h-auto object-cover pr-2"
-            />
+            <div className="w-1/2 relative h-72">
+              <Image
+                src="/images/Cover2/lm.jpg"
+                alt="Lift Master Operator"
+                fill
+                quality={100}
+                className="object-cover"
+              />
+            </div>
           </div>
         </div>
       </div>

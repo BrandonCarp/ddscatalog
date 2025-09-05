@@ -13,11 +13,11 @@ export default function Ribbed() {
     <>
       <CatalogLayout
         title={`COMMERICAL STEEL RIBBED`}
-        pagenum="24"
+        pagenum="22"
         reverseFooter
       >
         <div className="flex flex-col justify-center p-3 ">
-          <h1 className="font-semibold text-red-800 text-[26px]">
+          <h1 className="font-black text-red-900 text-[26px]">
             MEASURING COMMERICAL STEEL RIBBED SECTIONS
           </h1>
           <div className="grid grid-cols-2 mt-5">
@@ -35,7 +35,7 @@ export default function Ribbed() {
 
           {/* Identify The Joint Connection */}
           <section className="flex flex-col items-center mt-25">
-            <h1 className="text-red-800 font-semibold text-[20px]">
+            <h1 className="text-red-800 font-bold text-[20px]">
               IDENTIFY THE JOINT CONNECTION
             </h1>
             <Image

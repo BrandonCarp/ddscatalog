@@ -39,9 +39,11 @@ export default function StrutBox({ part }: { part: PartItem }) {
               <div className="text-[15px] leading-tight whitespace-nowrap">
                 {label}{" "}
               </div>
-              <div className="text-gray-500 font-semibold">
-                <span className="text-[14px]">PART: </span>
-                <span className="text-red-800 text-[16px]">{code}</span>
+              <div className="text-gray-800 font-semibold">
+                <span className="text-[14px] ">PART: </span>
+                <span className="text-red-900 text-[16px] font-bold">
+                  {code}
+                </span>
               </div>
             </li>
           );

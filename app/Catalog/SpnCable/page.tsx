@@ -107,15 +107,15 @@ export default function SpnCable() {
   return (
     <>
       <CatalogLayout
-        title={"CABLES \n& SPRING PUSHERS"}
-        pagenum="20"
+        title={"CABLES &\n SPRING PUSHERS"}
+        pagenum="28"
         reverseFooter
       >
-        <section className="p-5 leading-tight">
+        <section className="p-2 mx-5 leading-tight">
           <div className="grid grid-cols-4 gap-6">
             {/* Cables Header */}
             <div className="col-span-4">
-              <h1 className="text-3xl font-bold text-red-700 mb-2">
+              <h1 className="text-3xl font-black text-red-900 my-1">
                 CABLES & SPRING PUSHERS
               </h1>
             </div>
@@ -133,8 +133,8 @@ export default function SpnCable() {
         </section>
 
         <div className="border-t mx-10"></div>
-        <section className="p-5">
-          <h1 className="text-3xl font-bold text-red-700 ">CABLE HARDWARE</h1>
+        <section className="p-3 mx-5">
+          <h1 className="text-3xl font-black text-red-900 ">CABLE HARDWARE</h1>
           <div className="grid grid-cols-3">
             {Object.entries(cableHdwList).map(([key, value]) => (
               <CableBox key={key} part={value} />

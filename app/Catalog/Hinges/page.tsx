@@ -37,7 +37,7 @@ const hingeList11ga: { [key: string]: string } = {
 export default function Hinges() {
   return (
     <>
-      <CatalogLayout title="Hinges" pagenum="15">
+      <CatalogLayout title="HINGES" pagenum="8" reverseFooter>
         {" "}
         <div className="relative w-full h-70 overflow-hidden">
           <Image
@@ -49,7 +49,7 @@ export default function Hinges() {
           />
         </div>
         <div className="p-3 flex flex-col ml-15">
-          <h1 className="font-bold text-[30px] text-red-800">HINGES</h1>
+          <h1 className="font-black text-[30px] text-red-900">HINGES</h1>
 
           <div className="grid grid-cols-3  ">
             {/* 11 GA Hinges */}
@@ -62,7 +62,7 @@ export default function Hinges() {
                 width={170}
                 className=""
               />
-              <h1 className="font-bold text-[20px] text-red-800">
+              <h1 className="font-bold text-[20px] text-gray-800">
                 11GA HINGES
               </h1>
               <div className=" ">
@@ -80,7 +80,7 @@ export default function Hinges() {
                 width={170}
                 className=""
               />
-              <h1 className="font-bold text-[20px] text-red-800">
+              <h1 className="font-bold text-[20px] text-gray-800">
                 14GA HINGES
               </h1>
               <div className=" ">
@@ -98,7 +98,7 @@ export default function Hinges() {
                 width={170}
                 className=""
               />
-              <h1 className="font-bold text-[20px] text-red-800">
+              <h1 className="font-bold text-[20px] text-gray-800">
                 18GA HINGES
               </h1>
               <div className=" ">

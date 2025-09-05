@@ -35,7 +35,7 @@ export default function LMBox({ id, description }: LmBoxProps) {
       </ul>
 
       {/* Details */}
-      <p className="text-gray-500 text-[12px]  leading-tight  ">
+      <p className="text-gray-600 text-[12px]  leading-tight  ">
         {description.details}
       </p>
 
@@ -43,7 +43,7 @@ export default function LMBox({ id, description }: LmBoxProps) {
       <div className=" ">
         <h1 className="font-semibold  ">
           <span className="text-gray-700 text-[14px]">PART: </span>{" "}
-          <span className="text-red-800 text-[16px]"> {id}</span>
+          <span className="text-red-900 text-[16px]"> {id}</span>
         </h1>
         {/* <h2 className="text-gray-600 text-[11px]">{description.label}</h2> */}
       </div>

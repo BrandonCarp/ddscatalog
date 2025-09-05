@@ -130,14 +130,14 @@ export default function LocknDec() {
     <>
       <CatalogLayout
         title={"Decorative Hardware \n& Locks"}
-        pagenum="22"
+        pagenum="24"
         reverseFooter
       >
         {/* Container */}
         <div className="mx-10 p-3">
           {/* Decorative Hardware Section */}
           <section className="mb-3">
-            <h1 className="text-4xl font-bold text-red-700 ">
+            <h1 className="text-4xl font-black text-red-900 ">
               DECORATIVE HARDWARE
             </h1>
             <div className="grid grid-cols-4  ">
@@ -147,9 +147,9 @@ export default function LocknDec() {
             </div>
           </section>
           {/* Lock Section */}
-          <section className="flex p-2   border-t ">
+          <section className="flex p-1   border-t ">
             <div className="">
-              <h1 className="text-4xl font-bold text-red-800 ">LOCKS</h1>
+              <h1 className="text-4xl font-black text-red-900 ">LOCKS</h1>
 
               <div className="flex">
                 {LockList.map((item) => (
@@ -161,7 +161,7 @@ export default function LocknDec() {
             {/* LOCKBAR */}
             <div className="flex flex-col items-center ml-5 w-[400px]">
               <div className="h-15 w-full flex flex-col justify-center  items-center  mb-12 mt-3 pt-20">
-                <h1 className="text-4xl font-bold  text-red-800 ">LOCKBARS</h1>
+                <h1 className="text-4xl font-black  text-red-900 ">LOCKBARS</h1>
                 <Image
                   src="/images/Locks/lockbar.png"
                   alt="Lock Bar"

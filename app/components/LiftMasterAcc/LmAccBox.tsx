@@ -28,7 +28,7 @@ export default function LmAccBox({ id, description }: LmBoxProps) {
       </div>
 
       {/* Label */}
-      <div className=" flex items-center justify-center font-semibold text-gray-600 text-sm text-center">
+      <div className=" flex items-center justify-center font-semibold text-gray-800 text-[15px] text-center">
         {description.label}
       </div>
 
@@ -40,8 +40,8 @@ export default function LmAccBox({ id, description }: LmBoxProps) {
           ))}
         </ul>
         <h1 className="font-semibold mt-auto">
-          <span className="text-gray-700 text-[13px]">PART</span>{" "}
-          <span className="text-red-800 text-[15px]">{id}</span>
+          <span className="text-gray-800 text-[14px]">PART:</span>{" "}
+          <span className="text-red-900  font-bold text-[16px]">{id}</span>
         </h1>
       </div>
     </div>

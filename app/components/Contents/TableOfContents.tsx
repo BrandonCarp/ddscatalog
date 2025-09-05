@@ -5,7 +5,7 @@ type SectionProps = {
 
 export default function TableofContents({ name, page }: SectionProps) {
   return (
-    <div className="w-full text-lg">
+    <div className="w-full text-lg leading-tight">
       <h3 className="flex justify-between whitespace-nowrap">
         {/* Left side */}
         <span className="overflow-hidden text-ellipsis">{name}</span>

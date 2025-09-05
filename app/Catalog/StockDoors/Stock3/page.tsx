@@ -33,9 +33,9 @@ const StockDoors = () => {
     );
 
   return (
-    <CatalogLayout title="STOCK DOORS" pagenum="27">
+    <CatalogLayout title="STOCK DOORS" pagenum="20" reverseFooter>
       <div className="p-5">
-        <h1 className="font-bold text-[28px] text-red-800 mb-5">
+        <h1 className="font-black text-[28px] text-red-900 mb-5">
           {" "}
           STOCK DOORS
         </h1>

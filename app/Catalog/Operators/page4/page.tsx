@@ -52,7 +52,7 @@ export default function Operators() {
   return (
     <>
       <div className="">
-        <CatalogLayout title={"RESIDENTIAL\nLIFTMASTER"} pagenum="13">
+        <CatalogLayout title={"RESIDENTIAL\nLIFTMASTER"} pagenum="12">
           <div className="relative w-full h-65 overflow-hidden">
             {" "}
             <Image
@@ -63,7 +63,7 @@ export default function Operators() {
               priority
             />
           </div>
-          <h1 className="text-3xl font-bold text-red-800 p-5">
+          <h1 className="text-3xl font-black text-red-900 p-5">
             LIFTMASTER OPERATORS
           </h1>
           <div className="flex flex-col justify-center items-center ">

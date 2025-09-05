@@ -13,7 +13,7 @@ export default function JambSeal() {
   return (
     <>
       <div className="flex flex-col mt-5">
-        <h1 className="text-red-800 font-semibold text-[18px]">JAMB SEAL</h1>
+        <h1 className="text-red-900 font-bold text-[18px]">JAMB SEAL</h1>
 
         <ul className="grid grid-cols-3 gap-10 ">
           <li className="list-disc font-semi-bold">
@@ -24,8 +24,8 @@ export default function JambSeal() {
               width={180}
             />
             WHITE JAMB SEAL{" "}
-            <div className="text-gray-800 font-semibold">
-              PART: <span className="text-red-800 text-[16px]">JSWT</span>
+            <div className="text-gray-800 font-bold">
+              PART: <span className="text-red-900 text-[16px]">JSWT</span>
             </div>
           </li>
           <li className="list-disc font-semi-bold">
@@ -36,8 +36,8 @@ export default function JambSeal() {
               width={180}
             />
             BROWN JAMB SEAL{" "}
-            <div className="text-gray-800 font-semibold">
-              PART: <span className="text-red-800 text-[16px]">JSCB</span>
+            <div className="text-gray-800 font-bold">
+              PART: <span className="text-red-900 text-[16px]">JSCB</span>
             </div>
           </li>
           <li className="list-disc font-semi-bold">
@@ -48,11 +48,9 @@ export default function JambSeal() {
               width={180}
             />
             BLACK JAMB SEAL{" "}
-            <div className="text-gray-800 text-[15px] font-semibold">
+            <div className="text-gray-700 text-[14px] font-semibold">
               PART:{" "}
-              <span className="text-red-800 text-[16px] font-semibold">
-                JSBK
-              </span>
+              <span className="text-red-900 text-[16px] font-bold">JSBK</span>
             </div>
           </li>
         </ul>

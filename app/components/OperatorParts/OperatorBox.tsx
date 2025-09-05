@@ -35,7 +35,7 @@ export default function OperatorBox({ id, description }: OperatorBoxProps) {
 
       <div className="flex flex-col justify-between w-full pr-3">
         <div>
-          <h1 className="text-red-800 font-semibold text-3xl">{id}</h1>
+          <h1 className="text-red-900 font-bold text-3xl">{id}</h1>
           <h2 className="text-gray-800 font-semibold text-lg whitespace-pre ">
             {description.details}
           </h2>
