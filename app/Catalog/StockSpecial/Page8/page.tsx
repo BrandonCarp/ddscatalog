@@ -2,24 +2,6 @@
 import Image from "next/image";
 import CatalogLayout from "@/components/CatalogLayout";
 
-{
-  /* 
-  1. We are adults , fall night was not even remotely a big deal, it was almost rude to try to set me up with Sammy who rants with amber how they hate men like come on sammy called me a nazi why are you even upset it didnt work out
-  2. No one should even be discussing fall night its been a year, no one was disrespected things happen, get over it
-  3. Dan, Amber, Mark, it was absolutely baffling how poorly Jules was treated just because she was no longer with Alek. Its borderline disgusting behavior out of everyone involved
-  3.3. Jules is the youngest sister/younger friend, and it was repeated to me how bad she was apparently to Alek just to defend someone who lived on your street
-  3.3. Youre supposed to be the people closest to her and you treated her like absolute trash when she did nothing wrong
-  4. It is one thing to be hesitant regarding being my friend thats fine we dont have to be, but to take it out on Jules and pressuring our relationship is so beyond disrespectful to me and her
-  5. I have done nothing but be overly respectful and kind to everyone involved this entire time
-  5.5. Just for the nastiest things to be said about me behind my back when none of it involves anyone besides me and Jules
-  6. The slanderous claims on my character, how I treat others and my dog without even the smallest attempt to get to know me speaks me on others character than it does on mine
-  7. Amber making up the bogus claim it was a girls trip but at the same time is on the phone with Dan because she woke him up at 2:30 PM apologizing
-  8. Youre entitled to youre feelings , but acting on them as almost 40 year olds is absolutely bizarre and childish
-  9. Im cool with it all being water under the bridge, but do not expect me to not defend my self or Jules anymore regardless of if youre her brother or friend
-  
-  */
-}
-
 export default function Clo4051() {
   return (
     <>
