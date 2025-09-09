@@ -33,11 +33,10 @@ export default function T52S() {
             <div>
               <h1 className="font-bold text-4xl text-red-900">CLOPAY T52S</h1>
               <p className="font-semibold text-[17px]">
-                With a 2-layer construction of steel plus 1-5/16" of plystyrene
-                insulation, T52S are built to be energy efficient and durable.
-                Combining five color options, beautiful Traditional long or
-                short panel designs and multiple window options, you are certain
-                to find a door to meet your lifestyle and home style.
+                Traditional style with added comfort. Two-layer 25-gauge steel,
+                1-5/16" thick with polystyrene insulation (R-value 6.3),
+                delivers energy efficiency, quiet operation, and lasting
+                durability.
               </p>
             </div>
 

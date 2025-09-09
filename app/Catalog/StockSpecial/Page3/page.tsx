@@ -39,10 +39,10 @@ export default function Clo4050() {
             <div>
               <h1 className="font-bold text-4xl text-red-900">CLOPAY 4050</h1>
               <p className="font-semibold text-[16px]">
-                Available with 1-5/16" polystyrene insulation, the 4050 model
-                offers moderate insulating R-values, strength, and security, as
-                well as quiet operation and a beautiful appearance. With several
-                colors and window options to enhance your home's curb appeal.
+                Classic design with reliable performance. Two-layer steel,
+                1-5/16" thick with polystyrene insulation (R-value 6.3),
+                provides strength, security, quiet operation, and enhanced curb
+                appeal.
               </p>
             </div>
 
@@ -88,7 +88,7 @@ export default function Clo4050() {
           {/* Absolutely positioned image (40%) */}
           <div className="absolute top-0 right-0 w-2/5 flex justify-center">
             <Image
-              src="/images/DoorDetails/4050trans.png"
+              src="/images/DoorDetails/4050trans1.png"
               alt="4050 Details"
               width={250}
               height={250}

@@ -36,10 +36,9 @@ export default function T50S() {
             <div>
               <h1 className="font-bold text-4xl text-red-900">CLOPAY T50S</h1>
               <p className="font-semibold text-[18px]">
-                Improve your home's appearance with a Clopay Classic Steel Value
-                garage door. Available in 25 gauge steel with a durable 2" steel
-                frame construction, Classic Steel Value models are designed for
-                beautiful, long-lasting performance.
+                Timeless style at an affordable price. Single-layer 25-gauge
+                steel, 2" thick, hollow (non-insulated), provides durable
+                performance and lasting curb appeal.
               </p>
             </div>
 
