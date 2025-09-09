@@ -7,11 +7,11 @@ export default function Clo4050() {
   return (
     <>
       <CatalogLayout pagenum="1" title="STOCK RESIDENTIAL">
-        {/* Absolute Description Div */}
-        <div className="absolute left-0 ml-5 mt-105 z-1 ">
+        {/* Absolute Title */}
+        <div className="absolute left-0 ml-5 mt-105 z-10">
           <div className="text-white">
             <h1 className="font-bold inline">Classic Steel Value Plus /</h1>{" "}
-            <span className="">Model 4050, Short Traditional Panel</span>
+            <span>Model 4050, Short Traditional Panel</span>
           </div>
           <div>
             <h2 className="text-white">
@@ -20,70 +20,83 @@ export default function Clo4050() {
           </div>
         </div>
 
+        {/* Hero Image */}
         <div className="relative w-full h-120">
-          {" "}
           <Image
             src="/images/StockDoors/4050.png"
             alt="Operator Hero"
             fill
-            className="object-cover "
+            className="object-cover"
             priority
             quality={100}
           />
         </div>
+
         {/* Detail Section */}
-        <section className="flex flex-col items-center justify-center mx-20 mt-2">
-          <div>
-            <h1 className="font-bold text-4xl text-red-900">CLOPAY 4050</h1>
-            <p className="font-semibold text-[18px]">
-              Available with 1-5/16" polystyrene insulation, the 4050 model
-              offers moderate insulating R-values, strength, and security, as
-              well as quiet operation and a beautiful appearance. With several
-              colors and window options to enhance your home's curb appeal.
-            </p>
-          </div>
-          <div className="mt-3 space-y-3  ">
-            {/* <h1 className="font-semibold text-2xl">STOCK OPTIONS</h1> */}
-            {/* Color Options */}
+        <div className="relative mt-3">
+          {/* Text takes ~60% */}
+          <section className="w-3/5 flex flex-col ml-5">
             <div>
-              <span className="font-semibold text-2xl text-red-900">
-                STOCK COLORS
-              </span>
-              <Clo4050Colors />
-              {/* <p className="font-semibold text-[18px]">
-                WHITE - ALMOND - CHOCOLATE - SANDTONE - BLACK
-              </p> */}
-            </div>
-            {/* Height Options */}
-            <div>
-              <span className="font-semibold text-2xl text-red-900 ">
-                STOCK HEIGHTS
-              </span>
-              <p className="font-semibold text-[18px]">
-                6'3" - 6'6" - 6'9" - 7'0" - 7'6" - 7'9" - 8'0" - *9'0" - *10'0"
+              <h1 className="font-bold text-4xl text-red-900">CLOPAY 4050</h1>
+              <p className="font-semibold text-[16px]">
+                Available with 1-5/16" polystyrene insulation, the 4050 model
+                offers moderate insulating R-values, strength, and security, as
+                well as quiet operation and a beautiful appearance. With several
+                colors and window options to enhance your home's curb appeal.
               </p>
             </div>
 
-            {/* Width Options */}
-            <div>
-              <span className="font-semibold text-2xl text-red-900">
-                STOCK WIDTHS
-              </span>
-              <p className="font-semibold text-[18px]">
-                *7'0" - 7'6" - 8'0" - 9'0" - *10'0" - *12'0" - *14'0" - *15'0" -
-                16'0"
+            <div className="mt-3 space-y-3">
+              <div>
+                <span className="font-semibold text-2xl text-red-900">
+                  STOCK COLORS
+                </span>
+                <Clo4050Colors />
+              </div>
+
+              <div>
+                <span className="font-semibold text-2xl text-red-900">
+                  STOCK HEIGHTS
+                </span>
+                <p className="font-semibold text-[16px]">
+                  6'3" - 6'6" - 6'9" - 7'0" - 7'6" - 7'9" - 8'0" - *9'0" -
+                  *10'0"
+                </p>
+              </div>
+
+              <div>
+                <span className="font-semibold text-2xl text-red-900">
+                  STOCK WIDTHS
+                </span>
+                <p className="font-semibold text-[16px]">
+                  *7'0" - 7'6" - 8'0" - 9'0" - *10'0" - *12'0" - *14'0" - *15'0"
+                  - 16'0"
+                </p>
+              </div>
+
+              <p className="font-semibold my-3">
+                NOTE – * Sizes marked with an asterisk are only available in
+                WHITE.
+                <br />
+                <span className="ml-15">
+                  Call Doors Direct for further details. (856) 662-6666
+                </span>
               </p>
             </div>
-            <p className="font-semibold mt-3 mx-20">
-              NOTE - * Sizes marked with an asterisk are only available in
-              WHITE.
-              <br />{" "}
-              <span className="ml-15 ">
-                Call Doors Direct for further details. (856) 662-6666
-              </span>
-            </p>
+          </section>
+
+          {/* Absolutely positioned image (40%) */}
+          <div className="absolute top-0 right-0 w-2/5 flex justify-center">
+            <Image
+              src="/images/DoorDetails/4050trans.png"
+              alt="4050 Details"
+              width={250}
+              height={250}
+              className="object-contain mt-5"
+              quality={100}
+            />
           </div>
-        </section>
+        </div>
       </CatalogLayout>
     </>
   );
