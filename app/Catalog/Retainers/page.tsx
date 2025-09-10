@@ -81,7 +81,7 @@ export default function Retainers() {
             ))}
           </section>
           {/* Seal Section */}
-          <section className="retainers-grid grid grid-cols-3 ">
+          <section className="retainers-grid grid grid-cols-3 border-t ">
             {RubberList.map((rubber, index) => (
               <RubberBox
                 key={index}

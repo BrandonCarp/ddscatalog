@@ -20,21 +20,22 @@ export default function Ribbed() {
           <h1 className="font-black text-red-900 text-[26px]">
             MEASURING COMMERICAL STEEL RIBBED SECTIONS
           </h1>
-          <div className="grid grid-cols-2 mt-5">
+          <div className="grid grid-cols-2 gap-5 mt-20 mx-5">
             {/* Measure Height of Section */}
             <Section2 />
             {/* Measure Overall Length */}
             <Section1 />
-          </div>
-          <div className="flex flex-col items-center space-y-5 mt-3 mr-98">
-            {/* Identify Location of Section */}
-            <Section3 />
+
             {/* Measure Stile Locations */}
             <Section4 />
           </div>
 
           {/* Identify The Joint Connection */}
-          <section className="flex flex-col items-center mt-25">
+          <section className="flex flex-col items-center my-3 mt-50 mr-20">
+            {/* <div className=" mt-25 flex flex-col justify-center font-medium text-gray-800 text-[13px] whitespace-nowrap space-y-1">
+              <span>-- PULL ALL MEASUREMENTS LEFT TO RIGHT</span>
+              <span>-- FROM LEFT END MEASURE TO CENTER OF EACH STILE</span>
+            </div> */}
             <h1 className="text-red-800 font-bold text-[20px]">
               IDENTIFY THE JOINT CONNECTION
             </h1>

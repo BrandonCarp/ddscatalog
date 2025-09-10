@@ -55,12 +55,6 @@ const pulleyList: { [key: string]: PulleyInfo } = {
 };
 
 const forkList: { [key: string]: PulleyInfo } = {
-  SFRK_GROUP: {
-    label: '3" Safety Fork',
-    image: "/images/pulleys/3Fork.png",
-    title: "FORKS",
-    description: ["Nylon bushing for restraint cable - SFRK03"],
-  },
   FRK_GROUP: {
     label: '3" & 4" Forks',
     image: "/images/pulleys/3Fork.png",
@@ -101,14 +95,14 @@ export default function Pulleys() {
         {/* Pulleys */}
         <section className="py-3">
           <h1 className="font-bold text-[28px] text-red-900 ">PULLEYS</h1>
-          <div className="grid grid-cols-4 gap-5 ">
+          <div className="grid grid-cols-4 gap-5 p-3 ">
             {Object.entries(pulleyList).map(([key, value]) => (
               <PulleyBox key={key} id={key} description={value} />
             ))}
           </div>
         </section>
         {/* HDW */}
-        <section className="border-t py-3">
+        <section className="border-t p-2">
           <h1 className="font-bold text-[28px] text-red-900 ">HARDWARE</h1>
           <div className="grid grid-cols-3 ">
             {Object.entries(hdwList).map(([key, value]) => (
@@ -117,7 +111,7 @@ export default function Pulleys() {
           </div>
         </section>
         {/* Forks */}
-        <section className="flex flex-col border-t py-1">
+        <section className="flex flex-col justify-center items-center border-t py-1">
           <div className="">
             <h1 className="font-bold text-[28px] text-red-900">FORKS</h1>
             <h2 className="font-bold text-[15px] text-gray-600">

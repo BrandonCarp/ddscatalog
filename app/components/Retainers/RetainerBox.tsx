@@ -23,7 +23,7 @@ export default function RetainerBox({
 
   return (
     <div className="retainer-box">
-      <h3 className="text-red-900 font-bold text-[18px] mb-2">{name}</h3>
+      <h3 className="text-red-900 font-bold text-[20px] mb-2">{name}</h3>
       <Image src={image} alt={name} height={150} width={150} />
 
       <ul>

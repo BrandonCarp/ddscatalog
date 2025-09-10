@@ -35,9 +35,9 @@ const fasteners: PartItem[] = [
     label: "BOLTS",
     image: "/images/AngleFastern/bolt.png",
     description: [
-      '1/4" TRACK BOLTS - TRKBT',
+      '1/4" TRACK BOLTS - TRKBT4',
+      '5/16" X 1" TRACK BOLTS - TRKBT16',
       '3/8" X 1-1/2" BOLTS - BT38',
-      '5/16" X 1" BOLTS - BT05',
     ],
   },
   {

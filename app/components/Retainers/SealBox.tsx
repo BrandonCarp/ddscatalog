@@ -22,8 +22,8 @@ export default function RubberBox({
   };
 
   return (
-    <div className="Rubber-box ">
-      <h3 className="text-red-900 font-bold text-[18px] mb-2">{name}</h3>
+    <div className="Rubber-box pt-5">
+      <h3 className="text-red-900 font-bold text-[20px] mb-2">{name}</h3>
       <Image src={image} alt={name} height={150} width={150} />
 
       <ul>

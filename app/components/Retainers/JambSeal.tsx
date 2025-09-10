@@ -12,45 +12,45 @@ import Image from "next/image";
 export default function JambSeal() {
   return (
     <>
-      <div className="flex flex-col mt-5">
-        <h1 className="text-red-900 font-bold text-[18px]">JAMB SEAL</h1>
+      <div className="flex flex-col mt-5 border-t">
+        <h1 className="text-red-900 font-bold text-[20px] my-4">JAMB SEAL</h1>
 
         <ul className="grid grid-cols-3 gap-10 ">
           <li className="list-disc font-semi-bold">
-            <Image
+            {/* <Image
               src="/images/Retainer/WTSeal.png"
               alt="Jamb Seal"
               height={180}
               width={180}
-            />
+            /> */}
             WHITE JAMB SEAL{" "}
             <div className="text-gray-800 font-bold">
-              PART: <span className="text-red-900 text-[16px]">JSWT</span>
+              PART: <span className="text-red-900 text-[18px]">JSWT</span>
             </div>
           </li>
           <li className="list-disc font-semi-bold">
-            <Image
+            {/* <Image
               src="/images/Retainer/BrownSeal.png"
               alt="Jamb Seal"
               height={180}
               width={180}
-            />
+            /> */}
             BROWN JAMB SEAL{" "}
             <div className="text-gray-800 font-bold">
-              PART: <span className="text-red-900 text-[16px]">JSCB</span>
+              PART: <span className="text-red-900 text-[18px]">JSCB</span>
             </div>
           </li>
           <li className="list-disc font-semi-bold">
-            <Image
+            {/* <Image
               src="/images/Retainer/BKSeal.png"
               alt="Jamb Seal"
               height={180}
               width={180}
-            />
+            /> */}
             BLACK JAMB SEAL{" "}
             <div className="text-gray-700 text-[14px] font-semibold">
               PART:{" "}
-              <span className="text-red-900 text-[16px] font-bold">JSBK</span>
+              <span className="text-red-900 text-[18px] font-bold">JSBK</span>
             </div>
           </li>
         </ul>

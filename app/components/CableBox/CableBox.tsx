@@ -19,7 +19,7 @@ export default function CableBox({ part }: { part: PartItem }) {
             <Image
               src={part.image}
               alt={part.label}
-              width={150}
+              width={100}
               height={80}
               className="object-contain"
             />

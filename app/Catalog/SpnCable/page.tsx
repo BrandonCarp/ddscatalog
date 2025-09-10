@@ -60,6 +60,47 @@ const CableList: PartItem[] = [
       '3/16" CABLE, 500FT - ROLL16',
     ],
   },
+  // {
+  //   code: "SLV-*",
+  //   label: "SLEEVES",
+  //   image: "/images/cables/sleeves.png",
+  //   description: [
+  //     '1/8" SLEEVES - SLEV18',
+  //     '5/32" SLEEVES - SLEV32',
+  //     '3/16" SLEEVES - SLEV16',
+  //   ],
+  // },
+  // {
+  //   code: "STP-*",
+  //   label: "STOPS",
+  //   image: "/images/cables/stops.png",
+  //   description: [
+  //     '1/8" STOPS - STOP18',
+  //     '5/32" STOPS - STOP32',
+  //     '3/16" STOPS - STOP16',
+  //   ],
+  // },
+];
+
+const cableHdwList: PartItem[] = [
+  {
+    code: "FELCO",
+    label: "FELCO C-7 CABLE CUTTER",
+    image: "/images/cables/felco.png",
+    description: ["FELCO C-7  CABLE CUTTER - FELCC"],
+  },
+  {
+    code: "THIMBLES",
+    label: "THIMBLES",
+    image: "/images/cables/thimble.png",
+    description: ["CABLE THIMBLES - CTHIMB"],
+  },
+  {
+    code: "1/8 CABLE CLAMPS",
+    label: "1/8 CABLE CLAMPS",
+    image: "/images/cables/cableclamp.png",
+    description: ["1/8 CABLE CLAMPS - CABLECLAMP"],
+  },
   {
     code: "SLV-*",
     label: "SLEEVES",
@@ -82,27 +123,6 @@ const CableList: PartItem[] = [
   },
 ];
 
-const cableHdwList: PartItem[] = [
-  {
-    code: "FELCO",
-    label: "FELCO C-7 CABLE CUTTER",
-    image: "/images/cables/felco.png",
-    description: ["FELCO C-7  CABLE CUTTER - FELCC"],
-  },
-  {
-    code: "THIMBLES",
-    label: "THIMBLES",
-    image: "/images/cables/thimble.png",
-    description: ["CABLE THIMBLES - CTHIMB"],
-  },
-  {
-    code: "1/8 CABLE CLAMPS",
-    label: "1/8 CABLE CLAMPS",
-    image: "/images/cables/cableclamp.png",
-    description: ["1/8 CABLE CLAMPS - CABLECLAMP"],
-  },
-];
-
 export default function SpnCable() {
   return (
     <>
@@ -112,7 +132,7 @@ export default function SpnCable() {
         reverseFooter
       >
         <section className="p-2 mx-5 leading-tight">
-          <div className="grid grid-cols-4 gap-6">
+          <div className="grid grid-cols-4 gap-3">
             {/* Cables Header */}
             <div className="col-span-4">
               <h1 className="text-3xl font-black text-red-900 my-1">

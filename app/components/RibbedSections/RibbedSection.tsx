@@ -146,7 +146,7 @@ export function Section3() {
 
 export function Section4() {
   return (
-    <section className="flex flex-col leading-tight">
+    <section className="flex flex-col leading-tight ml-5">
       <h1 className="text-red-900 font-semibold text-[20px]">
         MEASURE STILE LOCATIONS
       </h1>
@@ -171,24 +171,24 @@ export function Section4() {
         </div>
 
         {/* label to the right */}
-        <div className="absolute left-[420px] flex flex-col justify-center font-medium text-gray-800 text-[13px] whitespace-nowrap space-y-1">
+        <div className="absolute left-[360px] flex flex-col justify-center font-medium text-gray-800 text-[13px] whitespace-nowrap space-y-1">
           <span>--- PULL ALL MEASUREMENTS LEFT TO RIGHT</span>
           <span>--- FROM LEFT END MEASURE TO CENTER OF EACH STILE</span>
         </div>
 
         {/* Measurement area under panel */}
-        <div className="absolute top-[120px] w-[400px] h-20">
+        <div className="absolute top-[120px] w-[350px] h-20">
           {/* Left baseline line */}
           <div className="absolute top-0 bottom-0 left-0 border-l border-black"></div>
 
           {/* 1/3 line */}
-          <div className="absolute top-0 h-10 left-[33.333%] border-l border-black"></div>
+          <div className="absolute top-0 h-6 left-[33.333%] border-l border-black"></div>
 
           {/* 2/3 line */}
-          <div className="absolute top-0 bottom-0 left-[66.666%] border-l border-black"></div>
+          <div className="absolute top-0 bottom-0 left-[65.666%] border-l border-black"></div>
 
           {/* 48" */}
-          <div className="absolute top-4 left-0 w-[133px] flex items-center justify-center">
+          <div className="absolute top-4 left-0 w-[120px] flex items-center justify-center">
             <div className="absolute top-1/2 left-0 right-0 border-t border-black"></div>
             <div className="absolute top-1/2 left-0 -translate-x-2 -translate-y-1 text-[10px]">
               ‹
@@ -202,7 +202,7 @@ export function Section4() {
           </div>
 
           {/* 96" */}
-          <div className="absolute bottom-4 left-0 w-[266px] flex items-center justify-center">
+          <div className="absolute bottom-4 left-0 w-[230px] flex items-center justify-center">
             <div className="absolute top-1/2 left-0 right-0 border-t border-black"></div>
             <div className="absolute top-1/2 left-0 -translate-x-2 -translate-y-1 text-[10px]">
               ‹
