@@ -8,13 +8,15 @@ export default function TableofContents({ name, page }: SectionProps) {
     <div className="w-full text-lg leading-tight">
       <h3 className="flex justify-between whitespace-nowrap">
         {/* Left side */}
-        <span className="overflow-hidden text-ellipsis">{name}</span>
+        <span className="overflow-hidden text-ellipsis font-semibold">
+          {name}
+        </span>
 
         {/* Dots filler */}
         <span className="flex-grow border-b-2 border-dotted border-gray-500 mx-2"></span>
 
         {/* Page number */}
-        <span>{page}</span>
+        <span className="font-bold">{page}</span>
       </h3>
     </div>
   );
