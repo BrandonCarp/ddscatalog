@@ -86,7 +86,7 @@ const vertList: { [key: string]: DrumInfo } = {
 
 export default function Drums() {
   return (
-    <CatalogLayout title={"DRUMS"} pagenum="2" reverseFooter>
+    <CatalogLayout title={"DRUMS"} pagenum="22" reverseFooter>
       <div className="px-5 mt-4 space-y-2">
         {/* STANDARD LIFT */}
         <div className="mt-2 py-1">

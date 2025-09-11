@@ -82,7 +82,7 @@ const rollerList3Steel: { [key: string]: rollerInfo } = {
 export default function Rollers() {
   return (
     <>
-      <CatalogLayout title={"ROLLERS"} pagenum="7">
+      <CatalogLayout title={"ROLLERS"} pagenum="19">
         <div className="flex flex-col mb-1">
           <h1 className="text-3xl text-red-900  font-black p-3 ml-20">
             ROLLERS

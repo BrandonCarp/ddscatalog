@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Hormann3200() {
   return (
     <>
-      <CatalogLayout pagenum="1" title="STOCK COMMERCIAL">
+      <CatalogLayout pagenum="15" title="STOCK COMMERCIAL">
         {/* Absolute Title */}
         <div className="absolute right-0 mr-35 mt-112 z-10">
           <div className="text-white">
@@ -56,19 +56,18 @@ export default function Hormann3200() {
 
               <div>
                 <span className="font-semibold text-2xl text-red-900">
-                  STOCK HEIGHTS
-                </span>
-                <p className="font-semibold text-[18px]">
-                  8'0" - 9'0" - 10'0" - 12'0" - 14'0"
-                </p>
-              </div>
-
-              <div>
-                <span className="font-semibold text-2xl text-red-900">
                   STOCK WIDTHS
                 </span>
                 <p className="font-semibold text-[18px]">
                   8'2" - 9'2" - 10'2" - 12'2"
+                </p>
+              </div>
+              <div>
+                <span className="font-semibold text-2xl text-red-900">
+                  STOCK HEIGHTS
+                </span>
+                <p className="font-semibold text-[18px]">
+                  8'0" - 9'0" - 10'0" - 12'0" - 14'0"
                 </p>
               </div>
             </div>

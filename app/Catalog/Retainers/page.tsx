@@ -65,7 +65,7 @@ const RubberList: Retainer[] = [
 export default function Retainers() {
   return (
     <>
-      <CatalogLayout pagenum="27" title={`RETAINERS \n & SEAL`}>
+      <CatalogLayout pagenum="26" title={`RETAINERS \n & SEAL`} reverseFooter>
         <div className="mx-10  flex flex-col justify-center  space-y-3 mt-3">
           <h1 className="font-black text-[36px] text-red-900">RETAINERS</h1>
 

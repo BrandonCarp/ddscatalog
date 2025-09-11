@@ -5,10 +5,10 @@ import CatalogLayout from "@/components/CatalogLayout";
 export default function Clo4051() {
   return (
     <>
-      <CatalogLayout pagenum="1" title="STOCK RESIDENTIAL">
+      <CatalogLayout pagenum="7" title="STOCK RESIDENTIAL">
         {/* Absolute Title */}
-        <div className="absolute left-0 ml-5 mt-110 z-10">
-          <div className="">
+        <div className="absolute left-0 ml-5 mt-112 z-10">
+          <div className="text-black">
             <h1 className="font-bold inline">Gallery Collection /</h1>{" "}
             <span>Model GD1SP, Gallery Collection Short Panel</span>
           </div>
@@ -20,7 +20,7 @@ export default function Clo4051() {
         {/* Hero Image */}
         <div className="relative w-full h-120">
           <Image
-            src="/images/StockDoors/gd1sp1.png"
+            src="/images/StockDoors/gd1spwh1.jpg"
             alt="Operator Hero"
             fill
             className=""
@@ -56,7 +56,12 @@ export default function Clo4051() {
                   </div>
                 </div>
               </div>
-
+              <div>
+                <span className="font-semibold text-2xl text-red-900">
+                  STOCK WIDTHS
+                </span>
+                <p className="font-semibold text-[18px]">8'0" - 9'0" - 16'0"</p>
+              </div>
               <div>
                 <span className="font-semibold text-2xl text-red-900">
                   STOCK HEIGHTS
@@ -64,13 +69,6 @@ export default function Clo4051() {
                 <p className="font-semibold text-[18px]">
                   6'3" - 6'6" - 6'9" - 7'0" - 7'6" - 7'9" - 8'0"
                 </p>
-              </div>
-
-              <div>
-                <span className="font-semibold text-2xl text-red-900">
-                  STOCK WIDTHS
-                </span>
-                <p className="font-semibold text-[18px]">8'0" - 9'0" - 16'0"</p>
               </div>
             </div>
           </section>

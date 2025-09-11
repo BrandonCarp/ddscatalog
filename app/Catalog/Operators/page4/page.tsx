@@ -52,7 +52,7 @@ export default function Operators() {
   return (
     <>
       <div className="">
-        <CatalogLayout title={"RESIDENTIAL\nLIFTMASTER"} pagenum="12">
+        <CatalogLayout title={"RESIDENTIAL\nLIFTMASTER"} pagenum="34">
           <div className="relative w-full h-65 overflow-hidden">
             {" "}
             <Image

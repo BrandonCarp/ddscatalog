@@ -128,11 +128,7 @@ const DecList: DecInfo[] = [
 export default function LocknDec() {
   return (
     <>
-      <CatalogLayout
-        title={"Decorative Hardware \n& Locks"}
-        pagenum="24"
-        reverseFooter
-      >
+      <CatalogLayout title={"Decorative Hardware \n& Locks"} pagenum="13">
         {/* Container */}
         <div className="mx-10 p-3">
           {/* Decorative Hardware Section */}

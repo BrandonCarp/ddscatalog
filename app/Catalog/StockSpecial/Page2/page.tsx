@@ -5,7 +5,7 @@ import CatalogLayout from "@/components/CatalogLayout";
 export default function T52S() {
   return (
     <>
-      <CatalogLayout pagenum="1" title="STOCK RESIDENTIAL">
+      <CatalogLayout pagenum="2" title="STOCK RESIDENTIAL" reverseFooter>
         {/* Absolute Title */}
         <div className="absolute left-0 ml-5 mt-110 z-10">
           <div>
@@ -50,22 +50,20 @@ export default function T52S() {
                   <span className="ml-4 font-semibold">White</span>
                 </div>
               </div>
-
-              <div>
-                <span className="font-semibold text-3xl text-red-900">
-                  STOCK HEIGHTS
-                </span>
-                <p className="font-semibold text-[17px]">
-                  6'3" - 6'6" - 6'9" - 7'0" - 7'6" - 7'9" - 8'0" - 9'0" - 10'0"
-                </p>
-              </div>
-
               <div>
                 <span className="font-semibold text-3xl text-red-900">
                   STOCK WIDTHS
                 </span>
                 <p className="font-semibold text-[17px]">
                   8'0", 9'0", 10'0", 16'0"
+                </p>
+              </div>
+              <div>
+                <span className="font-semibold text-3xl text-red-900">
+                  STOCK HEIGHTS
+                </span>
+                <p className="font-semibold text-[17px]">
+                  6'3" - 6'6" - 6'9" - 7'0" - 7'6" - 7'9" - 8'0" - 9'0" - 10'0"
                 </p>
               </div>
             </div>

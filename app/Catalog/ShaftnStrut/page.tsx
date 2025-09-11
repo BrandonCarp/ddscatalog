@@ -95,7 +95,7 @@ const CouplingList: PartItem[] = [
 
 export default function ShaftnStrut() {
   return (
-    <CatalogLayout title={`TUBE SHAFTS \n& STRUTS`} pagenum="15" reverseFooter>
+    <CatalogLayout title={`TUBE SHAFTS \n& STRUTS`} pagenum="29">
       <div className="grid grid-cols-2   p-5 ">
         {/* Shafts */}
         <section className="flex ml-10">

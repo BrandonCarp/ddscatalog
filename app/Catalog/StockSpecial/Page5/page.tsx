@@ -5,7 +5,7 @@ import CatalogLayout from "@/components/CatalogLayout";
 export default function Clo4051() {
   return (
     <>
-      <CatalogLayout pagenum="1" title="STOCK RESIDENTIAL">
+      <CatalogLayout pagenum="5" title="STOCK RESIDENTIAL">
         {/* Absolute Title */}
         <div className="absolute right-0 mr-20 mt-112 z-10">
           <div className="text-black">
@@ -59,7 +59,12 @@ export default function Clo4051() {
                   </div>
                 </div>
               </div>
-
+              <div>
+                <span className="font-semibold text-2xl text-red-900">
+                  STOCK WIDTHS
+                </span>
+                <p className="font-semibold text-[18px]">8'0" - 9'0" - 16'0"</p>
+              </div>
               <div>
                 <span className="font-semibold text-2xl text-red-900">
                   STOCK HEIGHTS
@@ -67,13 +72,6 @@ export default function Clo4051() {
                 <p className="font-semibold text-[18px]">
                   6'3" - 6'6" - 6'9" - 7'0" - 7'6" - 7'9" - 8'0"
                 </p>
-              </div>
-
-              <div>
-                <span className="font-semibold text-2xl text-red-900">
-                  STOCK WIDTHS
-                </span>
-                <p className="font-semibold text-[18px]">8'0" - 9'0" - 16'0"</p>
               </div>
 
               {/* <p className="font-semibold my-3">

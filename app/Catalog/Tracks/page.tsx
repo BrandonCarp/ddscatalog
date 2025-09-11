@@ -7,7 +7,7 @@ import RawTrack from "@/components/Tracks/RawTrack";
 export default function Tracks() {
   return (
     <>
-      <CatalogLayout pagenum="1" title="TRACKS">
+      <CatalogLayout pagenum="18" title="TRACKS" reverseFooter>
         <div className="p-5 ">
           <h1 className="font-black text-5xl text-red-900">TRACKS</h1>
           {/* Track Sections Res/Comm */}

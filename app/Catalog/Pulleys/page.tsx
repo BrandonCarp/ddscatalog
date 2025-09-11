@@ -88,7 +88,7 @@ export default function Pulleys() {
   return (
     <CatalogLayout
       title={"HARDWARE\n PULLEYS & FORKS"}
-      pagenum="26"
+      pagenum="20"
       reverseFooter
     >
       <div className="mx-5 ">

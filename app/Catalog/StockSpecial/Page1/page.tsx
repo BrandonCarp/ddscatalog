@@ -52,22 +52,20 @@ export default function T50S() {
                   <span className="ml-4 font-semibold">White</span>
                 </div>
               </div>
-
-              <div>
-                <span className="font-semibold text-3xl text-red-900">
-                  STOCK HEIGHTS
-                </span>
-                <p className="font-semibold text-[18px]">
-                  6'3" - 6'6" - 6'9" - 7'0" - 7'6" - 7'9" - 8'0" - 9'0" - 10'0"
-                </p>
-              </div>
-
               <div>
                 <span className="font-semibold text-3xl text-red-900">
                   STOCK WIDTHS
                 </span>
                 <p className="font-semibold text-[18px]">
                   7'6" - 8'0" - 9'0" - 10'0" - 12'0" - 15'0" - 16'0"
+                </p>
+              </div>
+              <div>
+                <span className="font-semibold text-3xl text-red-900">
+                  STOCK HEIGHTS
+                </span>
+                <p className="font-semibold text-[18px]">
+                  6'3" - 6'6" - 6'9" - 7'0" - 7'6" - 7'9" - 8'0" - 9'0" - 10'0"
                 </p>
               </div>
             </div>

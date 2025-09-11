@@ -6,7 +6,7 @@ type SectionProps = {
 export default function TermsCond({ title, description }: SectionProps) {
   return (
     <div className="w-full mt-2 ">
-      <h1 className="font-bold text-gray-800 text-[28px]">{title}</h1>
+      <h1 className="font-bold text-gray-800 text-[24px]">{title}</h1>
       <span className="text-[18px]  font-semibold">{description}</span>
     </div>
   );

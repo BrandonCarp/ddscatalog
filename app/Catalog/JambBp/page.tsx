@@ -46,7 +46,7 @@ export default function JambBp() {
   return (
     <CatalogLayout
       title={`Jamb Brackets \n End Bearing Plates & Arb`}
-      pagenum="3"
+      pagenum="27"
     >
       <div className="m-5">
         <h1 className="font-black text-[28px] text-red-900 ">

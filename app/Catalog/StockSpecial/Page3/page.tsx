@@ -6,7 +6,7 @@ import { Clo4050Colors } from "@/components/ColorBox/ColorBox";
 export default function Clo4050() {
   return (
     <>
-      <CatalogLayout pagenum="1" title="STOCK RESIDENTIAL">
+      <CatalogLayout pagenum="3" title="STOCK RESIDENTIAL">
         {/* Absolute Title */}
         <div className="absolute left-0 ml-5 mt-105 z-10">
           <div className="text-white">
@@ -53,17 +53,6 @@ export default function Clo4050() {
                 </span>
                 <Clo4050Colors />
               </div>
-
-              <div>
-                <span className="font-semibold text-2xl text-red-900">
-                  STOCK HEIGHTS
-                </span>
-                <p className="font-semibold text-[16px]">
-                  6'3" - 6'6" - 6'9" - 7'0" - 7'6" - 7'9" - 8'0" - *9'0" -
-                  *10'0"
-                </p>
-              </div>
-
               <div>
                 <span className="font-semibold text-2xl text-red-900">
                   STOCK WIDTHS
@@ -71,6 +60,15 @@ export default function Clo4050() {
                 <p className="font-semibold text-[16px]">
                   *7'0" - 7'6" - 8'0" - 9'0" - *10'0" - *12'0" - *14'0" - *15'0"
                   - 16'0"
+                </p>
+              </div>
+              <div>
+                <span className="font-semibold text-2xl text-red-900">
+                  STOCK HEIGHTS
+                </span>
+                <p className="font-semibold text-[16px]">
+                  6'3" - 6'6" - 6'9" - 7'0" - 7'6" - 7'9" - 8'0" - *9'0" -
+                  *10'0"
                 </p>
               </div>
 
