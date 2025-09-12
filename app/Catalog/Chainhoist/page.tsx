@@ -80,6 +80,32 @@ const halfLinks: PartItem = {
   ],
 };
 
+const SpList: PartItem[] = [
+  {
+    code: "PDB-*",
+    label: "PUSH DOWN DOOR BUMPERS",
+    image: "/images/cables/pusher.png",
+    description: [
+      'PUSH DOWN DOOR BUMPERS, 15", 2PCS - PDB15',
+      'PUSH DOWN DOOR BUMPERS, 27", 2PCS - PDB27',
+    ],
+  },
+  {
+    code: "USB-*",
+    label: "U-STYLE DOOR BUMPERS",
+    image: "/images/cables/ubumper.png",
+    description: ["U-STYLE DOOR BUMPERS, 2PCS - LEAF2"],
+  },
+];
+
+{
+  /* Spring Pusher Items */
+}
+{
+  /* {Object.entries(SpList).map(([key, value]) => (
+              <CableBox key={key} part={value} />
+            ))} */
+}
 export default function Chainhoist() {
   return (
     <>

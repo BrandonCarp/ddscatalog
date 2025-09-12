@@ -3,7 +3,7 @@
 export default function RawTrack() {
   return (
     <>
-      <section className="space-y-3 mt-10 ">
+      <section className=" ">
         <h1 className=" text-4xl text-gray-800 font-black flex flex-col">
           RAW TRACK{" "}
           <span className="text-[24px] font-bold mt-2">

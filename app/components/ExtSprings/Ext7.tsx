@@ -30,7 +30,7 @@ const extList7: { [key: string]: string } = {
 export default function Ext7() {
   return (
     <section className="mb-8">
-      <h1 className="text-3xl font-bold text-red-900 pb-2">
+      <h1 className="text-3xl font-black text-red-900 pb-2">
         7' EXTENSION SPRINGS
       </h1>
 

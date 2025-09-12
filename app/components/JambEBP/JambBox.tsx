@@ -10,12 +10,12 @@ interface JambBoxProps {
 export default function JambBox({ label, image, description }: JambBoxProps) {
   return (
     <div className="">
-      <h2 className="font-bold text-lg text-gray-700">{label}</h2>
+      {/* <h2 className="font-bold text-lg text-gray-700">{label}</h2> */}
       <Image
         src={image}
         alt={label}
-        width={200}
-        height={200}
+        width={150}
+        height={150}
         className="my-2"
       />
 

@@ -91,10 +91,10 @@ export default function Drums() {
         {/* STANDARD LIFT */}
         <div className="mt-2 py-1">
           <div>
-            <h1 className="font-black text-[26px] text-red-900">
-              STANDARD LIFT
-            </h1>
-            <h5 className="font-semibold  text-slate-600">SOLD IN PAIRS</h5>
+            <h1 className="font-black text-4xl text-red-900">STANDARD LIFT</h1>
+            <h5 className="font-semibold  text-slate-600 text-[20px]">
+              SOLD IN PAIRS
+            </h5>
           </div>
           <div className="grid grid-cols-3 gap-2 mt-1">
             {Object.entries(drumList).map(([key, value]) => (

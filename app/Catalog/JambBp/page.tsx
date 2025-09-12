@@ -2,6 +2,7 @@
 import CatalogLayout from "@/components/CatalogLayout";
 import Image from "next/image";
 import JambBox from "@/components/JambEBP/JambBox";
+import CableBox from "@/components/CableBox/CableBox";
 
 interface JambItem {
   label: string;
@@ -42,18 +43,42 @@ const EbpList: EbpList[] = [
   },
 ];
 
+const SpList: EbpList[] = [
+  {
+    code: "PDB-*",
+    label: "PUSH DOWN DOOR BUMPERS",
+    image: "/images/cables/pusher.png",
+    description: [
+      'PUSH DOWN DOOR BUMPERS, 15", 2PCS - PDB15',
+      'PUSH DOWN DOOR BUMPERS, 27", 2PCS - PDB27',
+    ],
+  },
+  {
+    code: "USB-*",
+    label: "U-STYLE DOOR BUMPERS",
+    image: "/images/cables/ubumper.png",
+    description: ["U-STYLE DOOR BUMPERS, 2PCS - LEAF2"],
+  },
+];
+
+{
+  /* Spring Pusher Items */
+}
+{
+  /* {Object.entries(SpList).map(([key, value]) => (
+              <CableBox key={key} part={value} />
+            ))} */
+}
+
 export default function JambBp() {
   return (
-    <CatalogLayout
-      title={`Jamb Brackets \n End Bearing Plates & Arb`}
-      pagenum="27"
-    >
+    <CatalogLayout title={`JAMB BRACKETS \n END BEARING PLATES `} pagenum="27">
       <div className="m-5">
         <h1 className="font-black text-[28px] text-red-900 ">
-          JAMB BRACKETS, END BEARING PLATES, ARB
+          JAMB BRACKETS, END BEARING PLATES
         </h1>
 
-        <div className="flex justify-center items-start gap-10 flex-wrap m-10">
+        <div className="flex mx-6">
           {/* Jamb Brackets */}
           <div className="flex-1 max-w-sm">
             {JambList.map((item, index) => (
@@ -80,9 +105,9 @@ export default function JambBp() {
 
           {/* ARB Bracket */}
           <div className="flex-1 max-w-sm text-center">
-            <h1 className="font-bold text-lg text-gray-700 mb-2">
+            {/* <h1 className="font-bold text-lg text-gray-700 mb-2">
               ARB BRACKET
-            </h1>
+            </h1> */}
             <Image
               src="/images/HingeArbOrb/ARB.png"
               alt="arb bracket"
@@ -99,6 +124,12 @@ export default function JambBp() {
             </h2>
           </div>
         </div>
+        {/* Push Down Bumpers */}
+        {/* <div className="flex ">
+          {Object.entries(SpList).map(([key, value]) => (
+            <CableBox key={key} part={value} />
+          ))}
+        </div> */}
       </div>
     </CatalogLayout>
   );
