@@ -106,7 +106,7 @@ const cableHdwList: PartItem[] = [
 export default function SpnCable() {
   return (
     <>
-      <CatalogLayout title={"CABLES &\n HARDWARE"} pagenum="21">
+      <CatalogLayout title={"CABLES &\n HARDWARE"} pagenum="23">
         <div className="p-2 mx-5 relative">
           <section className=" mx-5 leading-tight ">
             <div className="grid grid-cols-4 gap-3 ">

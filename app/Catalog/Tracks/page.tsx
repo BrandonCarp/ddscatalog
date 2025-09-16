@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function Tracks() {
   return (
     <>
-      <CatalogLayout pagenum="18" title="RESIDENTIAL TRACKS" reverseFooter>
+      <CatalogLayout pagenum="11" title="RESIDENTIAL TRACKS">
         <div className="relative w-full h-120">
           <Image
             src="/images/Track/track1.png"

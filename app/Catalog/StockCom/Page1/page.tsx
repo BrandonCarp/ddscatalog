@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Hormann3200() {
   return (
     <>
-      <CatalogLayout pagenum="15" title="STOCK COMMERCIAL">
+      <CatalogLayout pagenum="16" title="STOCK COMMERCIAL" reverseFooter>
         {/* Absolute Title */}
         <div className="absolute right-0 mr-35 mt-112 z-10">
           <div className="text-white">

@@ -5,10 +5,10 @@ import Image from "next/image";
 export default function Hormann3200() {
   return (
     <>
-      <CatalogLayout pagenum="15" title="STOCK COMMERCIAL">
+      <CatalogLayout pagenum="17" title="STOCK COMMERCIAL">
         {/* Absolute Title */}
         <div className="absolute left-0 ml-5 mt-112 z-10">
-          <div className="text-white">
+          <div className="">
             <h1 className="font-bold inline">Industrial Series /</h1>{" "}
             <span>2" Ribbed Steel Door</span>
           </div>

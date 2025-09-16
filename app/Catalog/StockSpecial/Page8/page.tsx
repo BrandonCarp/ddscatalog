@@ -7,7 +7,7 @@ export default function Clo4051() {
     <>
       <CatalogLayout pagenum="8" title="STOCK RESIDENTIAL" reverseFooter>
         {/* Absolute Title */}
-        <div className="absolute left-0 ml-5 mt-110 z-10">
+        <div className="absolute right-0 mr-5 mt-110 z-10">
           <div className="">
             <h1 className="font-bold inline">Gallery Collection /</h1>{" "}
             <span>Model GD1LP, Gallery Collection Long Panel</span>

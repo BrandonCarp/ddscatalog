@@ -37,7 +37,7 @@ const hingeList11ga: { [key: string]: string } = {
 export default function Hinges() {
   return (
     <>
-      <CatalogLayout title="HINGES" pagenum="24" reverseFooter>
+      <CatalogLayout title="HINGES" pagenum="27">
         {" "}
         <div className="relative w-full h-70 overflow-hidden">
           <Image

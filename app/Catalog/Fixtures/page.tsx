@@ -94,7 +94,7 @@ const ComFixtureList: PartItem[] = [
 
 export default function Fixtures() {
   return (
-    <CatalogLayout title="FIXTURES" pagenum="25">
+    <CatalogLayout title="FIXTURES" pagenum="28" reverseFooter>
       <div className="flex   mx-auto p-3  ml-3">
         <section className="mx-3">
           {/* RESIDENTIAL FIXTURES */}
@@ -111,7 +111,7 @@ export default function Fixtures() {
           <h1 className="text-3xl font-black text-red-900 mb-1 ml-2">
             COMMERCIAL FIXTURES
           </h1>
-          <div className="grid grid-cols-3 gap-3  ">
+          <div className="grid grid-cols-3 gap-3 ">
             {ComFixtureList.map((part) => (
               <FixtureBox key={part.code} part={part} />
             ))}

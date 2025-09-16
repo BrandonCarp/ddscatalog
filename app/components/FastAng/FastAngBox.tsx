@@ -10,7 +10,7 @@ export type PartItem = {
 
 export default function FastAngBox({ part }: { part: PartItem }) {
   return (
-    <div className=" flex flex-col w-full  px-3   items-center">
+    <div className=" flex flex-col w-full  px-3   items-center font-semibold">
       {/* Image */}
       <div className="w-full flex justify-center items-center h-[120px] mr-10">
         {part.image && (
@@ -40,8 +40,8 @@ export default function FastAngBox({ part }: { part: PartItem }) {
             return (
               <li key={i}>
                 <div className="text-[16px] leading-tight">{label}</div>
-                <div className="text-gray-800 font-semibold">
-                  <span className="text-[14px]">PART:</span>{" "}
+                <div className="text-gray-900 font-semibold">
+                  <span className="text-[15px] font-semibold">PART:</span>{" "}
                   <span className="text-red-900 text-[16px] font-bold">
                     {code}
                   </span>

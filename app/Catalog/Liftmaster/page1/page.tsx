@@ -119,7 +119,7 @@ const RemList: { [key: string]: LmInfo } = {
 
 export default function Operators() {
   return (
-    <CatalogLayout title={"LIFTMASTER\nACCESSORIES"} pagenum="35" reverseFooter>
+    <CatalogLayout title={"LIFTMASTER\nACCESSORIES"} pagenum="37" reverseFooter>
       <div className="mx-5">
         {/* Wall Console */}
 

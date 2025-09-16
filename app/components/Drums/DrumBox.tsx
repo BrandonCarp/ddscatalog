@@ -27,7 +27,7 @@ export default function ItemBox({ id, description }: ItemBoxProps) {
       </div>
 
       {/* Label */}
-      <div className=" font-semibold text-gray-800 text-[16px] leading-tight">
+      <div className=" font-semibold text-gray-900 text-[16px] leading-tight">
         {description.label}
       </div>
 
@@ -39,10 +39,10 @@ export default function ItemBox({ id, description }: ItemBoxProps) {
           ))}
         </ul>
         <h1 className="font-semibold mt-1">
-          <span className="font-semibold text-gray-800 text-[14px]">
+          <span className="font-semibold text-gray-900 text-[14px]">
             PART:{" "}
           </span>
-          <span className="font-bold text-red-800 text-[16px]"> {id}</span>
+          <span className="font-bold text-red-900 text-[16px]"> {id}</span>
         </h1>
       </div>
     </div>

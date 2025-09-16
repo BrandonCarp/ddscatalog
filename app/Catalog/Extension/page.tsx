@@ -5,7 +5,7 @@ import Ext8 from "@/components/ExtSprings/Ext8";
 
 export default function ExtensionSprings() {
   return (
-    <CatalogLayout title="EXTENSION SPRINGS" pagenum="11">
+    <CatalogLayout title="EXTENSION SPRINGS" pagenum="12" reverseFooter>
       <section className="flex justify-center p-3 space-x-10">
         <div>
           <Ext7 />

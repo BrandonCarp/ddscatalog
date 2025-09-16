@@ -81,7 +81,7 @@ function getColorHex(color: string) {
 
 export default function VinylTable() {
   return (
-    <CatalogLayout title={"WEATHER\nSEAL"} pagenum="14" reverseFooter>
+    <CatalogLayout title={"WEATHER\nSEAL"} pagenum="15">
       <div className="relative w-full h-55 overflow-hidden">
         <Image
           src="/images/Vinyl/house.png"

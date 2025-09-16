@@ -10,7 +10,7 @@ export type PartItem = {
 
 export default function ChainBox({ part }: { part: PartItem }) {
   return (
-    <div className="flex flex-col  mt-3  items-center rounded text-xs">
+    <div className="flex flex-col  mt-3  items-center rounded font-semibold">
       {/* Image */}
       {part.image && (
         <div className="flex">
@@ -25,10 +25,10 @@ export default function ChainBox({ part }: { part: PartItem }) {
       )}
 
       {/* Label */}
-      <div className="flex  text-gray-800 font-bold text-2xl">{part.label}</div>
+      <div className="flex  text-gray-900 font-bold text-2xl">{part.label}</div>
 
       {/* Description */}
-      <ul className="list-disc list-inside text-gray-800 text-[15px] leading-tight ">
+      <ul className="list-disc list-inside text-gray-900 text-[15px] leading-tight ">
         {part.description.map((line, i) => {
           // Split line at ": Part" so we can style separately
           const [itemText, partText] = line.split(": Part");
@@ -37,7 +37,7 @@ export default function ChainBox({ part }: { part: PartItem }) {
               <span>{itemText}</span>
               {partText && (
                 <>
-                  <span className="text-[14px] font-semibold"> : PART: </span>
+                  <span className="text-[15px] font-semibold"> : PART: </span>
                   <span className="text-[16px] font-bold text-red-900">
                     {partText.trim()}
                   </span>

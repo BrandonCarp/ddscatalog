@@ -36,28 +36,60 @@ const adderPiece: PartList[] = [
 
 export default function ShaftStrut() {
   return (
-    <CatalogLayout title={`STRUTS & MISC `} pagenum="29">
-      <div className="p-5 mx-5">
+    <CatalogLayout title={`STRUTS & MISC `} pagenum="30" reverseFooter>
+      <div className="p-3 mx-7 relative">
         <h1 className="font-black text-3xl text-red-900">STRUTS & MISC</h1>
-        <div className="grid grid-cols-2  gap-3   ">
+        <div
+          className=" flex 
+          space-x-8 mt-3 "
+        >
+          <StrutBox />
+          <JambBox />
+
+          <div className="space-y-10">
+            <section className="">
+              <Image
+                src="/images/Struts/ARB.png"
+                alt=""
+                width={200}
+                height={200}
+                className=""
+              />
+              <ul>
+                <li className="list-dict font-semibold text-[15px] whitespace-nowrap">
+                  ARB BRACKET PART:{" "}
+                  <span className="text-[16px] text-red-900 font-bold">
+                    {" "}
+                    ARB
+                  </span>
+                </li>
+              </ul>
+            </section>
+            <section className=" flex flex-col justify-center items-center">
+              <Image
+                src="/images/Struts/flagbracket.png"
+                alt=""
+                width={150}
+                height={150}
+                className=""
+              />
+              <ul>
+                <li className="list-dict font-semibold text-[15px] whitespace-nowrap ">
+                  FLAG BRACKET PART:{" "}
+                  <span className="text-[16px] text-red-900 font-bold">
+                    {" "}
+                    FLAGB
+                  </span>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+        <div className="flex space-x-15 items-center  border-t mt-5   ">
           {/* ARB */}
-          <section className="">
-            <Image
-              src="/images/Struts/ARB.png"
-              alt=""
-              width={200}
-              height={200}
-              className=""
-            />
-            <ul>
-              <li className="list-dict font-semibold text-[15px]">
-                ARB BRACKET PART:{" "}
-                <span className="text-[16px] text-red-900 font-bold"> ARB</span>
-              </li>
-            </ul>
-          </section>
+
           {/* Angle */}
-          <section className="flex flex-col items-center ">
+          <section className="flex flex-col items-center mt-10 ">
             <Image
               src="/images/Struts/galvangle.png"
               alt=""
@@ -90,28 +122,7 @@ export default function ShaftStrut() {
             </ul>
           </section>
 
-          {/* Adder */}
-
-          {/* fLAG BRACKET */}
-          <section className="absolute  right-0 mt-65 mr-35 flex flex-col justify-center items-center">
-            <Image
-              src="/images/Struts/flagbracket.png"
-              alt=""
-              width={150}
-              height={150}
-              className=""
-            />
-            <ul>
-              <li className="list-dict font-semibold text-[15px]">
-                FLAG BRACKET PART:{" "}
-                <span className="text-[16px] text-red-900 font-bold">
-                  {" "}
-                  FLAGB
-                </span>
-              </li>
-            </ul>
-          </section>
-          <section className="absolute mt-40 ml-  space-y-[-100px] flex flex-col items-center">
+          <section className="  space-y-[-100px]">
             <Image
               src="/images/Struts/adder.png"
               alt=""
@@ -119,7 +130,7 @@ export default function ShaftStrut() {
               height={80}
               className="rotate-90 ml-20"
             />
-            <ul>
+            <ul className="">
               <li className="list-dict font-semibold text-[15px]">
                 ADDER PIECE 36" PART:{" "}
                 <span className="text-[16px] text-red-900 font-bold">
@@ -136,11 +147,6 @@ export default function ShaftStrut() {
               </li>
             </ul>
           </section>
-        </div>
-
-        <div className="absolute flex bottom-0 mb-28  space-x-10 ml-5 ">
-          <StrutBox />
-          <JambBox />
         </div>
       </div>
     </CatalogLayout>

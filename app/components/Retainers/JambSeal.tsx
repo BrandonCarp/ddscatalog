@@ -12,8 +12,8 @@ import Image from "next/image";
 export default function JambSeal() {
   return (
     <>
-      <div className="flex flex-col mt-5 border-t">
-        <h1 className="text-red-900 font-bold text-[20px] my-4">JAMB SEAL</h1>
+      <div className="flex flex-col ">
+        <h1 className="text-red-900 font-bold text-[20px] ">JAMB SEAL</h1>
 
         <ul className="grid grid-cols-3 gap-10 ">
           <li className="list-disc font-semi-bold">

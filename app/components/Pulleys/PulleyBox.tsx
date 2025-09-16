@@ -18,7 +18,7 @@ export default function PulleyBox({ id, description }: PulleyBoxProps) {
   const hideGroupId = groupIds.includes(id);
 
   return (
-    <div className="flex flex-col ">
+    <div className="flex flex-col justify-center ">
       {/* Image */}
 
       <Image
@@ -36,7 +36,7 @@ export default function PulleyBox({ id, description }: PulleyBoxProps) {
             <div key={i}>
               <li className="leading-tight text-[15px]">{label}</li>
               {code && (
-                <span className="text-gray-800 font-semibold text-[14px] ">
+                <span className="text-gray-900 font-semibold text-[14px] ">
                   PART:{" "}
                   <span className="text-red-900 text-[16px] bold">{code}</span>
                 </span>
@@ -50,7 +50,7 @@ export default function PulleyBox({ id, description }: PulleyBoxProps) {
       {!hideGroupId && (
         <div className="font-semibold text-[15px] ">
           PART:{" "}
-          <span className="font-semibold text-red-800 text-[16px]">{id}</span>
+          <span className="font-semibold text-red-900 text-[16px]">{id}</span>
         </div>
       )}
     </div>

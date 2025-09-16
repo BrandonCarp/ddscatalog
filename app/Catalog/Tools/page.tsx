@@ -68,7 +68,7 @@ const toolList: ToolItem[] = [
 export default function Tools() {
   return (
     <>
-      <CatalogLayout pagenum="30" title="TOOLS" reverseFooter>
+      <CatalogLayout pagenum="32" title="TOOLS" reverseFooter>
         <div className=" p-3 mx-5">
           <h1 className="text-red-900 text-[38px] font-black">TOOLS</h1>
           <section className="grid grid-cols-3 gap-4">
