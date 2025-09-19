@@ -109,11 +109,7 @@ const SpList: PartItem[] = [
 export default function Chainhoist() {
   return (
     <>
-      <CatalogLayout
-        title={`CHAIN HOISTS \n & ACCESSORIES`}
-        pagenum="26"
-        reverseFooter
-      >
+      <CatalogLayout title={`CHAIN HOISTS \n & ACCESSORIES`} pagenum="27">
         <div className="">
           <h1 className="text-3xl font-black text-red-900 ml-5 mt-5 ">
             CHAIN HOISTS & ACCESSORIES

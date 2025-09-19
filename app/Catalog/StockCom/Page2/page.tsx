@@ -6,7 +6,11 @@ import StockCom from "@/components/StockDoors/StockCom";
 export default function StcokCom() {
   return (
     <>
-      <CatalogLayout pagenum="19" title="STOCK COMMERCIAL SECTIONS">
+      <CatalogLayout
+        pagenum="20"
+        title="STOCK COMMERCIAL SECTIONS"
+        reverseFooter
+      >
         {/* Detail Section */}
         <div className="flex flex-col relative mt-3">
           {/* Text takes ~60% */}

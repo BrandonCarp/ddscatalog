@@ -86,11 +86,7 @@ const hdwList: { [key: string]: PulleyInfo } = {
 
 export default function Pulleys() {
   return (
-    <CatalogLayout
-      title={"HARDWARE\n PULLEYS & FORKS"}
-      pagenum="22"
-      reverseFooter
-    >
+    <CatalogLayout title={"HARDWARE\n PULLEYS & FORKS"} pagenum="23">
       <div className="mx-5 ">
         {/* Pulleys */}
         <section className="py-3">

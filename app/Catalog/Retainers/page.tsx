@@ -13,7 +13,7 @@ import JambSeal from "@/components/Retainers/JambSeal";
 export default function Retainers() {
   return (
     <>
-      <CatalogLayout pagenum="29" title={`RETAINERS`}>
+      <CatalogLayout pagenum="30" title={`RETAINERS`} reverseFooter>
         <div className="mx-10 mr-28  flex flex-col justify-center  space-y-5 mt-3">
           <h1 className="font-black text-[36px] text-red-900">RETAINERS</h1>
           <div className="flex justify-center ml-15 ">

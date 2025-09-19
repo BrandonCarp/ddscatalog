@@ -9,7 +9,7 @@ export default function TracksCom() {
   return (
     <>
       <CatalogLayout pagenum="18" title="COMMERICAL TRACKS" reverseFooter>
-        <div className="relative w-full h-50">
+        <div className="relative w-full h-100">
           <Image
             src="/images/Track/track2.png"
             alt="Operator Hero"
@@ -28,7 +28,7 @@ export default function TracksCom() {
             {/* Raw Track */}
             <RawTrack />
 
-            <div className="flex space-x-20 mt-5">
+            {/* <div className="flex space-x-20 mt-5">
               <ul>
                 <Image
                   src="/images/cables/pusher.png"
@@ -73,7 +73,7 @@ export default function TracksCom() {
                   </span>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </section>
         </div>
       </CatalogLayout>

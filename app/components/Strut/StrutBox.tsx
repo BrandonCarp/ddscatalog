@@ -9,8 +9,8 @@ export default function StrutBox() {
         <Image
           src="/images/Struts/struts.png"
           alt="Strut"
-          height={200}
-          width={200}
+          height={250}
+          width={250}
         />
 
         <div className="flex font-semibold text-[15px] mt-4">

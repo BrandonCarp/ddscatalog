@@ -11,11 +11,7 @@ import {
 export default function Ribbed() {
   return (
     <>
-      <CatalogLayout
-        title={`COMMERICAL STEEL RIBBED`}
-        pagenum="20"
-        reverseFooter
-      >
+      <CatalogLayout title={`COMMERICAL STEEL RIBBED`} pagenum="21">
         <div className="flex flex-col justify-center p-3 ">
           <h1 className="font-black text-red-900 text-[26px]">
             MEASURING COMMERICAL STEEL RIBBED SECTIONS

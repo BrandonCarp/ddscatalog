@@ -19,7 +19,11 @@ type PartList = {
 
 export default function EndBearingPage() {
   return (
-    <CatalogLayout title={`END BEARING PLATES & MISC`} pagenum="25">
+    <CatalogLayout
+      title={`END BEARING PLATES & MISC`}
+      pagenum="26"
+      reverseFooter
+    >
       <div className="p-3 mx-5  ">
         <h1 className="font-black text-3xl text-red-900 mb-2">
           END BEARING PLATES & MISC

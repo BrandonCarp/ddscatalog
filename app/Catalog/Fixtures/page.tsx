@@ -94,7 +94,7 @@ const ComFixtureList: PartItem[] = [
 
 export default function Fixtures() {
   return (
-    <CatalogLayout title="FIXTURES" pagenum="28" reverseFooter>
+    <CatalogLayout title="FIXTURES" pagenum="29">
       <div className="flex   mx-auto p-3  ml-3">
         <section className="mx-3">
           {/* RESIDENTIAL FIXTURES */}
