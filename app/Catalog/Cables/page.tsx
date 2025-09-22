@@ -107,7 +107,7 @@ export default function SpnCable() {
   return (
     <>
       <CatalogLayout title={"CABLES &\n HARDWARE"} pagenum="24" reverseFooter>
-        <div className="p-2 mx-5 relative">
+        <div className="p-2 mx-5 relative leading-tight">
           <section className=" mx-5 leading-tight ">
             <div className="grid grid-cols-4 gap-3 ">
               {/* Cables Header */}
@@ -122,7 +122,7 @@ export default function SpnCable() {
                 <CableBox key={key} part={value} />
               ))}
               {/* Ext Kits */}
-              <ul className="absolute mt-60 ml-45">
+              <ul className="absolute mt-70 ml-35 ">
                 <Image
                   src="/images/cables/extkit.png"
                   alt="Push Down Bumpers"
@@ -145,7 +145,7 @@ export default function SpnCable() {
                 </li>
               </ul>
               {/* Torsion Kits */}
-              <ul className="absolute right-0 mt-63 mr-58">
+              <ul className="absolute right-0 mt-70 mr-58">
                 <Image
                   src="/images/cables/torkit.png"
                   alt="Push Down Bumpers"
@@ -170,7 +170,7 @@ export default function SpnCable() {
             </div>
           </section>
 
-          <section className="mt-45">
+          <section className="mt-55">
             <h1 className="text-3xl font-black text-red-900 ">
               CABLE HARDWARE
             </h1>

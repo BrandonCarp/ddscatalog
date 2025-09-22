@@ -16,8 +16,8 @@ export default function Tracks() {
                   <Image
                     src="/images/cables/pusher.png"
                     alt="Push Down Bumpers"
-                    width={225}
-                    height={225}
+                    width={150}
+                    height={150}
                   />
                   <li className="list-disc font-semibold">
                     PUSH DOWN DOOR BUMPERS, 15", 2PCS
@@ -43,8 +43,8 @@ export default function Tracks() {
                   <Image
                     src="/images/cables/ubumper.png"
                     alt="Push Down Bumpers"
-                    width={225}
-                    height={225}
+                    width={150}
+                    height={150}
                   />
                   <li className="list-disc font-semibold">
                     U-STYLE DOOR BUMPERS, 2PCS
@@ -64,8 +64,8 @@ export default function Tracks() {
                 <Image
                   src="/images/Struts/flagbracket.png"
                   alt=""
-                  width={175}
-                  height={175}
+                  width={150}
+                  height={150}
                   className=""
                 />
                 <ul className="list-disc">
@@ -78,12 +78,12 @@ export default function Tracks() {
                   </li>
                 </ul>
               </section>
-              <section className="absolute right-0 top-0 mr-25 mt-160 space-y-[-100px]">
+              <section className="absolute right-0 top-0 mr-25 mt-175 space-y-[-100px]">
                 <Image
                   src="/images/Struts/adder.png"
                   alt=""
-                  width={80}
-                  height={80}
+                  width={60}
+                  height={60}
                   className="rotate-90 ml-20 "
                 />
                 <ul className="list-disc ">

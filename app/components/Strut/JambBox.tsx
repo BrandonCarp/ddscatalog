@@ -8,8 +8,8 @@ export default function JambBox() {
       <Image
         src="/images/JBEB/JB1.png"
         alt=""
-        width={200}
-        height={200}
+        width={150}
+        height={150}
         className="my-2"
       />
       {/* <h1 className="font-bold text-[24px] text-red-900">JAMB BRACKETS</h1> */}

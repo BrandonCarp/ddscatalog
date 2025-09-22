@@ -30,11 +30,11 @@ export default function CableBox({ part }: { part: PartItem }) {
       )}
 
       {/* Description */}
-      <ul className="list-disc ">
+      <ul className="list-disc leading-tight ">
         {part.description.map((line, i) => {
           const [label, code] = line.split(" - ");
           return (
-            <li key={i} className="">
+            <li key={i} className="leading-tight font-semibold">
               <div className="text-[15px]  mr-5">{label} </div>
               <div className=" font-semibold text-[15px] ">
                 PART:{" "}

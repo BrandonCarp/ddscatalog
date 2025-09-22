@@ -3,7 +3,7 @@ import CatalogLayout from "@/components/CatalogLayout";
 import TableofContents from "@/components/Contents/TableOfContents";
 import TermsCond from "@/components/Contents/TermsCond";
 
-const sections: { [key: string]: number } = {
+const sections: { [key: string]: React.ReactNode } = {
   // --- Stock Residential ---
   "Clopay T50S": 1,
   "Clopay T52S ": 2,

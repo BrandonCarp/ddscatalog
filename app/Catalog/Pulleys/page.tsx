@@ -90,7 +90,7 @@ export default function Pulleys() {
       <div className="mx-5 ">
         {/* Pulleys */}
         <section className="py-3">
-          <h1 className="font-bold text-[28px] text-red-900 ">PULLEYS</h1>
+          <h1 className="font-black text-4xl text-red-900 ">PULLEYS</h1>
           <div className="grid grid-cols-4 gap-5 p-3 ">
             {Object.entries(pulleyList).map(([key, value]) => (
               <PulleyBox key={key} id={key} description={value} />
@@ -98,29 +98,47 @@ export default function Pulleys() {
           </div>
         </section>
         {/* HDW */}
-        <section className="border-t p-2">
-          <h1 className="font-bold text-[28px] text-red-900 ">HARDWARE</h1>
+        <section className="">
+          <h1 className="font-black text-[28px] text-red-900 ">HARDWARE</h1>
           <div className="grid grid-cols-3 ">
             {Object.entries(hdwList).map(([key, value]) => (
               <PulleyBox key={key} id={key} description={value} />
             ))}
+            {/* Forks */}
+            <section className="flex flex-col justify-center items-center ">
+              <div className="">
+                <h1 className="font-black text-[28px] text-red-900">FORKS</h1>
+                <h2 className="font-bold text-[15px] text-gray-900">
+                  FASTENERS SOLD SEPARATELY
+                </h2>
+              </div>
+              <div className="">
+                {Object.entries(forkList).map(([key, value]) => (
+                  <PulleyBox key={key} id={key} description={value} />
+                ))}
+              </div>
+            </section>
           </div>
         </section>
-        {/* Forks */}
-        <section className="flex flex-col justify-center items-center border-t py-1">
-          <div className="">
-            <h1 className="font-bold text-[28px] text-red-900">FORKS</h1>
-            <h2 className="font-bold text-[15px] text-gray-600">
-              FASTENERS SOLD SEPARATELY
-            </h2>
-          </div>
-          <div className="grid grid-cols-2">
-            {Object.entries(forkList).map(([key, value]) => (
-              <PulleyBox key={key} id={key} description={value} />
-            ))}
-          </div>
-        </section>
+        <div className="w-[450px] h-[225px] absolute right-0 top-0 mt-177 mr-10  ">
+          <Image
+            src="/images/Pulleys/house.png"
+            alt="House"
+            fill
+            style={{ objectFit: "fill" }} // or "contain", "fill", etc.
+          />
+        </div>
       </div>
     </CatalogLayout>
   );
+}
+{
+  /* 
+  Mathematical Language - Pages 1-24
+  -1.1 Variables :
+    - Universal Statement - true f or all elements in a set eg. All positive numbers are greater than 0
+    - Conditional Statement - if one thing is ture then some other thing also has to be true
+    - Existential Statement - there is atleast one thing for which the property is true. Eg. there is a prime number that is even
+    - 
+  */
 }

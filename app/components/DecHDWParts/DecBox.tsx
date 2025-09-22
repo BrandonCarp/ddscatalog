@@ -13,13 +13,13 @@ export default function DecBox({ part }: { part: PartItem }) {
     <div className="flex flex-col w-full  items-center ">
       {/* Image */}
       {part.image ? (
-        <div className="h-15  w-full flex justify-center items-center my-9 ">
+        <div className="h-15  w-full flex justify-center items-center my-7 ">
           {" "}
           {part.image && (
             <Image
               src={part.image}
               alt={part.label}
-              width={140}
+              width={115}
               height={80}
               className="mr-8 "
             />
@@ -35,8 +35,10 @@ export default function DecBox({ part }: { part: PartItem }) {
           const [label, code] = line.split(" - ");
           return (
             <li key={i}>
-              <div className="text-[14px] leading-tight mr-5">{label} </div>
-              <div className="text-gray-800 font-semibold text-[14px] ">
+              <div className="text-[14px] leading-tight mr-5 font-semibold ">
+                {label}{" "}
+              </div>
+              <div className="text-gray-900 font-semibold text-[14px] ">
                 PART:{" "}
                 <span className="text-red-900 text-[16px] font-bold">
                   {code}
