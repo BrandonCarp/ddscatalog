@@ -159,7 +159,7 @@ export default function LocknDec() {
             </div>
 
             {/* LOCKBAR */}
-            <div className="flex flex-col items-center ml-5 w-[400px]">
+            <div className="flex flex-col items-center ml-5 w-[300px] absolute left-0 ml-120 top-0 mt-133 ">
               <div className="h-15 w-full flex flex-col justify-center  items-center  mb-15 mt-3 pt-20">
                 <h1 className="text-4xl font-black  text-red-900 ">LOCKBARS</h1>
                 <Image

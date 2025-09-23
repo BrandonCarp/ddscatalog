@@ -8,12 +8,12 @@ export default function JambBox() {
       <Image
         src="/images/JBEB/JB1.png"
         alt=""
-        width={150}
-        height={150}
+        width={125}
+        height={125}
         className="my-2"
       />
       {/* <h1 className="font-bold text-[24px] text-red-900">JAMB BRACKETS</h1> */}
-      <ul className="list-disc font-semibold text-[20px]">
+      <ul className="list-disc font-semibold text-[15px]">
         <li className="odd:bg-gray-100 even:bg-white px-5 py-2 whitespace-nowrap">
           #1 JAMB BRACKET PART:
           <span className="text-red-900 font-bold text-[16px]"> JAM1</span>

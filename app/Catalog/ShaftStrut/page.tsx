@@ -54,81 +54,72 @@ export default function ShaftStrut() {
 
         <div className="flex justify-between mx-10">
           <StrutBox />
-          {/* right side */}
-          <div className="flex flex-col justify-center items-center">
-            {/* Angle */}
-            <section className="flex flex-col items-center mt-10 ">
-              <Image
-                src="/images/Struts/galvangle.png"
-                alt=""
-                width={200}
-                height={200}
-                className=""
-              />
-              <ul>
-                <li className="list-dict font-semibold text-[15px] whitespace-nowrap">
-                  GALVANIZED ANGLE 1-1/4" X 1-1/4" X 8FT PART:{" "}
-                  <span className="text-[16px] text-red-900 font-bold">
-                    {" "}
-                    GALVA8
-                  </span>
-                </li>
-                <li className="list-dict font-semibold text-[15px]">
-                  GALVANIZED ANGLE 2" X 2" X 10FT PART:{" "}
-                  <span className="text-[16px] text-red-900 font-bold">
-                    {" "}
-                    GALVA10
-                  </span>
-                </li>
-                <li className="list-dict font-semibold text-[15px]">
-                  WHITE ANGLE 1-1/4" X 1-1/4" X 8FT PART:{" "}
-                  <span className="text-[16px] text-red-900 font-bold">
-                    {" "}
-                    WTANG8
-                  </span>
-                </li>
-              </ul>
-            </section>
-            {/* arb / orb */}
-            <div className="flex justify-center items-center space-x-5">
-              <section className="ml-20">
-                <Image
-                  src="/images/Struts/ARB.png"
-                  alt=""
-                  width={225}
-                  height={225}
-                  className=""
-                />
-                <ul>
-                  <li className="list-dict font-semibold text-[15px] whitespace-nowrap">
-                    ARB BRACKET PART:{" "}
-                    <span className="text-[16px] text-red-900 font-bold">
-                      {" "}
-                      ARB
-                    </span>
-                  </li>
-                </ul>
-              </section>
-              <section className="mt-18">
-                <Image
-                  src="/images/Struts/orb.png"
-                  alt=""
-                  width={225}
-                  height={225}
-                  className=""
-                />
-                <ul>
-                  <li className="list-dict font-semibold text-[15px] whitespace-nowrap">
-                    ORB BRACKET PART:{" "}
-                    <span className="text-[16px] text-red-900 font-bold">
-                      {" "}
-                      ORB
-                    </span>
-                  </li>
-                </ul>
-              </section>
-            </div>
-          </div>
+
+          {/* Angle */}
+          <section className=" mt-5 flex flex-col items-center">
+            <Image
+              src="/images/Struts/galvangle.png"
+              alt=""
+              width={200}
+              height={200}
+              className=""
+            />
+            <ul>
+              <li className="list-dict font-semibold text-[15px] whitespace-nowrap">
+                GALVANIZED ANGLE 1-1/4" X 1-1/4" X 8FT PART:{" "}
+                <span className="text-[16px] text-red-900 font-bold">
+                  {" "}
+                  GALVA8
+                </span>
+              </li>
+              <li className="list-dict font-semibold text-[15px]">
+                GALVANIZED ANGLE 2" X 2" X 10FT PART:{" "}
+                <span className="text-[16px] text-red-900 font-bold">
+                  {" "}
+                  GALVA10
+                </span>
+              </li>
+              <li className="list-dict font-semibold text-[15px]">
+                WHITE ANGLE 1-1/4" X 1-1/4" X 8FT PART:{" "}
+                <span className="text-[16px] text-red-900 font-bold">
+                  {" "}
+                  WTANG8
+                </span>
+              </li>
+            </ul>
+          </section>
+          {/* arb / orb */}
+
+          <section className="absolute right-0 bottom-0 mr-70 mb-10">
+            <Image
+              src="/images/Struts/ARB.png"
+              alt=""
+              width={180}
+              height={180}
+              className=""
+            />
+            <ul>
+              <li className="list-dict font-semibold text-[15px] whitespace-nowrap">
+                ARB BRACKET PART:{" "}
+                <span className="text-[16px] text-red-900 font-bold"> ARB</span>
+              </li>
+            </ul>
+          </section>
+          <section className="absolute right-0 bottom-0 mr-15 mb-10">
+            <Image
+              src="/images/Struts/orb.png"
+              alt=""
+              width={180}
+              height={180}
+              className=""
+            />
+            <ul>
+              <li className="list-dict font-semibold text-[15px] whitespace-nowrap">
+                ORB BRACKET PART:{" "}
+                <span className="text-[16px] text-red-900 font-bold"> ORB</span>
+              </li>
+            </ul>
+          </section>
         </div>
       </div>
     </CatalogLayout>
