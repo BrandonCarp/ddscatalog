@@ -5,20 +5,17 @@
 
 def main():
     change = 0
-    
+
     while change < 50:
+        print(f"Amount Due: {50 - change}")
         x = int(input("Insert Coin :"))
+        
         if x != 25 and x != 10 and x != 5:
-           pass
+            pass
         else:
             change += x
-            print(f"Amount Due: {50 - change}")
-    print(f"Change Owed:{change - 50}")
-         
-
-        
-
-
+            
+    print(f"Change Owed: {change-50}")
 
 
 
