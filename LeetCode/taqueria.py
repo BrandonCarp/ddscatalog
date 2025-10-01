@@ -42,7 +42,7 @@ def main():
 
 
 
-def cost_converter():
-
+def cost_converter(c):
+    
 
 main()
