@@ -38,84 +38,38 @@ months = {
     "November": "11",
     "December": "12"
 }
-# Recieve input  month-day-year order 6-2-993 | June 2, 1993
-# Output in YYYY-MM-DD format , no month has more than 31 days in this
-
-# problems currently
-# what if month is numeric ?
-# what if len(x) != 3
-
-
-# month is either in months or a number thats 1-12
 
 def main():
     while True:
-        try:
-            x = input("Enter date : ")
-            if "/" in x:
-                user_date = slant_date(x)
-                if user_date == None:
-                    continue
-                else: 
-                    print(user_date)
+        date = input("Enter date: ").strip()
+
+        # Format: M/D/YYYY
+        if "/" in date:
+            try:
+                month, day, year = date.split("/")
+                month = int(month)
+                day = int(day)
+                if 1 <= month <= 12 and 1 <= day <= 31 and len(year) == 4:
+                    print(f"{year}-{month:02d}-{day:02d}")
                     break
-            
-            elif "," in x:
-                user_date = comma_date(x)
-                if user_date == None:
-                    continue
-                else: 
-                    print(user_date)
-                    break
-            else:
+            except ValueError:
                 continue
-            
-            
 
+        # Format: Month D, YYYY
+        elif "," in date:
+            try:
+                month_day, year = date.split(",")
+                month_day = month_day.strip()
+                year = year.strip()
 
-def slant_date(x):
-    x = x.replace("/", "-")
-    month, day, year = x.split("-")
-    conv_date = date_converter(month, day, year)
-    if conv_date == None:
-        return
-    else:
-        return conv_date
+                month_name, day = month_day.split(" ")
+                day = int(day)
 
-def comma_date(x):
-    x = x.replace(",","-",)
-    x = x.replace(" ", "-")
-    month, day, year = x.split("-")
-    conv_date = date_converter(month, day, year)
-    if conv_date == None:
-        return
-    else:
-        return conv_date
+                if month_name in months and 1 <= day <= 31 and len(year) == 4:
+                    print(f"{year}-{months[month_name]}-{day:02d}")
+                    break
+            except ValueError:
+                continue
 
-def date_converter(month, day, year):
-    if month in months:
-        month = months[month]
-    if int(month) >= 1 and int(month) <= 12:
-        if int(month) <= 9:
-            if len(month) == 2:
-                month = month
-            else:
-                month = f"0{month}"
-            
-    if int(day) >= 1 and int(day) <= 31:
-        if int(day) <= 9:
-            if len(day) == 2:
-                day = day
-            else:
-                day = f"0{day}"
-        else:
-            day = day
-                
-
-    if len(year) == 4 and year.isdigit():
-        return(f"{year}-{month}-{day}")
-    else:
-        return
-
-
-main()
+if __name__ == "__main__":
+    main()
