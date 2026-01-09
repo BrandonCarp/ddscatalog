@@ -1,10 +1,9 @@
 import Image from "next/image";
 import logo from "public/liftmaster/logo.jpg";
 import LMlogo from "public/liftmaster/LMlogo.png";
-import LiftmasterAccessories from "../lmacc/page";
+
 import LM81650 from "public/liftmaster/81650.png";
 import LM2220L from "public/liftmaster/2220L.png";
-import LM2420L from "public/liftmaster/2420L.png";
 import LM81550 from "public/liftmaster/81550.png";
 import LM84504R from "public/liftmaster/84504R.png";
 import LM6580L from "public/liftmaster/6580L.png";
@@ -25,18 +24,18 @@ export default function Liftmaster() {
             <Image
               src={logo}
               alt="Company logo"
-              width={350}
-              height={350}
+              width={220}
+              height={220}
               priority
-              className=""
+              className="h-auto w-[180px] sm:w-[220px]"
             />
             <Image
               src={LMlogo}
               alt="LiftMaster logo"
-              width={350}
-              height={350}
+              width={220}
+              height={220}
               priority
-              className=""
+              className="h-auto w-[180px] sm:w-[220px]"
             />
           </div>
         </div>
@@ -47,13 +46,12 @@ export default function Liftmaster() {
         {/* Basic / Plus Series */}
         <section className="flex items-center justify-center  mb-5">
           <div className="flex flex-col items-center mr-10">
-            <h1 className="font-black border-b mb-5 text-3xl ">BASIC SERIES</h1>
+            <h1 className="font-black border-b mb-5 text-2xl ">BASIC SERIES</h1>
             <div className="flex space-x-5">
               <LMbox
                 name="MODEL 2220L"
                 image={LM2220L}
                 details={[
-                  "STARTING AT $315.95",
                   "DC CHAIN DRIVE",
                   "T-RAIL SYSTEM",
                   "WiFi / myQ / CAMERA",
@@ -65,20 +63,18 @@ export default function Liftmaster() {
             </div>
           </div>
           <div className="flex flex-col items-center ">
-            <h1 className="font-black border-b mb-5 text-3xl ">PLUS SERIES</h1>
+            <h1 className="font-black border-b mb-5 text-2xl ">PLUS SERIES</h1>
             <div className="flex space-x-5">
               <LMbox
-                name="MODEL 6580L"
-                image={LM6580L}
+                name="MODEL 2220L"
+                image={LM2220L}
                 details={[
-                  "STARTING AT $499.95",
-                  "1HP DC BELT DRIVE",
+                  "DC CHAIN DRIVE",
                   "T-RAIL SYSTEM",
-                  "WiFi / myQ / CAMERA W/ 360 SWIVEL",
-                  "DUAL LED LIGHTING",
-                  "L957W - MOTION DETECTING CONTROL PANEL",
-                  "L993M - 3 BUTTON REMOTE",
-                  "485LM - BATTERY BACK UP",
+                  "WiFi / myQ / CAMERA",
+                  "1 LED BULB",
+                  "L995W - MULTI-FUNCTION CONTROL PANEL",
+                  "L993S - 3 BUTTON REMOTE",
                 ]}
               />
             </div>
@@ -86,16 +82,28 @@ export default function Liftmaster() {
         </section>
         {/* PREMIUM */}
         <section className="mt-10">
-          <h1 className="mb-6 border-b-2 text-center text-3xl font-black">
+          <h1 className="mb-4 border-b text-center text-2xl font-black">
             PREMIUM SERIES
           </h1>
 
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
             <LMbox
+              name="MODEL 6580L"
+              image={LM6580L}
+              details={[
+                "1HP DC BELT DRIVE",
+                "T-RAIL SYSTEM",
+                "WiFi / myQ / CAMERA W/ 360 SWIVEL",
+                "DUAL LED LIGHTING",
+                "L957W - MOTION DETECTING CONTROL PANEL",
+                "L993M - 3 BUTTON REMOTE",
+              ]}
+            />
+
+            <LMbox
               name="MODEL 6690L"
               image={LM6690L}
               details={[
-                "STARTING AT $455.95",
                 "1-1/4 HP DC BELT DRIVE",
                 "T-RAIL SYSTEM",
                 "WiFi / myQ / CAMERA W/ 360 SWIVEL",
@@ -103,7 +111,6 @@ export default function Liftmaster() {
                 "L958W - SMART CONTROL PANEL",
                 "L979M - WIRELESS KEYPAD",
                 "(2) L993M - 3 BUTTON REMOTE",
-                "485LM - BATTERY BACK UP",
               ]}
             />
 
@@ -111,7 +118,6 @@ export default function Liftmaster() {
               name="MODEL 98022"
               image={LM98022}
               details={[
-                "STARTING AT $599.95",
                 "MEDIUM DUTY SIDE MOUNT OPERATOR",
                 "WiFi / myQ",
                 "REMOTE LED LIGHT",
@@ -126,7 +132,6 @@ export default function Liftmaster() {
               name="MODEL 98032"
               image={LM98032}
               details={[
-                "STARTING AT $759.95",
                 "ELITE SERIES HEAVY DUTY DC SIDE MOUNT OPERATOR",
                 "400LBS TO 1100LBS",
                 "WiFi / myQ",
@@ -138,15 +143,12 @@ export default function Liftmaster() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t-2 mt-5 ">
-        {" "}
-        <div className="mx-auto flex max-w-6xl justify-between text-center items-center px-4 font-bold text-2xl  pt-7 ">
-          {" "}
-          <p>(856)-666-6662</p>{" "}
-          <p>7150 Westfield Ave, Pennsauken, NJ 08110</p>{" "}
-        </div>{" "}
+      <footer className="border-t py-6">
+        <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 font-bold text-lg sm:flex-row sm:items-center sm:justify-between">
+          <p>(856)-666-6662</p>
+          <p>7150 Westfield Ave, Pennsauken, NJ 08110</p>
+        </div>
       </footer>
-      <LiftmasterAccessories />
     </div>
   );
 }
