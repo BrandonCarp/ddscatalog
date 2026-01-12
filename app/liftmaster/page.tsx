@@ -48,10 +48,11 @@ export default function Liftmaster() {
         <section className="flex items-center justify-center  mb-5">
           <div className="flex flex-col items-center mr-10">
             <h1 className="font-black border-b mb-5 text-3xl ">BASIC SERIES</h1>
-            <div className="flex space-x-5">
+            <div className="flex space-x-5 pb-13">
               <LMbox
                 name="MODEL 2220L"
                 image={LM2220L}
+                driveTag="CHAIN DRIVE"
                 details={[
                   "STARTING AT $315.95",
                   "DC CHAIN DRIVE",
@@ -70,8 +71,10 @@ export default function Liftmaster() {
               <LMbox
                 name="MODEL 6580L"
                 image={LM6580L}
+                driveTag="BELT DRIVE"
                 details={[
                   "STARTING AT $499.95",
+
                   "1HP DC BELT DRIVE",
                   "T-RAIL SYSTEM",
                   "WiFi / myQ / CAMERA W/ 360 SWIVEL",
@@ -85,7 +88,7 @@ export default function Liftmaster() {
           </div>
         </section>
         {/* PREMIUM */}
-        <section className="mt-10">
+        <section className="mt-5">
           <h1 className="mb-6 border-b-2 text-center text-3xl font-black">
             PREMIUM SERIES
           </h1>
@@ -94,6 +97,7 @@ export default function Liftmaster() {
             <LMbox
               name="MODEL 6690L"
               image={LM6690L}
+              driveTag="BELT DRIVE"
               details={[
                 "STARTING AT $455.95",
                 "1-1/4 HP DC BELT DRIVE",
@@ -138,13 +142,9 @@ export default function Liftmaster() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t-2 mt-5 ">
-        {" "}
-        <div className="mx-auto flex max-w-6xl justify-between text-center items-center px-4 font-bold text-2xl  pt-7 ">
-          {" "}
-          <p>(856)-666-6662</p>{" "}
-          <p>7150 Westfield Ave, Pennsauken, NJ 08110</p>{" "}
-        </div>{" "}
+      <footer className="border-t-2 border-t-2 flex justify-between p-5  text-center items-center  font-semibold text-2xl">
+        <p>(856)-666-6662</p>{" "}
+        <p>7150 Westfield Ave, Pennsauken, NJ 08110</p>{" "}
       </footer>
       <LiftmasterAccessories />
     </div>

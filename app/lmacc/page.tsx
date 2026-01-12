@@ -103,8 +103,10 @@ const operatorsWhileSuppliesLast = [
   {
     name: "81650",
     image: LM81650,
+    driveTag: "CHAIN DRIVE",
     details: [
       "OPERATOR (WHILE SUPPLIES LAST)",
+      "STARTING AT $235.95",
       "1/2 HP AC CHAIN DRIVE",
       "893LM 3-BUTTON REMOTE, 882LMW CONTROL PANEL",
     ],
@@ -112,8 +114,10 @@ const operatorsWhileSuppliesLast = [
   {
     name: "81550",
     image: LM81550,
+    driveTag: "BELT DRIVE",
     details: [
       "OPERATOR (WHILE SUPPLIES LAST)",
+      "STARTING AT $270.95",
       "1/2 HP AC BELT DRIVE, WiFi/myQ",
       "893LM 3-BUTTON REMOTE",
       "882LMW CONTROL PANEL",
@@ -122,7 +126,12 @@ const operatorsWhileSuppliesLast = [
   {
     name: "84504R",
     image: LM84504R,
-    details: ["OPERATOR (WHILE SUPPLIES LAST)", "12V DC CHAIN DRIVE"],
+    driveTag: "CHAIN DRIVE",
+    details: [
+      "OPERATOR (WHILE SUPPLIES LAST)",
+      "STARTING AT $365.95",
+      "12V DC CHAIN DRIVE",
+    ],
   },
 ];
 
@@ -131,7 +140,12 @@ function Section({
   items,
 }: {
   title: string;
-  items: { name: string; image: any; details: string[] }[];
+  items: {
+    name: string;
+    image: any;
+    details: string[];
+    driveTag?: "CHAIN DRIVE" | "BELT DRIVE";
+  }[];
 }) {
   return (
     <section className="mt-8">
@@ -146,12 +160,40 @@ function Section({
             name={item.name}
             image={item.image}
             details={item.details}
+            driveTag={item.driveTag} // ✅ pass through (undefined for accessories)
           />
         ))}
       </div>
     </section>
   );
 }
+
+// function Section({
+//   title,
+//   items,
+// }: {
+//   title: string;
+//   items: { name: string; image: any; details: string[] }[];
+// }) {
+//   return (
+//     <section className="mt-8">
+//       <h2 className="mb-4 border-b-2 text-center text-2xl font-black">
+//         {title}
+//       </h2>
+
+//       <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 print:grid-cols-4 print:gap-2">
+//         {items.map((item) => (
+//           <LMACCBOX
+//             key={item.name}
+//             name={item.name}
+//             image={item.image}
+//             details={item.details}
+//           />
+//         ))}
+//       </div>
+//     </section>
+//   );
+// }
 
 export default function LiftmasterAccessories() {
   return (
@@ -190,13 +232,9 @@ export default function LiftmasterAccessories() {
       </main>
 
       {/* Footer (matches operator page exactly) */}
-      <footer className="border-t-2 ">
-        {" "}
-        <div className="mx-auto flex max-w-6xl justify-between text-center items-center px-4 font-bold text-2xl  ">
-          {" "}
-          <p className="pt-3">(856)-666-6662</p>{" "}
-          <p>7150 Westfield Ave, Pennsauken, NJ 08110</p>{" "}
-        </div>{" "}
+      <footer className="border-t-2 flex justify-between p-5  text-center items-center  font-semibold text-2xl">
+        <p className="">(856)-666-6662</p>{" "}
+        <p>7150 Westfield Ave, Pennsauken, NJ 08110</p>{" "}
       </footer>
     </div>
   );
