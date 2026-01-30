@@ -21,11 +21,6 @@ import LML958W from "public/liftmaster/L958W.png";
 import LML957W from "public/liftmaster/L957W.png";
 import LML955W from "public/liftmaster/L955W.png";
 
-// PREVIOUS OPERATORS (WHILE SUPPLIES LAST)
-import LM81650 from "public/liftmaster/81650.png";
-import LM81550 from "public/liftmaster/81550.png";
-import LM84504R from "public/liftmaster/84504R.png";
-
 const remotes = [
   {
     name: "L993M",
@@ -96,42 +91,6 @@ const controlPanels = [
     name: "L955W",
     image: LML955W,
     details: ["STANDARD CONTROL PANEL", "LIFTMASTER 3.0 ONLY"],
-  },
-];
-
-const operatorsWhileSuppliesLast = [
-  {
-    name: "81650",
-    image: LM81650,
-    driveTag: "CHAIN DRIVE",
-    details: [
-      "OPERATOR (WHILE SUPPLIES LAST)",
-      "STARTING AT $235.95",
-      "1/2 HP AC CHAIN DRIVE",
-      "893LM 3-BUTTON REMOTE, 882LMW CONTROL PANEL",
-    ],
-  },
-  {
-    name: "81550",
-    image: LM81550,
-    driveTag: "BELT DRIVE",
-    details: [
-      "OPERATOR (WHILE SUPPLIES LAST)",
-      "STARTING AT $270.95",
-      "1/2 HP AC BELT DRIVE, WiFi/myQ",
-      "893LM 3-BUTTON REMOTE",
-      "882LMW CONTROL PANEL",
-    ],
-  },
-  {
-    name: "84504R",
-    image: LM84504R,
-    driveTag: "CHAIN DRIVE",
-    details: [
-      "OPERATOR (WHILE SUPPLIES LAST)",
-      "STARTING AT $365.95",
-      "12V DC CHAIN DRIVE",
-    ],
   },
 ];
 

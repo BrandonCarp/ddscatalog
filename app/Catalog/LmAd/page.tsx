@@ -7,11 +7,11 @@ export default function LmAd() {
       <div className="relative h-[100vh] w-[100vw] bg-gray-200">
         {/* Black BG Drop */}
         <Image
-          src={"/images/ad/lmtrans.png"}
-          alt="Lift Master Operator"
+          src={"/liftmaster/6690L.png"}
+          alt="Lift Master 6690L"
           height={850}
           width={850}
-          className="ml-20 z-3 absolute"
+          className="ml- mt-[-5rem] z-3 absolute"
         />
         <div className="flex flex-col items-center justify-center  space-y-3 bottom-0 mb-20 ml-33 z-3 absolute text-white">
           <Image

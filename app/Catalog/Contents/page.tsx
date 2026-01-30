@@ -43,14 +43,14 @@ const sections: { [key: string]: React.ReactNode } = {
   Fasterns: 32,
   Tools: 33,
 
-  "LiftMaster Operators": 34,
-  "LiftMaster Operators ": 35,
-  "LiftMaster Operators  ": 36,
-  "LiftMaster Operators   ": 37,
+  // "LiftMaster Operators": 34,
+  // "LiftMaster Operators ": 35,
+  // "LiftMaster Operators  ": 36,
+  // "LiftMaster Operators   ": 37,
 
-  // --- LiftMaster Accessories ---
-  "LiftMaster Accessories": 38,
-  "LiftMaster Accessories ": 39,
+  // // --- LiftMaster Accessories ---
+  // "LiftMaster Accessories": 38,
+  // "LiftMaster Accessories ": 39,
 };
 
 const termsLeft: { [key: string]: React.ReactNode } = {
