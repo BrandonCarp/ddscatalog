@@ -52,7 +52,6 @@ export default function Liftmaster() {
                 image={LM2220L}
                 driveTag="CHAIN DRIVE"
                 details={[
-                  "STARTING AT $315.95",
                   "DC CHAIN DRIVE",
                   "T-RAIL SYSTEM",
                   "WiFi / myQ / CAMERA",
@@ -71,8 +70,6 @@ export default function Liftmaster() {
                 image={LM6580L}
                 driveTag="BELT DRIVE"
                 details={[
-                  "STARTING AT $355.95",
-
                   "1HP DC BELT DRIVE",
                   "T-RAIL SYSTEM",
                   "WiFi / myQ / CAMERA W/ 360 SWIVEL",
@@ -97,7 +94,6 @@ export default function Liftmaster() {
               image={LM6690L}
               driveTag="BELT DRIVE"
               details={[
-                "STARTING AT $455.95",
                 "1-1/4 HP DC BELT DRIVE",
                 "T-RAIL SYSTEM",
                 "WiFi / myQ / CAMERA W/ 360 SWIVEL",
@@ -113,7 +109,6 @@ export default function Liftmaster() {
               name="MODEL 98022"
               image={LM98022}
               details={[
-                "STARTING AT $599.95",
                 "MEDIUM DUTY SIDE MOUNT OPERATOR",
                 "WiFi / myQ",
                 "REMOTE LED LIGHT",
@@ -128,8 +123,7 @@ export default function Liftmaster() {
               name="MODEL 98032"
               image={LM98032}
               details={[
-                "STARTING AT $759.95",
-                "ELITE SERIES HEAVY DUTY DC SIDE MOUNT OPERATOR",
+                "HEAVY DUTY DC SIDE MOUNT OPERATOR",
                 "400LBS TO 1100LBS",
                 "WiFi / myQ",
                 "myQ SMART GARAGE VIDEO KEYPAD",
