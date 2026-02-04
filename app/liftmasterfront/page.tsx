@@ -52,7 +52,8 @@ export default function Liftmaster() {
                 image={LM2220L}
                 driveTag="CHAIN DRIVE"
                 details={[
-                  "DC CHAIN DRIVE",
+                  "STARTING AT $319.95",
+                  "3/4 HP DC CHAIN DRIVE",
                   "T-RAIL SYSTEM",
                   "WiFi / myQ / CAMERA",
                   "1 LED BULB",
@@ -70,7 +71,8 @@ export default function Liftmaster() {
                 image={LM6580L}
                 driveTag="BELT DRIVE"
                 details={[
-                  "1HP DC BELT DRIVE",
+                  "STARTING AT $355.95",
+                  "1 HP DC BELT DRIVE",
                   "T-RAIL SYSTEM",
                   "WiFi / myQ / CAMERA W/ 360 SWIVEL",
                   "DUAL LED LIGHTING",
@@ -94,14 +96,15 @@ export default function Liftmaster() {
               image={LM6690L}
               driveTag="BELT DRIVE"
               details={[
+                "STARTING AT $455.95",
                 "1-1/4 HP DC BELT DRIVE",
                 "T-RAIL SYSTEM",
-                "WiFi / myQ / CAMERA W/ 360 SWIVEL",
+                "WiFi, myQ, CAMERA W/ 360 SWIVEL",
                 "LED LIGHT RING",
-                "L958W - SMART CONTROL PANEL",
-                "L979M - WIRELESS KEYPAD",
-                "(2) L993M - 3 BUTTON REMOTE",
-                "485LM - BATTERY BACK UP",
+                "L958W, SMART CONTROL PANEL",
+                "L979M, WIRELESS KEYPAD",
+                "(2) L993M, 3 BUTTON REMOTE",
+                "485LM, BATTERY BACK UP",
               ]}
             />
 
@@ -109,6 +112,7 @@ export default function Liftmaster() {
               name="MODEL 98022"
               image={LM98022}
               details={[
+                "STARTING AT $599.95",
                 "MEDIUM DUTY SIDE MOUNT OPERATOR",
                 "WiFi / myQ",
                 "REMOTE LED LIGHT",
@@ -123,6 +127,7 @@ export default function Liftmaster() {
               name="MODEL 98032"
               image={LM98032}
               details={[
+                "STARTING AT $759.95",
                 "HEAVY DUTY DC SIDE MOUNT OPERATOR",
                 "400LBS TO 1100LBS",
                 "WiFi / myQ",
